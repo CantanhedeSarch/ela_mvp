@@ -1,0 +1,89 @@
+# ELA MVP - Dependências do Projeto
+# ====================================
+# 
+# Este arquivo lista todas as dependências necessárias para o
+# sistema de tradução PT-BR → LIBRAS Gloss
+#
+# Instalação: pip install -r requirements.txt
+# Autor: GitHub Copilot & Assistant
+# Versão: 2.0.0
+
+# ============================================================================
+# DEPENDÊNCIAS PRINCIPAIS
+# ============================================================================
+
+# Framework Web
+Flask==3.1.2
+Flask-CORS==6.0.1
+
+# Machine Learning & Deep Learning
+tensorflow==2.15.0
+numpy==1.24.3
+scikit-learn==1.5.2
+
+# Processamento de Dados
+pandas==2.1.4
+
+# Tokenização e NLP
+gensim==4.3.3
+
+# ============================================================================
+# DEPENDÊNCIAS DE DESENVOLVIMENTO (OPCIONAIS)
+# ============================================================================
+
+# Jupyter para prototipagem
+# jupyter==1.1.1
+# notebook==7.2.2
+
+# Visualização
+# matplotlib==3.8.4
+# seaborn==0.13.2
+
+# Teste de APIs
+# requests==2.32.3
+
+# Formatação de código
+# black==24.8.0
+# flake8==7.1.1
+
+# ============================================================================
+# DEPENDÊNCIAS DO SISTEMA
+# ============================================================================
+
+# Utilitários
+typing-extensions==4.12.2
+six==1.16.0
+
+# Threading
+threadpoolctl==3.5.0
+
+# Markdown (para documentação)
+markdown==3.9
+
+# Processamento de imagens (futuro)
+# Pillow==10.4.0
+
+# ============================================================================
+# NOTAS DE INSTALAÇÃO
+# ============================================================================
+# 
+# 1. Ative o ambiente virtual antes de instalar:
+#    Windows: ela_env\Scripts\activate
+#    Linux/Mac: source ela_env/bin/activate
+#
+# 2. Instale as dependências:
+#    pip install -r requirements.txt
+#
+# 3. Para desenvolvimento, descomente as dependências opcionais
+#
+# 4. Para produção, use apenas as dependências principais
+#
+# ============================================================================
+# COMPATIBILIDADE
+# ============================================================================
+#
+# Python: 3.10+
+# TensorFlow: 2.15.0 (compatível com M1/M2 Mac e Windows)
+# CUDA: Opcional (para GPU)
+#
+# ============================================================================

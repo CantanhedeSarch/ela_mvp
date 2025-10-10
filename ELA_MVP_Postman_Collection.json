@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "ela-mvp-collection",
+		"name": "ELA MVP - Tradutor PT-BR → LIBRAS Gloss",
+		"description": "Collection para testar a API do ELA MVP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/health",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8082",
+					"path": ["health"]
+				},
+				"description": "Verifica se a API está funcionando e o modelo está carregado"
+			}
+		},
+		{
+			"name": "2. API Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": [""]
+				},
+				"description": "Obtém informações sobre a API e endpoints disponíveis"
+			}
+		},
+		{
+			"name": "3. Traduzir - Saudação",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"texto\": \"Olá, como você está?\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/traduzir",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["traduzir"]
+				},
+				"description": "Traduz uma saudação simples"
+			}
+		},
+		{
+			"name": "4. Traduzir - Frase Complexa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"texto\": \"Eu gosto de estudar português na escola\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/traduzir",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["traduzir"]
+				},
+				"description": "Traduz uma frase mais complexa"
+			}
+		},
+		{
+			"name": "5. Traduzir - Descrição",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"texto\": \"A casa é azul e grande\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/traduzir",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["traduzir"]
+				},
+				"description": "Traduz uma descrição simples"
+			}
+		},
+		{
+			"name": "6. Teste Erro - Texto Vazio",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"texto\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/traduzir",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["traduzir"]
+				},
+				"description": "Testa validação de texto vazio"
+			}
+		},
+		{
+			"name": "7. Teste Erro - Campo Ausente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mensagem\": \"falta o campo texto\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/traduzir",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["traduzir"]
+				},
+				"description": "Testa validação de campo obrigatório"
+			}
+		}
+	]
+}

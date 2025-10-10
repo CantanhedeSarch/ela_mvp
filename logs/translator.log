@@ -1,0 +1,400 @@
+2025-10-09 14:15:59,479 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:15:59,480 - professional_translator - INFO - Mapeamentos carregados: 0 palavras, 187 frases
+2025-10-09 14:15:59,480 - professional_translator - INFO - Modelo Word2Vec não encontrado. Será treinado automaticamente.
+2025-10-09 14:15:59,526 - professional_translator - INFO - Iniciando treinamento do modelo Word2Vec...
+2025-10-09 14:15:59,527 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-10-09 14:15:59,527 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-10-09 14:15:59,529 - gensim.models.word2vec - INFO - collected 3430 word types from a corpus of 10475 raw words and 1000 sentences
+2025-10-09 14:15:59,529 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-10-09 14:15:59,545 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 1728 unique words (50.38% of original 3430, drops 1702)', 'datetime': '2025-10-09T14:15:59.534898', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-10-09 14:15:59,546 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 8773 word corpus (83.75% of original 10475, drops 1702)', 'datetime': '2025-10-09T14:15:59.546378', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-10-09 14:15:59,552 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 3430 items
+2025-10-09 14:15:59,552 - gensim.models.word2vec - INFO - sample=0.001 downsamples 37 most-common words
+2025-10-09 14:15:59,553 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 7078.567592962823 word corpus (80.7%% of prior 8773)', 'datetime': '2025-10-09T14:15:59.553996', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-10-09 14:15:59,568 - gensim.models.word2vec - INFO - estimated required memory for 1728 words and 300 dimensions: 5011200 bytes
+2025-10-09 14:15:59,568 - gensim.models.word2vec - INFO - resetting layer weights
+2025-10-09 14:15:59,573 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-10-09T14:15:59.573124', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-10-09 14:15:59,573 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1728 vocabulary and 300 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-10-09T14:15:59.573124', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-10-09 14:15:59,612 - gensim.models.word2vec - INFO - EPOCH 0: training on 10475 raw words (7034 effective words) took 0.0s, 194575 effective words/s
+2025-10-09 14:15:59,649 - gensim.models.word2vec - INFO - EPOCH 1: training on 10475 raw words (7045 effective words) took 0.0s, 204980 effective words/s
+2025-10-09 14:15:59,684 - gensim.models.word2vec - INFO - EPOCH 2: training on 10475 raw words (7055 effective words) took 0.0s, 214068 effective words/s
+2025-10-09 14:15:59,718 - gensim.models.word2vec - INFO - EPOCH 3: training on 10475 raw words (7048 effective words) took 0.0s, 222467 effective words/s
+2025-10-09 14:15:59,758 - gensim.models.word2vec - INFO - EPOCH 4: training on 10475 raw words (7102 effective words) took 0.0s, 191753 effective words/s
+2025-10-09 14:15:59,793 - gensim.models.word2vec - INFO - EPOCH 5: training on 10475 raw words (7090 effective words) took 0.0s, 215893 effective words/s
+2025-10-09 14:15:59,829 - gensim.models.word2vec - INFO - EPOCH 6: training on 10475 raw words (7099 effective words) took 0.0s, 206011 effective words/s
+2025-10-09 14:15:59,865 - gensim.models.word2vec - INFO - EPOCH 7: training on 10475 raw words (7043 effective words) took 0.0s, 210797 effective words/s
+2025-10-09 14:15:59,900 - gensim.models.word2vec - INFO - EPOCH 8: training on 10475 raw words (7098 effective words) took 0.0s, 216065 effective words/s
+2025-10-09 14:15:59,935 - gensim.models.word2vec - INFO - EPOCH 9: training on 10475 raw words (7038 effective words) took 0.0s, 218898 effective words/s
+2025-10-09 14:15:59,970 - gensim.models.word2vec - INFO - EPOCH 10: training on 10475 raw words (7107 effective words) took 0.0s, 217534 effective words/s
+2025-10-09 14:16:00,008 - gensim.models.word2vec - INFO - EPOCH 11: training on 10475 raw words (7092 effective words) took 0.0s, 206623 effective words/s
+2025-10-09 14:16:00,048 - gensim.models.word2vec - INFO - EPOCH 12: training on 10475 raw words (7116 effective words) took 0.0s, 184991 effective words/s
+2025-10-09 14:16:00,092 - gensim.models.word2vec - INFO - EPOCH 13: training on 10475 raw words (7101 effective words) took 0.0s, 174298 effective words/s
+2025-10-09 14:16:00,127 - gensim.models.word2vec - INFO - EPOCH 14: training on 10475 raw words (7069 effective words) took 0.0s, 215501 effective words/s
+2025-10-09 14:16:00,163 - gensim.models.word2vec - INFO - EPOCH 15: training on 10475 raw words (7072 effective words) took 0.0s, 215085 effective words/s
+2025-10-09 14:16:00,199 - gensim.models.word2vec - INFO - EPOCH 16: training on 10475 raw words (7083 effective words) took 0.0s, 213080 effective words/s
+2025-10-09 14:16:00,234 - gensim.models.word2vec - INFO - EPOCH 17: training on 10475 raw words (7067 effective words) took 0.0s, 208655 effective words/s
+2025-10-09 14:16:00,269 - gensim.models.word2vec - INFO - EPOCH 18: training on 10475 raw words (7102 effective words) took 0.0s, 217381 effective words/s
+2025-10-09 14:16:00,310 - gensim.models.word2vec - INFO - EPOCH 19: training on 10475 raw words (7103 effective words) took 0.0s, 189800 effective words/s
+2025-10-09 14:16:00,346 - gensim.models.word2vec - INFO - EPOCH 20: training on 10475 raw words (7077 effective words) took 0.0s, 214918 effective words/s
+2025-10-09 14:16:00,383 - gensim.models.word2vec - INFO - EPOCH 21: training on 10475 raw words (7111 effective words) took 0.0s, 206189 effective words/s
+2025-10-09 14:16:00,418 - gensim.models.word2vec - INFO - EPOCH 22: training on 10475 raw words (7072 effective words) took 0.0s, 220619 effective words/s
+2025-10-09 14:16:00,456 - gensim.models.word2vec - INFO - EPOCH 23: training on 10475 raw words (7110 effective words) took 0.0s, 198814 effective words/s
+2025-10-09 14:16:00,492 - gensim.models.word2vec - INFO - EPOCH 24: training on 10475 raw words (7114 effective words) took 0.0s, 215407 effective words/s
+2025-10-09 14:16:00,527 - gensim.models.word2vec - INFO - EPOCH 25: training on 10475 raw words (7112 effective words) took 0.0s, 213428 effective words/s
+2025-10-09 14:16:00,566 - gensim.models.word2vec - INFO - EPOCH 26: training on 10475 raw words (7098 effective words) took 0.0s, 192701 effective words/s
+2025-10-09 14:16:00,602 - gensim.models.word2vec - INFO - EPOCH 27: training on 10475 raw words (7071 effective words) took 0.0s, 213465 effective words/s
+2025-10-09 14:16:00,639 - gensim.models.word2vec - INFO - EPOCH 28: training on 10475 raw words (7101 effective words) took 0.0s, 211254 effective words/s
+2025-10-09 14:16:00,675 - gensim.models.word2vec - INFO - EPOCH 29: training on 10475 raw words (7043 effective words) took 0.0s, 211918 effective words/s
+2025-10-09 14:16:00,709 - gensim.models.word2vec - INFO - EPOCH 30: training on 10475 raw words (7076 effective words) took 0.0s, 213474 effective words/s
+2025-10-09 14:16:00,744 - gensim.models.word2vec - INFO - EPOCH 31: training on 10475 raw words (7093 effective words) took 0.0s, 220954 effective words/s
+2025-10-09 14:16:00,780 - gensim.models.word2vec - INFO - EPOCH 32: training on 10475 raw words (7119 effective words) took 0.0s, 210739 effective words/s
+2025-10-09 14:16:00,816 - gensim.models.word2vec - INFO - EPOCH 33: training on 10475 raw words (7070 effective words) took 0.0s, 212110 effective words/s
+2025-10-09 14:16:00,851 - gensim.models.word2vec - INFO - EPOCH 34: training on 10475 raw words (7084 effective words) took 0.0s, 213962 effective words/s
+2025-10-09 14:16:00,886 - gensim.models.word2vec - INFO - EPOCH 35: training on 10475 raw words (7066 effective words) took 0.0s, 221435 effective words/s
+2025-10-09 14:16:00,923 - gensim.models.word2vec - INFO - EPOCH 36: training on 10475 raw words (7113 effective words) took 0.0s, 217560 effective words/s
+2025-10-09 14:16:00,957 - gensim.models.word2vec - INFO - EPOCH 37: training on 10475 raw words (7104 effective words) took 0.0s, 214850 effective words/s
+2025-10-09 14:16:00,993 - gensim.models.word2vec - INFO - EPOCH 38: training on 10475 raw words (7094 effective words) took 0.0s, 219038 effective words/s
+2025-10-09 14:16:01,029 - gensim.models.word2vec - INFO - EPOCH 39: training on 10475 raw words (7122 effective words) took 0.0s, 209915 effective words/s
+2025-10-09 14:16:01,063 - gensim.models.word2vec - INFO - EPOCH 40: training on 10475 raw words (7137 effective words) took 0.0s, 219292 effective words/s
+2025-10-09 14:16:01,099 - gensim.models.word2vec - INFO - EPOCH 41: training on 10475 raw words (7054 effective words) took 0.0s, 212381 effective words/s
+2025-10-09 14:16:01,134 - gensim.models.word2vec - INFO - EPOCH 42: training on 10475 raw words (7062 effective words) took 0.0s, 215768 effective words/s
+2025-10-09 14:16:01,168 - gensim.models.word2vec - INFO - EPOCH 43: training on 10475 raw words (7056 effective words) took 0.0s, 219789 effective words/s
+2025-10-09 14:16:01,203 - gensim.models.word2vec - INFO - EPOCH 44: training on 10475 raw words (7123 effective words) took 0.0s, 223185 effective words/s
+2025-10-09 14:16:01,241 - gensim.models.word2vec - INFO - EPOCH 45: training on 10475 raw words (7116 effective words) took 0.0s, 210378 effective words/s
+2025-10-09 14:16:01,276 - gensim.models.word2vec - INFO - EPOCH 46: training on 10475 raw words (7064 effective words) took 0.0s, 218168 effective words/s
+2025-10-09 14:16:01,310 - gensim.models.word2vec - INFO - EPOCH 47: training on 10475 raw words (7055 effective words) took 0.0s, 219116 effective words/s
+2025-10-09 14:16:01,344 - gensim.models.word2vec - INFO - EPOCH 48: training on 10475 raw words (7100 effective words) took 0.0s, 220368 effective words/s
+2025-10-09 14:16:01,378 - gensim.models.word2vec - INFO - EPOCH 49: training on 10475 raw words (7085 effective words) took 0.0s, 224344 effective words/s
+2025-10-09 14:16:01,412 - gensim.models.word2vec - INFO - EPOCH 50: training on 10475 raw words (7066 effective words) took 0.0s, 221191 effective words/s
+2025-10-09 14:16:01,447 - gensim.models.word2vec - INFO - EPOCH 51: training on 10475 raw words (7078 effective words) took 0.0s, 219251 effective words/s
+2025-10-09 14:16:01,483 - gensim.models.word2vec - INFO - EPOCH 52: training on 10475 raw words (7081 effective words) took 0.0s, 211730 effective words/s
+2025-10-09 14:16:01,516 - gensim.models.word2vec - INFO - EPOCH 53: training on 10475 raw words (7038 effective words) took 0.0s, 222995 effective words/s
+2025-10-09 14:16:01,556 - gensim.models.word2vec - INFO - EPOCH 54: training on 10475 raw words (7063 effective words) took 0.0s, 189018 effective words/s
+2025-10-09 14:16:01,601 - gensim.models.word2vec - INFO - EPOCH 55: training on 10475 raw words (7089 effective words) took 0.0s, 168731 effective words/s
+2025-10-09 14:16:01,644 - gensim.models.word2vec - INFO - EPOCH 56: training on 10475 raw words (7098 effective words) took 0.0s, 180053 effective words/s
+2025-10-09 14:16:01,684 - gensim.models.word2vec - INFO - EPOCH 57: training on 10475 raw words (7024 effective words) took 0.0s, 187984 effective words/s
+2025-10-09 14:16:01,725 - gensim.models.word2vec - INFO - EPOCH 58: training on 10475 raw words (7043 effective words) took 0.0s, 181945 effective words/s
+2025-10-09 14:16:01,763 - gensim.models.word2vec - INFO - EPOCH 59: training on 10475 raw words (7036 effective words) took 0.0s, 193680 effective words/s
+2025-10-09 14:16:01,801 - gensim.models.word2vec - INFO - EPOCH 60: training on 10475 raw words (7099 effective words) took 0.0s, 203384 effective words/s
+2025-10-09 14:16:01,839 - gensim.models.word2vec - INFO - EPOCH 61: training on 10475 raw words (7079 effective words) took 0.0s, 206776 effective words/s
+2025-10-09 14:16:01,874 - gensim.models.word2vec - INFO - EPOCH 62: training on 10475 raw words (7022 effective words) took 0.0s, 212313 effective words/s
+2025-10-09 14:16:01,908 - gensim.models.word2vec - INFO - EPOCH 63: training on 10475 raw words (7036 effective words) took 0.0s, 222746 effective words/s
+2025-10-09 14:16:01,941 - gensim.models.word2vec - INFO - EPOCH 64: training on 10475 raw words (7060 effective words) took 0.0s, 228938 effective words/s
+2025-10-09 14:16:01,975 - gensim.models.word2vec - INFO - EPOCH 65: training on 10475 raw words (7094 effective words) took 0.0s, 220459 effective words/s
+2025-10-09 14:16:02,010 - gensim.models.word2vec - INFO - EPOCH 66: training on 10475 raw words (7104 effective words) took 0.0s, 220145 effective words/s
+2025-10-09 14:16:02,042 - gensim.models.word2vec - INFO - EPOCH 67: training on 10475 raw words (7081 effective words) took 0.0s, 230441 effective words/s
+2025-10-09 14:16:02,078 - gensim.models.word2vec - INFO - EPOCH 68: training on 10475 raw words (7050 effective words) took 0.0s, 213172 effective words/s
+2025-10-09 14:16:02,111 - gensim.models.word2vec - INFO - EPOCH 69: training on 10475 raw words (7043 effective words) took 0.0s, 228735 effective words/s
+2025-10-09 14:16:02,197 - gensim.models.word2vec - INFO - EPOCH 70: training on 10475 raw words (7021 effective words) took 0.1s, 83924 effective words/s
+2025-10-09 14:16:02,252 - gensim.models.word2vec - INFO - EPOCH 71: training on 10475 raw words (7066 effective words) took 0.0s, 182572 effective words/s
+2025-10-09 14:16:02,293 - gensim.models.word2vec - INFO - EPOCH 72: training on 10475 raw words (7073 effective words) took 0.0s, 196583 effective words/s
+2025-10-09 14:16:02,329 - gensim.models.word2vec - INFO - EPOCH 73: training on 10475 raw words (7132 effective words) took 0.0s, 213802 effective words/s
+2025-10-09 14:16:02,362 - gensim.models.word2vec - INFO - EPOCH 74: training on 10475 raw words (7103 effective words) took 0.0s, 223206 effective words/s
+2025-10-09 14:16:02,397 - gensim.models.word2vec - INFO - EPOCH 75: training on 10475 raw words (7089 effective words) took 0.0s, 219929 effective words/s
+2025-10-09 14:16:02,441 - gensim.models.word2vec - INFO - EPOCH 76: training on 10475 raw words (7044 effective words) took 0.0s, 168138 effective words/s
+2025-10-09 14:16:02,478 - gensim.models.word2vec - INFO - EPOCH 77: training on 10475 raw words (7055 effective words) took 0.0s, 204401 effective words/s
+2025-10-09 14:16:02,513 - gensim.models.word2vec - INFO - EPOCH 78: training on 10475 raw words (7052 effective words) took 0.0s, 211936 effective words/s
+2025-10-09 14:16:02,549 - gensim.models.word2vec - INFO - EPOCH 79: training on 10475 raw words (7119 effective words) took 0.0s, 217860 effective words/s
+2025-10-09 14:16:02,583 - gensim.models.word2vec - INFO - EPOCH 80: training on 10475 raw words (7074 effective words) took 0.0s, 229943 effective words/s
+2025-10-09 14:16:02,615 - gensim.models.word2vec - INFO - EPOCH 81: training on 10475 raw words (7068 effective words) took 0.0s, 233335 effective words/s
+2025-10-09 14:16:02,650 - gensim.models.word2vec - INFO - EPOCH 82: training on 10475 raw words (7062 effective words) took 0.0s, 214740 effective words/s
+2025-10-09 14:16:02,713 - gensim.models.word2vec - INFO - EPOCH 83: training on 10475 raw words (7098 effective words) took 0.1s, 118977 effective words/s
+2025-10-09 14:16:02,749 - gensim.models.word2vec - INFO - EPOCH 84: training on 10475 raw words (7086 effective words) took 0.0s, 211766 effective words/s
+2025-10-09 14:16:02,784 - gensim.models.word2vec - INFO - EPOCH 85: training on 10475 raw words (7061 effective words) took 0.0s, 217323 effective words/s
+2025-10-09 14:16:02,818 - gensim.models.word2vec - INFO - EPOCH 86: training on 10475 raw words (7119 effective words) took 0.0s, 226372 effective words/s
+2025-10-09 14:16:02,851 - gensim.models.word2vec - INFO - EPOCH 87: training on 10475 raw words (7081 effective words) took 0.0s, 227014 effective words/s
+2025-10-09 14:16:02,884 - gensim.models.word2vec - INFO - EPOCH 88: training on 10475 raw words (7018 effective words) took 0.0s, 228563 effective words/s
+2025-10-09 14:16:02,918 - gensim.models.word2vec - INFO - EPOCH 89: training on 10475 raw words (7014 effective words) took 0.0s, 231802 effective words/s
+2025-10-09 14:16:02,950 - gensim.models.word2vec - INFO - EPOCH 90: training on 10475 raw words (7082 effective words) took 0.0s, 233799 effective words/s
+2025-10-09 14:16:02,984 - gensim.models.word2vec - INFO - EPOCH 91: training on 10475 raw words (7063 effective words) took 0.0s, 224511 effective words/s
+2025-10-09 14:16:03,017 - gensim.models.word2vec - INFO - EPOCH 92: training on 10475 raw words (7058 effective words) took 0.0s, 225871 effective words/s
+2025-10-09 14:16:03,050 - gensim.models.word2vec - INFO - EPOCH 93: training on 10475 raw words (7070 effective words) took 0.0s, 230113 effective words/s
+2025-10-09 14:16:03,083 - gensim.models.word2vec - INFO - EPOCH 94: training on 10475 raw words (7098 effective words) took 0.0s, 230607 effective words/s
+2025-10-09 14:16:03,115 - gensim.models.word2vec - INFO - EPOCH 95: training on 10475 raw words (7032 effective words) took 0.0s, 231231 effective words/s
+2025-10-09 14:16:03,151 - gensim.models.word2vec - INFO - EPOCH 96: training on 10475 raw words (7113 effective words) took 0.0s, 215090 effective words/s
+2025-10-09 14:16:03,184 - gensim.models.word2vec - INFO - EPOCH 97: training on 10475 raw words (7059 effective words) took 0.0s, 225982 effective words/s
+2025-10-09 14:16:03,219 - gensim.models.word2vec - INFO - EPOCH 98: training on 10475 raw words (7061 effective words) took 0.0s, 227359 effective words/s
+2025-10-09 14:16:03,252 - gensim.models.word2vec - INFO - EPOCH 99: training on 10475 raw words (7053 effective words) took 0.0s, 238113 effective words/s
+2025-10-09 14:16:03,252 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 1047500 raw words (707674 effective words) took 3.7s, 192312 effective words/s', 'datetime': '2025-10-09T14:16:03.252864', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-10-09 14:16:03,253 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=1728, vector_size=300, alpha=0.025>', 'datetime': '2025-10-09T14:16:03.253863', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-10-09 14:16:03,254 - gensim.utils - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models/word2vec_libras.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-10-09T14:16:03.254862', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-10-09 14:16:03,262 - gensim.utils - INFO - not storing attribute cum_table
+2025-10-09 14:16:03,276 - gensim.utils - INFO - saved models/word2vec_libras.model
+2025-10-09 14:16:03,277 - professional_translator - INFO - Modelo treinado com 1728 palavras
+2025-10-09 14:16:03,279 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 14:16:03,280 - professional_translator - INFO - Traduzindo: 'quero agua'
+2025-10-09 14:16:40,514 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:16:40,516 - professional_translator - INFO - Mapeamentos carregados: 0 palavras, 187 frases
+2025-10-09 14:16:40,516 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 14:16:40,535 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 14:16:40,535 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 14:16:40,558 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T14:16:40.547886', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 14:16:40,559 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 14:16:40,559 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 14:16:40,559 - professional_translator - INFO - Traduzindo: 'quero agua'
+2025-10-09 14:16:40,560 - professional_translator - INFO - Traduzindo: 'bom dia'
+2025-10-09 14:16:40,560 - professional_translator - INFO - Traduzindo: 'obrigado'
+2025-10-09 14:16:40,561 - professional_translator - INFO - Traduzindo: 'eu gosto muito de você'
+2025-10-09 14:16:40,562 - professional_translator - INFO - Traduzindo: 'como você está?'
+2025-10-09 14:16:40,563 - professional_translator - INFO - Traduzindo: 'oi'
+2025-10-09 14:16:40,563 - professional_translator - INFO - Traduzindo: 'tchau'
+2025-10-09 14:16:40,563 - professional_translator - INFO - Traduzindo: 'obrigado'
+2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'por favor'
+2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'bom dia'
+2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'como vai'
+2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'tudo bem'
+2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'até logo'
+2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'boa noite'
+2025-10-09 14:16:40,565 - professional_translator - INFO - Traduzindo: 'teste rápido'
+2025-10-09 14:16:40,565 - professional_translator - INFO - Traduzindo: 'frase um pouco mais longa para teste'
+2025-10-09 14:16:40,565 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
+2025-10-09 14:16:40,566 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
+2025-10-09 14:16:40,566 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
+2025-10-09 14:16:40,566 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
+2025-10-09 14:16:40,566 - professional_translator - INFO - Traduzindo: 'meu nome é João'
+2025-10-09 14:16:40,567 - professional_translator - INFO - Traduzindo: 'meu nome é João'
+2025-10-09 14:18:59,800 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:18:59,800 - professional_translator - INFO - Mapeamentos carregados: 0 palavras, 187 frases
+2025-10-09 14:18:59,801 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 14:18:59,803 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 14:18:59,803 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 14:18:59,827 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T14:18:59.817327', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 14:18:59,827 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 14:18:59,828 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 14:18:59,828 - professional_translator - INFO - Traduzindo: 'quero agua'
+2025-10-09 14:18:59,829 - professional_translator - INFO - Traduzindo: 'bom dia'
+2025-10-09 14:18:59,830 - professional_translator - INFO - Traduzindo: 'obrigado'
+2025-10-09 14:18:59,831 - professional_translator - INFO - Traduzindo: 'eu gosto muito de você'
+2025-10-09 14:18:59,831 - professional_translator - INFO - Traduzindo: 'como você está?'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'oi'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'tchau'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'obrigado'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'por favor'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'bom dia'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'como vai'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'tudo bem'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'até logo'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'boa noite'
+2025-10-09 14:18:59,834 - professional_translator - INFO - Traduzindo: 'teste rápido'
+2025-10-09 14:18:59,834 - professional_translator - INFO - Traduzindo: 'frase um pouco mais longa para teste'
+2025-10-09 14:18:59,835 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
+2025-10-09 14:18:59,835 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
+2025-10-09 14:18:59,835 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
+2025-10-09 14:18:59,835 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
+2025-10-09 14:18:59,836 - professional_translator - INFO - Traduzindo: 'meu nome é João'
+2025-10-09 14:18:59,836 - professional_translator - INFO - Traduzindo: 'meu nome é João'
+2025-10-09 14:20:07,615 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:20:07,616 - professional_translator - INFO - Mapeamentos carregados: 0 palavras, 187 frases
+2025-10-09 14:20:07,616 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 14:20:07,620 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 14:20:07,620 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 14:20:07,642 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T14:20:07.631199', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 14:20:07,642 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 14:20:07,642 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 14:20:31,318 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:20:31,320 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-09 14:20:31,320 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 14:20:31,323 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 14:20:31,323 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 14:20:31,344 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T14:20:31.334207', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 14:20:31,344 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 14:20:31,344 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 14:20:42,041 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:20:42,042 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-09 14:20:42,043 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 14:20:42,045 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 14:20:42,045 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 14:20:42,067 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T14:20:42.057126', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 14:20:42,067 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 14:20:42,067 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 14:20:42,068 - professional_translator - INFO - Traduzindo: 'quero agua'
+2025-10-09 14:20:42,069 - professional_translator - INFO - Traduzindo: 'bom dia'
+2025-10-09 14:20:42,069 - professional_translator - INFO - Traduzindo: 'obrigado'
+2025-10-09 14:20:42,069 - professional_translator - INFO - Traduzindo: 'eu gosto muito de você'
+2025-10-09 14:20:42,071 - professional_translator - INFO - Traduzindo: 'como você está?'
+2025-10-09 14:20:42,073 - professional_translator - INFO - Traduzindo: 'oi'
+2025-10-09 14:20:42,073 - professional_translator - INFO - Traduzindo: 'tchau'
+2025-10-09 14:20:42,074 - professional_translator - INFO - Traduzindo: 'obrigado'
+2025-10-09 14:20:42,074 - professional_translator - INFO - Traduzindo: 'por favor'
+2025-10-09 14:20:42,074 - professional_translator - INFO - Traduzindo: 'bom dia'
+2025-10-09 14:20:42,074 - professional_translator - INFO - Traduzindo: 'como vai'
+2025-10-09 14:20:42,074 - professional_translator - INFO - Traduzindo: 'tudo bem'
+2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'até logo'
+2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'boa noite'
+2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'teste rápido'
+2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'frase um pouco mais longa para teste'
+2025-10-09 14:20:42,076 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
+2025-10-09 14:20:42,076 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
+2025-10-09 14:20:42,077 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
+2025-10-09 14:20:42,077 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
+2025-10-09 14:20:42,078 - professional_translator - INFO - Traduzindo: 'meu nome é João'
+2025-10-09 14:20:42,078 - professional_translator - INFO - Traduzindo: 'meu nome é João'
+2025-10-09 14:21:16,154 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-09 14:21:16,154 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:21:16,156 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-09 14:21:16,157 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 14:21:16,160 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 14:21:16,160 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 14:21:16,185 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T14:21:16.173406', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 14:21:16,186 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 14:21:16,186 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 14:21:16,186 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-09 14:21:16,195 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-09 14:21:16,196 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 14:22:13,097 - __main__ - INFO - Request 1760030533-2756612425520: POST /translate
+2025-10-09 14:22:13,098 - professional_translator - INFO - Traduzindo: 'inovaçao é transformar o impossivel em realidade'
+2025-10-09 14:22:13,098 - __main__ - INFO - Request 1760030533-2756612425520 completado em 0.0010s - Status: 200
+2025-10-09 14:22:13,099 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:22:13] "POST /translate HTTP/1.1" 200 -
+2025-10-09 14:22:50,303 - __main__ - INFO - Request 1760030570-2756612425520: POST /translate
+2025-10-09 14:22:50,303 - professional_translator - INFO - Traduzindo: 'Bom dia'
+2025-10-09 14:22:50,304 - __main__ - INFO - Request 1760030570-2756612425520 completado em 0.0010s - Status: 200
+2025-10-09 14:22:50,304 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:22:50] "POST /translate HTTP/1.1" 200 -
+2025-10-09 14:23:00,970 - __main__ - INFO - Request 1760030580-2756612425520: POST /translate
+2025-10-09 14:23:00,971 - professional_translator - INFO - Traduzindo: 'ola'
+2025-10-09 14:23:00,971 - __main__ - INFO - Request 1760030580-2756612425520 completado em 0.0015s - Status: 200
+2025-10-09 14:23:00,971 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:23:00] "POST /translate HTTP/1.1" 200 -
+2025-10-09 14:23:12,299 - __main__ - INFO - Request 1760030592-2756612425520: POST /translate
+2025-10-09 14:23:12,307 - professional_translator - INFO - Traduzindo: 'tudo bem?'
+2025-10-09 14:23:12,308 - __main__ - INFO - Request 1760030592-2756612425520 completado em 0.0085s - Status: 200
+2025-10-09 14:23:12,309 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:23:12] "POST /translate HTTP/1.1" 200 -
+2025-10-09 14:23:27,990 - __main__ - INFO - Request 1760030607-2756612425520: POST /translate
+2025-10-09 14:23:27,991 - professional_translator - INFO - Traduzindo: 'hoje a noite vou assistir um filme'
+2025-10-09 14:23:27,991 - __main__ - INFO - Request 1760030607-2756612425520 completado em 0.0015s - Status: 200
+2025-10-09 14:23:27,992 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:23:27] "POST /translate HTTP/1.1" 200 -
+2025-10-09 14:24:44,473 - __main__ - INFO - Request 1760030684-2756612425520: POST /translate
+2025-10-09 14:24:44,474 - professional_translator - INFO - Traduzindo: 'Yan quer muito dar um abraço'
+2025-10-09 14:24:44,475 - __main__ - INFO - Request 1760030684-2756612425520 completado em 0.0020s - Status: 200
+2025-10-09 14:24:44,475 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:24:44] "POST /translate HTTP/1.1" 200 -
+2025-10-09 14:29:27,762 - __main__ - INFO - Request 1760030967-2756612425520: POST /translate
+2025-10-09 14:29:27,762 - professional_translator - INFO - Traduzindo: 'carros, os maiorais.'
+2025-10-09 14:29:27,763 - __main__ - INFO - Request 1760030967-2756612425520 completado em 0.0010s - Status: 200
+2025-10-09 14:29:27,763 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:29:27] "POST /translate HTTP/1.1" 200 -
+2025-10-09 14:34:41,670 - __main__ - INFO - Request 1760031281-2756612425520: POST /translate
+2025-10-09 14:34:41,672 - professional_translator - INFO - Traduzindo: 'fui ao otorrino e dei um mortal pra tras'
+2025-10-09 14:34:41,673 - __main__ - INFO - Request 1760031281-2756612425520 completado em 0.0025s - Status: 200
+2025-10-09 14:34:41,673 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:34:41] "POST /translate HTTP/1.1" 200 -
+2025-10-09 14:35:58,463 - __main__ - INFO - Request 1760031358-2756612425520: POST /translate
+2025-10-09 14:35:58,464 - professional_translator - INFO - Traduzindo: 'Olá mundo'
+2025-10-09 14:35:58,464 - __main__ - INFO - Request 1760031358-2756612425520 completado em 0.0010s - Status: 200
+2025-10-09 14:35:58,465 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:35:58] "POST /translate HTTP/1.1" 200 -
+2025-10-09 14:56:30,987 - __main__ - INFO - Request 1760032590-2756612425520: GET /health
+2025-10-09 14:56:30,988 - professional_translator - INFO - Traduzindo: 'teste'
+2025-10-09 14:56:30,989 - __main__ - INFO - Request 1760032590-2756612425520 completado em 0.0020s - Status: 200
+2025-10-09 14:56:30,990 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:56:30] "GET /health HTTP/1.1" 200 -
+2025-10-09 14:58:55,610 - __main__ - INFO - Request 1760032735-2756612425520: GET /health
+2025-10-09 14:58:55,626 - professional_translator - INFO - Traduzindo: 'teste'
+2025-10-09 14:58:55,626 - __main__ - INFO - Request 1760032735-2756612425520 completado em 0.0160s - Status: 200
+2025-10-09 14:58:55,627 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:58:55] "GET /health HTTP/1.1" 200 -
+2025-10-09 15:04:52,729 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-09 15:04:52,729 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:04:52,730 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-09 15:04:52,730 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 15:04:52,732 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 15:04:52,734 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 15:04:52,756 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T15:04:52.745816', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 15:04:52,756 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 15:04:52,756 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 15:04:52,757 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-09 15:04:52,766 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-09 15:04:52,766 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 15:05:08,127 - __main__ - INFO - Request 1760033108-2861064357680: GET /health
+2025-10-09 15:05:08,127 - professional_translator - INFO - Traduzindo: 'teste'
+2025-10-09 15:05:08,128 - __main__ - INFO - Request 1760033108-2861064357680 completado em 0.0010s - Status: 200
+2025-10-09 15:05:08,129 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:05:08] "GET /health HTTP/1.1" 200 -
+2025-10-09 15:05:12,484 - __main__ - INFO - Request 1760033112-2861064357680: POST /translate
+2025-10-09 15:05:12,485 - professional_translator - INFO - Traduzindo: 'Olá mundo'
+2025-10-09 15:05:12,485 - __main__ - INFO - Request 1760033112-2861064357680 completado em 0.0010s - Status: 200
+2025-10-09 15:05:12,485 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:05:12] "POST /translate HTTP/1.1" 200 -
+2025-10-09 15:07:22,178 - __main__ - INFO - Request 1760033242-2861064357680: POST /translate
+2025-10-09 15:07:22,179 - __main__ - INFO - Request 1760033242-2861064357680 completado em 0.0010s - Status: 400
+2025-10-09 15:07:22,179 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:07:22] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
+2025-10-09 15:08:48,818 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-09 15:08:48,818 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:08:48,819 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-09 15:08:48,820 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 15:08:48,822 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 15:08:48,822 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 15:08:48,844 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T15:08:48.834585', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 15:08:48,845 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 15:08:48,845 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 15:08:48,845 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-09 15:08:48,854 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-09 15:08:48,854 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 15:08:57,010 - __main__ - INFO - Request 1760033337-2861064357680: POST /translate
+2025-10-09 15:08:57,011 - __main__ - INFO - Request 1760033337-2861064357680 completado em 0.0010s - Status: 400
+2025-10-09 15:08:57,011 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:08:57] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
+2025-10-09 15:09:00,778 - __main__ - INFO - Request 1760033340-2861064357680: POST /translate
+2025-10-09 15:09:00,778 - __main__ - INFO - Request 1760033340-2861064357680 completado em 0.0010s - Status: 400
+2025-10-09 15:09:00,778 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:09:00] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
+2025-10-09 15:09:14,922 - __main__ - INFO - Request 1760033354-2861064357680: POST /translate
+2025-10-09 15:09:14,922 - __main__ - INFO - Request 1760033354-2861064357680 completado em 0.0000s - Status: 400
+2025-10-09 15:09:14,923 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:09:14] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
+2025-10-09 15:09:55,004 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-09 15:09:55,004 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:09:55,006 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-09 15:09:55,006 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 15:09:55,009 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 15:09:55,009 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 15:09:55,033 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T15:09:55.022380', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 15:09:55,034 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 15:09:55,034 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 15:09:55,034 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-09 15:09:55,042 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-09 15:09:55,042 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 15:09:59,888 - __main__ - INFO - Request 1760033399-2861064357680: POST /translate
+2025-10-09 15:09:59,888 - __main__ - INFO - Request 1760033399-2861064357680 completado em 0.0000s - Status: 400
+2025-10-09 15:09:59,889 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:09:59] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
+2025-10-09 15:10:03,573 - __main__ - INFO - Request 1760033403-2861064357680: POST /translate
+2025-10-09 15:10:03,573 - __main__ - INFO - Request 1760033403-2861064357680 completado em 0.0000s - Status: 400
+2025-10-09 15:10:03,574 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:10:03] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
+2025-10-09 15:10:44,673 - __main__ - INFO - Request 1760033444-2861064357680: POST /translate
+2025-10-09 15:10:44,673 - __main__ - INFO - Request 1760033444-2861064357680 completado em 0.0000s - Status: 400
+2025-10-09 15:10:44,674 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:10:44] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
+2025-10-09 15:11:39,221 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-09 15:11:39,221 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:11:39,223 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-09 15:11:39,223 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 15:11:39,225 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 15:11:39,225 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 15:11:39,257 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T15:11:39.245577', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 15:11:39,258 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 15:11:39,258 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 15:11:39,258 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-09 15:11:39,266 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-09 15:11:39,266 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 15:11:56,443 - __main__ - INFO - Request 1760033516-2861064357680: GET /health
+2025-10-09 15:11:56,443 - professional_translator - INFO - Traduzindo: 'teste'
+2025-10-09 15:11:56,444 - __main__ - INFO - Request 1760033516-2861064357680 completado em 0.0010s - Status: 200
+2025-10-09 15:11:56,445 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:11:56] "GET /health HTTP/1.1" 200 -
+2025-10-09 15:12:00,357 - __main__ - INFO - Request 1760033520-2861064357680: POST /translate
+2025-10-09 15:12:00,357 - __main__ - INFO - Request 1760033520-2861064357680 completado em 0.0000s - Status: 400
+2025-10-09 15:12:00,358 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:12:00] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
+2025-10-09 15:12:03,640 - __main__ - INFO - Request 1760033523-2861064357680: POST /translate
+2025-10-09 15:12:03,641 - __main__ - INFO - Request 1760033523-2861064357680 completado em 0.0010s - Status: 400
+2025-10-09 15:12:03,641 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:12:03] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
+2025-10-09 15:13:32,644 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-09 15:13:32,644 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:13:32,645 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-09 15:13:32,645 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-09 15:13:32,648 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-09 15:13:32,648 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-09 15:13:32,671 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T15:13:32.660312', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-09 15:13:32,671 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-09 15:13:32,671 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-09 15:13:32,672 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-09 15:13:32,680 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-09 15:13:32,680 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-09 15:13:46,843 - __main__ - INFO - Request 1760033626-2182669895472: GET /health
+2025-10-09 15:13:46,843 - professional_translator - INFO - Traduzindo: 'teste'
+2025-10-09 15:13:46,843 - __main__ - INFO - Request 1760033626-2182669895472 completado em 0.0010s - Status: 200
+2025-10-09 15:13:46,843 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:13:46] "GET /health HTTP/1.1" 200 -
+2025-10-09 15:13:58,360 - __main__ - INFO - Request 1760033638-2182669895472: POST /translate
+2025-10-09 15:13:58,360 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coração do Mundo, o novo longa da Filmes de Plástico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O Último Episódio retrata a trajetória de amadurecimento de três adolescentes da periferia, a partir de narrativas criadas sobre o fim da animação Caverna do Dragão. A obra gera reconhecimento e identificação, algo que já é marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurílio Martins, deve emocionar a todos os públicos.  “É um filme que retrata um momento muito específico do mundo, no qual a comunicação era distinta e passávamos por uma crise econômica que as novas gerações não entendem, mas as dores são iguais às de hoje. As dores do crescimento são iguais em qualquer lugar do mundo. Por isso, a identificação é muito imediata, tanto para quem está vivendo, quanto para quem já viveu essas situações”, explica, em entrevista ao Conversa Bem Viver. O enredo parte da história criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o último episódio do desenho que marcou as gerações dos anos 80 e 90. Mas, no desenrolar da narrativa, vão ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausência parental são alguns deles.  Tudo isso mantendo características fiéis da Filmes de Plástico, como o olhar cuidadoso ao cotidiano, a representação de pessoas negras sem estereotipá-las e a sensibilidade que gera intimismo. “Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste é saber que isso não existe com tanta frequência nos outros lugares. Mas, de nossa parte, não é um panfleto. É natural. A Filmes de Plástico parte do princípio da sinceridade sobre aquilo que nos rodeia”, enfatiza Martins.  A produtora, que comemora os seus 16 anos de história, conta também com André Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Além dos dois primeiros, o elenco de O Último Episódio tem a participação de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuição é da Malute e da Embaúba Filmes.'
+2025-10-09 15:13:58,387 - __main__ - INFO - Request 1760033638-2182669895472 completado em 0.0273s - Status: 200
+2025-10-09 15:13:58,387 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:13:58] "POST /translate HTTP/1.1" 200 -

@@ -1,0 +1,61 @@
+{
+  "timestamp": 1760030442.079112,
+  "version": "5.0.0",
+  "test_results": [
+    {
+      "test_name": "Caso Principal Original",
+      "input": "quero agua",
+      "output": "QUERER AGUA",
+      "confidence": 0.95,
+      "method": "phrase_mapping",
+      "processing_time": 0.0,
+      "passed": true
+    },
+    {
+      "test_name": "Saudação Simples",
+      "input": "bom dia",
+      "output": "BOM DIA",
+      "confidence": 0.95,
+      "method": "phrase_mapping",
+      "processing_time": 0.0,
+      "passed": true
+    },
+    {
+      "test_name": "Agradecimento",
+      "input": "obrigado",
+      "output": "OBRIGADO [PONTO]",
+      "confidence": 1.0,
+      "method": "semantic_word2vec",
+      "processing_time": 0.0,
+      "passed": true
+    },
+    {
+      "test_name": "Frase Complexa",
+      "input": "eu gosto muito de você",
+      "output": "EU GOSTAR MUITO DE VOCÊ [PONTO]",
+      "confidence": 0.86,
+      "method": "semantic_word2vec",
+      "processing_time": 0.0,
+      "passed": true
+    },
+    {
+      "test_name": "Pergunta",
+      "input": "como você está?",
+      "output": "COMO VOCÊ ESTÁ [INTERROGAÇÃO]",
+      "confidence": 0.7666666666666666,
+      "method": "semantic_word2vec",
+      "processing_time": 0.0,
+      "passed": true
+    }
+  ],
+  "performance_metrics": {
+    "throughput": 4502.473282442748,
+    "average_latency": 0.000498652458190918,
+    "total_test_time": 0.0019989013671875
+  },
+  "summary": {
+    "total_tests": 5,
+    "passed_tests": 5,
+    "success_rate": 1.0
+  }
+}
