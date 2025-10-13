@@ -1,0 +1,89 @@
+# ELA MVP v5.0 - Dependências Profissionais
+# ==========================================
+# 
+# Sistema profissional de tradução PT-BR → LIBRAS com Word2Vec
+# Autor: ELA Team
+# Versão: 5.0.0
+# Data: Outubro 2025
+
+# ============================================================================
+# DEPENDÊNCIAS PRINCIPAIS (PROFISSIONAIS)
+# ============================================================================
+
+# Framework Web Profissional
+Flask==3.1.2
+Flask-CORS==6.0.1
+Werkzeug==3.0.4
+
+# Machine Learning & Processamento Semântico
+gensim==4.3.3
+scikit-learn==1.5.2
+numpy==1.26.4
+
+# Processamento de Dados
+pandas==2.2.2
+
+# Logging e Monitoramento
+structlog==24.4.0
+
+# ============================================================================
+# DEPENDÊNCIAS DE DESENVOLVIMENTO
+# ============================================================================
+
+# Teste de APIs
+requests==2.32.3
+
+# Validação de Dados
+jsonschema==4.23.0
+
+# Formatação de Código
+black==24.8.0
+flake8==7.1.1
+
+# Análise de Código
+mypy==1.11.2
+
+# ============================================================================
+# DEPENDÊNCIAS OPCIONAIS (PERFORMANCE)
+# ============================================================================
+
+# Performance Word2Vec
+# Cython==3.0.11
+# smart-open==7.0.4
+
+# Cache avançado
+# redis==5.1.1
+# memcached==1.62
+
+# Métricas avançadas
+# prometheus-client==0.21.0
+
+# ============================================================================
+# NOTAS DE INSTALAÇÃO PROFISSIONAL
+# ============================================================================
+# 
+# 1. Ambiente Virtual:
+#    python -m venv ela_env
+#    ela_env\Scripts\activate (Windows)
+#    source ela_env/bin/activate (Linux/Mac)
+#
+# 2. Instalação:
+#    pip install -r requirements.txt
+#
+# 3. Verificação:
+#    python professional_translator.py
+#    python professional_api.py
+#
+# 4. Produção:
+#    gunicorn professional_api:app
+#
+# ============================================================================
+# COMPATIBILIDADE PROFISSIONAL
+# ============================================================================
+#
+# Python: 3.10+
+# Sistema: Windows 10+, Linux, macOS
+# Memória: 2GB+ recomendado
+# CPU: Multi-core recomendado para Word2Vec
+#
+# ============================================================================
