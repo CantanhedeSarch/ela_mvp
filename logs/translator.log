@@ -411,3 +411,36 @@
 2025-10-10 11:33:44,312 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:9000
 2025-10-10 11:33:44,312 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-10 19:11:20,949 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-10 19:11:21,045 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-10 19:11:21,067 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-10 19:11:21,068 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-10 19:11:21,249 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-10 19:11:21,251 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-10 19:11:21,319 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-10T19:11:21.269425', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-10 19:11:21,319 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-10 19:11:21,319 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-10 19:11:21,319 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-10 19:11:21,335 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-10 19:11:21,335 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-10 19:11:35,375 - __main__ - INFO - Request 1760134295-2820461463344: POST /translate
+2025-10-10 19:11:35,375 - professional_translator - INFO - Traduzindo: 'ola'
+2025-10-10 19:11:35,376 - __main__ - INFO - Request 1760134295-2820461463344 completado em 0.0010s - Status: 200
+2025-10-10 19:11:35,377 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:11:35] "POST /translate HTTP/1.1" 200 -
+2025-10-10 19:12:06,643 - __main__ - INFO - Request 1760134326-2820461463344: GET /health
+2025-10-10 19:12:06,643 - professional_translator - INFO - Traduzindo: 'teste'
+2025-10-10 19:12:06,644 - __main__ - INFO - Request 1760134326-2820461463344 completado em 0.0010s - Status: 200
+2025-10-10 19:12:06,645 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:12:06] "GET /health HTTP/1.1" 200 -
+2025-10-10 19:14:20,785 - __main__ - INFO - Request 1760134460-2820461463344: POST /translate
+2025-10-10 19:14:20,786 - __main__ - ERROR - Erro na tradução: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-10-10 19:14:20,787 - __main__ - INFO - Request 1760134460-2820461463344 completado em 0.0020s - Status: 500
+2025-10-10 19:14:20,787 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:14:20] "[35m[1mPOST /translate HTTP/1.1[0m" 500 -
+2025-10-10 19:14:36,827 - __main__ - INFO - Request 1760134476-2820461463344: POST /translate
+2025-10-10 19:14:36,827 - professional_translator - INFO - Traduzindo: 'como voce esta hoje?'
+2025-10-10 19:14:36,828 - __main__ - INFO - Request 1760134476-2820461463344 completado em 0.0010s - Status: 200
+2025-10-10 19:14:36,828 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:14:36] "POST /translate HTTP/1.1" 200 -
+2025-10-10 19:16:13,563 - __main__ - INFO - Request 1760134573-2820461463344: POST /translate
+2025-10-10 19:16:13,563 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coração do Mundo, o novo longa da Filmes de Plástico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O Último Episódio retrata a trajetória de amadurecimento de três adolescentes da periferia, a partir de narrativas criadas sobre o fim da animação Caverna do Dragão. A obra gera reconhecimento e identificação, algo que já é marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurílio Martins, deve emocionar a todos os públicos.  “É um filme que retrata um momento muito específico do mundo, no qual a comunicação era distinta e passávamos por uma crise econômica que as novas gerações não entendem, mas as dores são iguais às de hoje. As dores do crescimento são iguais em qualquer lugar do mundo. Por isso, a identificação é muito imediata, tanto para quem está vivendo, quanto para quem já viveu essas situações”, explica, em entrevista ao Conversa Bem Viver. O enredo parte da história criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o último episódio do desenho que marcou as gerações dos anos 80 e 90. Mas, no desenrolar da narrativa, vão ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausência parental são alguns deles.  Tudo isso mantendo características fiéis da Filmes de Plástico, como o olhar cuidadoso ao cotidiano, a representação de pessoas negras sem estereotipá-las e a sensibilidade que gera intimismo. “Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste é saber que isso não existe com tanta frequência nos outros lugares. Mas, de nossa parte, não é um panfleto. É natural. A Filmes de Plástico parte do princípio da sinceridade sobre aquilo que nos rodeia”, enfatiza Martins.  A produtora, que comemora os seus 16 anos de história, conta também com André Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Além dos dois primeiros, o elenco de O Último Episódio tem a participação de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuição é da Malute e da Embaúba Filmes.'
+2025-10-10 19:16:13,585 - __main__ - INFO - Request 1760134573-2820461463344 completado em 0.0218s - Status: 200
+2025-10-10 19:16:13,587 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:16:13] "POST /translate HTTP/1.1" 200 -
