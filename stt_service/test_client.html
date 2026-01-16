@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente STT - Teste Visual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .status {
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .status.disconnected {
+            background: #fee;
+            color: #c33;
+            border: 2px solid #fcc;
+        }
+        
+        .status.connected {
+            background: #efe;
+            color: #3c3;
+            border: 2px solid #cfc;
+        }
+        
+        .status.recording {
+            background: #ffeaa7;
+            color: #d63031;
+            border: 2px solid #fdcb6e;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        button {
+            flex: 1;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .btn-connect {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-disconnect {
+            background: #d63031;
+            color: white;
+        }
+        
+        .btn-record {
+            background: #00b894;
+            color: white;
+        }
+        
+        .btn-stop {
+            background: #ff7675;
+            color: white;
+        }
+        
+        .transcription-box {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            min-height: 150px;
+            margin-bottom: 20px;
+        }
+        
+        .transcription-label {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .transcription-text {
+            color: #212529;
+            font-size: 18px;
+            line-height: 1.6;
+            word-wrap: break-word;
+        }
+        
+        .transcription-text.partial {
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        .transcription-text.final {
+            color: #212529;
+            font-weight: 500;
+        }
+        
+        .confidence {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #e9ecef;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #495057;
+            display: inline-block;
+        }
+        
+        .log {
+            background: #212529;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            padding: 15px;
+            border-radius: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        
+        .log-entry {
+            margin-bottom: 5px;
+            opacity: 0;
+            animation: fadeIn 0.3s forwards;
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        
+        .timestamp {
+            color: #888;
+            margin-right: 10px;
+        }
+        
+        .error {
+            color: #ff6b6b;
+        }
+        
+        .success {
+            color: #51cf66;
+        }
+        
+        .info {
+            color: #74c0fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>serase vai dar certo</h1>
+        <p class="subtitle">Microsserviço de Transcrição em Tempo Real</p>
+        
+        <div class="status disconnected" id="status">
+            <span class="status-indicator"></span>
+            <span id="status-text">Desconectado</span>
+        </div>
+        
+        <div class="controls">
+            <button class="btn-connect" id="btn-connect" onclick="conectar()">Conectar</button>
+            <button class="btn-disconnect" id="btn-disconnect" onclick="desconectar()" disabled>Desconectar</button>
+        </div>
+        
+        <div class="controls">
+            <button class="btn-record" id="btn-record" onclick="iniciarGravacao()" disabled>🔴 Gravar</button>
+            <button class="btn-stop" id="btn-stop" onclick="pararGravacao()" disabled>⏹️ Parar</button>
+        </div>
+        
+        <div class="transcription-box">
+            <span class="transcription-label">Transcrição Parcial:</span>
+            <div class="transcription-text partial" id="partial-text">
+                Aguardando gravação...
+            </div>
+        </div>
+        
+        <div class="transcription-box">
+            <span class="transcription-label">Transcrição Final:</span>
+            <div class="transcription-text final" id="final-text">
+                Nenhuma transcrição finalizada ainda.
+            </div>
+            <div class="confidence" id="confidence" style="display: none;">
+                Confiança: <span id="confidence-value">0%</span>
+            </div>
+        </div>
+        
+        <div class="log" id="log">
+            <div class="log-entry info">
+                <span class="timestamp">[00:00:00]</span>
+                Cliente pronto. Clique em "Conectar" para iniciar.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Configuração
+        const WS_URL = 'ws://localhost:9100/stt';
+        
+        // Estado
+        let websocket = null;
+        let mediaRecorder = null;
+        let audioContext = null;
+        let sessionId = null;
+        
+        // Elementos DOM
+        const statusDiv = document.getElementById('status');
+        const statusText = document.getElementById('status-text');
+        const btnConnect = document.getElementById('btn-connect');
+        const btnDisconnect = document.getElementById('btn-disconnect');
+        const btnRecord = document.getElementById('btn-record');
+        const btnStop = document.getElementById('btn-stop');
+        const partialText = document.getElementById('partial-text');
+        const finalText = document.getElementById('final-text');
+        const confidenceDiv = document.getElementById('confidence');
+        const confidenceValue = document.getElementById('confidence-value');
+        const logDiv = document.getElementById('log');
+        
+        // Funções de Log
+        function log(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString('pt-BR');
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.innerHTML = `<span class="timestamp">[${timestamp}]</span>${message}`;
+            logDiv.appendChild(entry);
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+        
+        // Conectar WebSocket
+        async function conectar() {
+            try {
+                log('Conectando ao serviço STT...', 'info');
+                
+                websocket = new WebSocket(WS_URL);
+                
+                websocket.onopen = () => {
+                    log('✓ Conexão WebSocket estabelecida', 'success');
+                    updateStatus('connected', 'Conectado');
+                    btnConnect.disabled = true;
+                    btnDisconnect.disabled = false;
+                    btnRecord.disabled = false;
+                };
+                
+                websocket.onmessage = (event) => {
+                    const data = JSON.parse(event.data);
+                    handleMessage(data);
+                };
+                
+                websocket.onerror = (error) => {
+                    log('✗ Erro na conexão WebSocket', 'error');
+                    console.error(error);
+                };
+                
+                websocket.onclose = () => {
+                    log('Conexão WebSocket fechada', 'info');
+                    updateStatus('disconnected', 'Desconectado');
+                    btnConnect.disabled = false;
+                    btnDisconnect.disabled = true;
+                    btnRecord.disabled = true;
+                    btnStop.disabled = true;
+                };
+                
+            } catch (error) {
+                log(`✗ Erro ao conectar: ${error.message}`, 'error');
+            }
+        }
+        
+        // Desconectar WebSocket
+        function desconectar() {
+            if (mediaRecorder && mediaRecorder.state === 'recording') {
+                pararGravacao();
+            }
+            
+            if (websocket) {
+                websocket.close();
+                websocket = null;
+            }
+        }
+        
+        // Iniciar Gravação
+        async function iniciarGravacao() {
+            try {
+                log('Solicitando acesso ao microfone...', 'info');
+                
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    audio: {
+                        sampleRate: 16000,
+                        channelCount: 1,
+                        echoCancellation: true,
+                        noiseSuppression: true
+                    }
+                });
+                
+                log('✓ Acesso ao microfone concedido', 'success');
+                
+                // Criar AudioContext para conversão PCM
+                audioContext = new (window.AudioContext || window.webkitAudioContext)({
+                    sampleRate: 16000
+                });
+                
+                const source = audioContext.createMediaStreamSource(stream);
+                const processor = audioContext.createScriptProcessor(4096, 1, 1);
+                
+                processor.onaudioprocess = (e) => {
+                    if (websocket && websocket.readyState === WebSocket.OPEN) {
+                        const inputData = e.inputBuffer.getChannelData(0);
+                        const pcmData = float32ToPCM16(inputData);
+                        websocket.send(pcmData);
+                    }
+                };
+                
+                source.connect(processor);
+                processor.connect(audioContext.destination);
+                
+                mediaRecorder = { source, processor, stream };
+                
+                updateStatus('recording', 'Gravando...');
+                btnRecord.disabled = true;
+                btnStop.disabled = false;
+                
+                log('🔴 Gravação iniciada', 'success');
+                partialText.textContent = 'Ouvindo...';
+                
+            } catch (error) {
+                log(`✗ Erro ao iniciar gravação: ${error.message}`, 'error');
+            }
+        }
+        
+        // Parar Gravação
+        function pararGravacao() {
+            if (mediaRecorder) {
+                mediaRecorder.processor.disconnect();
+                mediaRecorder.source.disconnect();
+                mediaRecorder.stream.getTracks().forEach(track => track.stop());
+                
+                if (audioContext) {
+                    audioContext.close();
+                    audioContext = null;
+                }
+                
+                mediaRecorder = null;
+                
+                updateStatus('connected', 'Conectado');
+                btnRecord.disabled = false;
+                btnStop.disabled = true;
+                
+                log('⏹️ Gravação parada', 'info');
+            }
+        }
+        
+        // Converter Float32 para PCM16
+        function float32ToPCM16(float32Array) {
+            const pcm16 = new Int16Array(float32Array.length);
+            for (let i = 0; i < float32Array.length; i++) {
+                const s = Math.max(-1, Math.min(1, float32Array[i]));
+                pcm16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
+            }
+            return pcm16.buffer;
+        }
+        
+        // Processar Mensagens
+        function handleMessage(data) {
+            const type = data.type;
+            
+            if (type === 'session_started') {
+                sessionId = data.session_id;
+                log(`📨 Sessão iniciada: ${sessionId.substring(0, 8)}...`, 'success');
+                log(`   Language: ${data.language}, Sample Rate: ${data.sample_rate}Hz`, 'info');
+            }
+            else if (type === 'partial') {
+                partialText.textContent = data.text || 'Ouvindo...';
+            }
+            else if (type === 'final') {
+                finalText.textContent = data.text;
+                
+                if (data.confidence) {
+                    const confPercent = (data.confidence * 100).toFixed(1);
+                    confidenceValue.textContent = `${confPercent}%`;
+                    confidenceDiv.style.display = 'inline-block';
+                }
+                
+                log(`✅ Transcrição final: "${data.text}"`, 'success');
+                
+                if (data.dispatch) {
+                    const d = data.dispatch;
+                    if (d.request_sent && d.response_status === 200) {
+                        log(`📤 Enviado para glossa (${d.duration_ms.toFixed(1)}ms)`, 'success');
+                        if (d.response_body && d.response_body.translation) {
+                            log(`   Glossa: "${d.response_body.translation}"`, 'info');
+                        }
+                    } else if (d.error) {
+                        log(`✗ Erro no dispatch: ${d.error}`, 'error');
+                    }
+                }
+                
+                partialText.textContent = 'Ouvindo...';
+            }
+            else if (type === 'error') {
+                log(`✗ Erro: ${data.error_message} (${data.error_code})`, 'error');
+            }
+        }
+        
+        // Atualizar Status Visual
+        function updateStatus(state, text) {
+            statusDiv.className = `status ${state}`;
+            statusText.textContent = text;
+        }
+        
+        // Verificar suporte do navegador
+        if (!window.WebSocket) {
+            log('✗ Navegador não suporta WebSocket', 'error');
+        }
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+            log('✗ Navegador não suporta acesso ao microfone', 'error');
+        }
+    </script>
+</body>
+</html>

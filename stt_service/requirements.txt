@@ -1,0 +1,69 @@
+# ==================================================
+# Dependências do Microsserviço STT
+# ==================================================
+# Versão Python requerida: 3.10+
+# Plataforma testada: Windows 10/11
+# Data: Janeiro 2026
+# ==================================================
+
+# Framework web assíncrono
+fastapi==0.115.5
+uvicorn[standard]==0.32.0
+
+# WebSocket (incluído em uvicorn[standard], mas explicitado)
+websockets==13.1
+
+# Validação de dados e schemas
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# Cliente HTTP para comunicação com serviço de glossa
+requests==2.32.3
+
+# Motor STT - Vosk para reconhecimento de fala offline
+vosk==0.3.45
+
+# Dependências de áudio (requeridas pelo Vosk)
+# Vosk usa Kaldi internamente, que depende de numpy
+numpy==1.26.4
+
+# Utilitários Python
+typing-extensions==4.12.2
+
+# ==================================================
+# Dependências opcionais para desenvolvimento
+# ==================================================
+# Descomentar se necessário para testes/debug:
+
+# pytest==8.3.4
+# pytest-asyncio==0.24.0
+# httpx==0.28.1  # Cliente async para testar FastAPI
+# black==24.10.0  # Formatação de código
+# flake8==7.1.1  # Linting
+
+# ==================================================
+# Notas de instalação
+# ==================================================
+# 
+# 1. Criar ambiente virtual:
+#    python -m venv venv_stt
+#    venv_stt\Scripts\activate
+#
+# 2. Instalar dependências:
+#    pip install -r requirements.txt
+#
+# 3. Baixar modelo Vosk pt-BR:
+#    - Acesse: https://alphacephei.com/vosk/models
+#    - Recomendado: vosk-model-small-pt-0.3 (50MB) ou
+#                   vosk-model-pt-fb-v0.1.1-20220516_2113 (1.6GB, maior precisão)
+#    - Extrair em: models/vosk-model-small-pt-0.3/
+#
+# 4. Configurar variável de ambiente:
+#    set VOSK_MODEL_PATH=models/vosk-model-small-pt-0.3
+#
+# 5. Executar serviço:
+#    python -m stt_service.gateway_comunicacao
+#    ou
+#    uvicorn stt_service.gateway_comunicacao:app --host 0.0.0.0 --port 9100
+#
+# ==================================================

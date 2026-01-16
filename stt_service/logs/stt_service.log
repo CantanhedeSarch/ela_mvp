@@ -1,0 +1,365 @@
+2026-01-14 16:49:53 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 16:49:53 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-14 16:49:53 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-14 16:49:53 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-14 16:49:53 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-14 16:49:53 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 16:49:53 - __main__ - INFO - Validando configurações...
+2026-01-14 16:57:53 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 16:57:53 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-14 16:57:53 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-14 16:57:53 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-14 16:57:53 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-14 16:57:53 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 16:57:53 - __main__ - INFO - Validando configurações...
+2026-01-14 16:59:43 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 16:59:43 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-14 16:59:43 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-14 16:59:43 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-14 16:59:43 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-14 16:59:43 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 16:59:43 - __main__ - INFO - Validando configurações...
+2026-01-14 16:59:43 - __main__ - INFO - ============================================================
+2026-01-14 16:59:43 - __main__ - INFO - Configurações do Serviço:
+2026-01-14 16:59:43 - __main__ - INFO -   porta: 9100
+2026-01-14 16:59:43 - __main__ - INFO -   versao: 1.0.0
+2026-01-14 16:59:43 - __main__ - INFO -   idioma: pt-br
+2026-01-14 16:59:43 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-14 16:59:43 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-pt-fb-v0.1.1-20220516_2113
+2026-01-14 16:59:43 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-14 16:59:43 - __main__ - INFO - ============================================================
+2026-01-14 16:59:44 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-14 16:59:44 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-14 16:59:44 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-14 16:59:44 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-14 16:59:44 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-pt-fb-v0.1.1-20220516_2113
+2026-01-14 16:59:49 - stt_service.motor_stt_vosk - ERROR - ✗ Falha ao carregar modelo Vosk: Failed to create a model
+2026-01-14 16:59:49 - stt_service.gateway_comunicacao - CRITICAL - ✗ Falha na inicialização: Failed to create a model
+2026-01-14 17:05:09 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 17:05:09 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-14 17:05:09 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-14 17:05:09 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-14 17:05:09 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-14 17:05:09 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 17:05:09 - __main__ - INFO - Validando configurações...
+2026-01-14 17:05:09 - __main__ - INFO - ============================================================
+2026-01-14 17:05:09 - __main__ - INFO - Configurações do Serviço:
+2026-01-14 17:05:09 - __main__ - INFO -   porta: 9100
+2026-01-14 17:05:09 - __main__ - INFO -   versao: 1.0.0
+2026-01-14 17:05:09 - __main__ - INFO -   idioma: pt-br
+2026-01-14 17:05:09 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-14 17:05:09 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-pt-fb-v0.1.1-20220516_2113
+2026-01-14 17:05:09 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-14 17:05:09 - __main__ - INFO - ============================================================
+2026-01-14 17:05:09 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-14 17:05:09 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-14 17:05:10 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-14 17:05:10 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-14 17:05:10 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-pt-fb-v0.1.1-20220516_2113
+2026-01-14 17:05:14 - stt_service.motor_stt_vosk - ERROR - ✗ Falha ao carregar modelo Vosk: Failed to create a model
+2026-01-14 17:05:14 - stt_service.gateway_comunicacao - CRITICAL - ✗ Falha na inicialização: Failed to create a model
+2026-01-14 17:10:16 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 17:10:16 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-14 17:10:16 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-14 17:10:16 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-14 17:10:16 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-14 17:10:16 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 17:10:16 - __main__ - INFO - Validando configurações...
+2026-01-14 17:10:16 - __main__ - INFO - ============================================================
+2026-01-14 17:10:16 - __main__ - INFO - Configurações do Serviço:
+2026-01-14 17:10:16 - __main__ - INFO -   porta: 9100
+2026-01-14 17:10:16 - __main__ - INFO -   versao: 1.0.0
+2026-01-14 17:10:16 - __main__ - INFO -   idioma: pt-br
+2026-01-14 17:10:16 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-14 17:10:16 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 17:10:16 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-14 17:10:16 - __main__ - INFO - ============================================================
+2026-01-14 17:10:17 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-14 17:10:17 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-14 17:10:17 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-14 17:10:17 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-14 17:10:17 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 17:10:17 - stt_service.motor_stt_vosk - ERROR - ✗ Falha ao carregar modelo Vosk: Failed to create a model
+2026-01-14 17:10:17 - stt_service.gateway_comunicacao - CRITICAL - ✗ Falha na inicialização: Failed to create a model
+2026-01-14 17:12:26 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 17:12:26 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-14 17:12:26 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-14 17:12:26 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-14 17:12:26 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-14 17:12:26 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 17:12:26 - __main__ - INFO - Validando configurações...
+2026-01-14 17:12:26 - __main__ - INFO - ============================================================
+2026-01-14 17:12:26 - __main__ - INFO - Configurações do Serviço:
+2026-01-14 17:12:26 - __main__ - INFO -   porta: 9100
+2026-01-14 17:12:26 - __main__ - INFO -   versao: 1.0.0
+2026-01-14 17:12:26 - __main__ - INFO -   idioma: pt-br
+2026-01-14 17:12:26 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-14 17:12:26 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 17:12:26 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-14 17:12:26 - __main__ - INFO - ============================================================
+2026-01-14 17:12:26 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-14 17:12:26 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-14 17:12:26 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-14 17:12:26 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-14 17:12:26 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 17:12:27 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-14 17:12:27 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-14 17:12:27 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 18:29:16 - __main__ - INFO - Validando configurações...
+2026-01-14 18:29:16 - __main__ - INFO - ============================================================
+2026-01-14 18:29:16 - __main__ - INFO - Configurações do Serviço:
+2026-01-14 18:29:16 - __main__ - INFO -   porta: 9100
+2026-01-14 18:29:16 - __main__ - INFO -   versao: 1.0.0
+2026-01-14 18:29:16 - __main__ - INFO -   idioma: pt-br
+2026-01-14 18:29:16 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-14 18:29:16 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 18:29:16 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-14 18:29:16 - __main__ - INFO - ============================================================
+2026-01-14 18:29:16 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-14 18:29:16 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-14 18:29:16 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 18:29:16 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-14 18:29:16 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-14 18:34:11 - stt_service.gateway_comunicacao.36cdc67c - INFO - Nova sessão WebSocket estabelecida: 36cdc67c-21b5-4b65-bd1f-068a6d2a0370
+2026-01-14 18:34:11 - stt_service.motor_stt_vosk.36cdc67c - INFO - Motor STT inicializado para sessão 36cdc67c (taxa: 16000Hz)
+2026-01-14 18:34:11 - stt_service.gateway_comunicacao.36cdc67c - INFO - Motor STT inicializado
+2026-01-14 18:34:11 - stt_service.orquestrador_envio.36cdc67c - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:34:11 - stt_service.gateway_comunicacao.36cdc67c - INFO - Orquestrador de envio inicializado
+2026-01-14 18:34:11 - stt_service.gateway_comunicacao.36cdc67c - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:34:24 - stt_service.gateway_comunicacao.36cdc67c - ERROR - Erro durante processamento: Invalid format specifier
+Traceback (most recent call last):
+  File "D:\ela_teste\ela_mvp\stt_service\gateway_comunicacao.py", line 277, in websocket_stt
+    is_final, texto, confianca = motor_stt.processar_audio(audio_bytes)
+  File "D:\ela_teste\ela_mvp\stt_service\motor_stt_vosk.py", line 186, in processar_audio
+    f"Transcrição final #{self.transcricoes_finais}: "
+ValueError: Invalid format specifier
+2026-01-14 18:34:24 - stt_service.gateway_comunicacao.36cdc67c - INFO - Finalizando sessão...
+2026-01-14 18:34:24 - stt_service.gateway_comunicacao.36cdc67c - INFO - Estatísticas STT: {'session_id': '36cdc67c-21b5-4b65-bd1f-068a6d2a0370', 'bytes_processados': 180224, 'transcricoes_parciais': 1, 'transcricoes_finais': 1, 'mb_processados': 0.17}
+2026-01-14 18:34:24 - stt_service.gateway_comunicacao.36cdc67c - INFO - Estatísticas envio: {'session_id': '36cdc67c-21b5-4b65-bd1f-068a6d2a0370', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:34:24 - stt_service.gateway_comunicacao.36cdc67c - INFO - Sessão 36cdc67c encerrada
+2026-01-14 18:35:35 - stt_service.gateway_comunicacao.c5e6193b - INFO - Nova sessão WebSocket estabelecida: c5e6193b-925d-441a-9fe7-fbe96e1fba33
+2026-01-14 18:35:35 - stt_service.motor_stt_vosk.c5e6193b - INFO - Motor STT inicializado para sessão c5e6193b (taxa: 16000Hz)
+2026-01-14 18:35:35 - stt_service.gateway_comunicacao.c5e6193b - INFO - Motor STT inicializado
+2026-01-14 18:35:35 - stt_service.orquestrador_envio.c5e6193b - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:35:35 - stt_service.gateway_comunicacao.c5e6193b - INFO - Orquestrador de envio inicializado
+2026-01-14 18:35:35 - stt_service.gateway_comunicacao.c5e6193b - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:35:42 - stt_service.gateway_comunicacao.c5e6193b - ERROR - Erro durante processamento: Invalid format specifier
+Traceback (most recent call last):
+  File "D:\ela_teste\ela_mvp\stt_service\gateway_comunicacao.py", line 277, in websocket_stt
+    is_final, texto, confianca = motor_stt.processar_audio(audio_bytes)
+  File "D:\ela_teste\ela_mvp\stt_service\motor_stt_vosk.py", line 186, in processar_audio
+    f"Transcrição final #{self.transcricoes_finais}: "
+ValueError: Invalid format specifier
+2026-01-14 18:35:42 - stt_service.gateway_comunicacao.c5e6193b - INFO - Finalizando sessão...
+2026-01-14 18:35:42 - stt_service.gateway_comunicacao.c5e6193b - INFO - Estatísticas STT: {'session_id': 'c5e6193b-925d-441a-9fe7-fbe96e1fba33', 'bytes_processados': 311296, 'transcricoes_parciais': 9, 'transcricoes_finais': 1, 'mb_processados': 0.3}
+2026-01-14 18:35:42 - stt_service.gateway_comunicacao.c5e6193b - INFO - Estatísticas envio: {'session_id': 'c5e6193b-925d-441a-9fe7-fbe96e1fba33', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:35:42 - stt_service.gateway_comunicacao.c5e6193b - INFO - Sessão c5e6193b encerrada
+2026-01-14 18:37:47 - stt_service.gateway_comunicacao.6d02fe07 - INFO - Nova sessão WebSocket estabelecida: 6d02fe07-8649-42cd-b9c4-d991eb8a5ce3
+2026-01-14 18:37:48 - stt_service.motor_stt_vosk.6d02fe07 - INFO - Motor STT inicializado para sessão 6d02fe07 (taxa: 16000Hz)
+2026-01-14 18:37:48 - stt_service.gateway_comunicacao.6d02fe07 - INFO - Motor STT inicializado
+2026-01-14 18:37:48 - stt_service.orquestrador_envio.6d02fe07 - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:37:48 - stt_service.gateway_comunicacao.6d02fe07 - INFO - Orquestrador de envio inicializado
+2026-01-14 18:37:48 - stt_service.gateway_comunicacao.6d02fe07 - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:38:02 - stt_service.gateway_comunicacao.6d02fe07 - ERROR - Erro durante processamento: Invalid format specifier
+Traceback (most recent call last):
+  File "D:\ela_teste\ela_mvp\stt_service\gateway_comunicacao.py", line 277, in websocket_stt
+    is_final, texto, confianca = motor_stt.processar_audio(audio_bytes)
+  File "D:\ela_teste\ela_mvp\stt_service\motor_stt_vosk.py", line 186, in processar_audio
+    f"Transcrição final #{self.transcricoes_finais}: "
+ValueError: Invalid format specifier
+2026-01-14 18:38:02 - stt_service.gateway_comunicacao.6d02fe07 - INFO - Finalizando sessão...
+2026-01-14 18:38:02 - stt_service.gateway_comunicacao.6d02fe07 - INFO - Estatísticas STT: {'session_id': '6d02fe07-8649-42cd-b9c4-d991eb8a5ce3', 'bytes_processados': 245760, 'transcricoes_parciais': 20, 'transcricoes_finais': 1, 'mb_processados': 0.23}
+2026-01-14 18:38:02 - stt_service.gateway_comunicacao.6d02fe07 - INFO - Estatísticas envio: {'session_id': '6d02fe07-8649-42cd-b9c4-d991eb8a5ce3', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:38:02 - stt_service.gateway_comunicacao.6d02fe07 - INFO - Sessão 6d02fe07 encerrada
+2026-01-14 18:39:48 - stt_service.gateway_comunicacao.6e89157c - INFO - Nova sessão WebSocket estabelecida: 6e89157c-27f5-4430-8d77-578956588536
+2026-01-14 18:39:48 - stt_service.motor_stt_vosk.6e89157c - INFO - Motor STT inicializado para sessão 6e89157c (taxa: 16000Hz)
+2026-01-14 18:39:48 - stt_service.gateway_comunicacao.6e89157c - INFO - Motor STT inicializado
+2026-01-14 18:39:48 - stt_service.orquestrador_envio.6e89157c - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:39:48 - stt_service.gateway_comunicacao.6e89157c - INFO - Orquestrador de envio inicializado
+2026-01-14 18:39:48 - stt_service.gateway_comunicacao.6e89157c - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:39:54 - stt_service.gateway_comunicacao.6e89157c - ERROR - Erro durante processamento: Invalid format specifier
+Traceback (most recent call last):
+  File "D:\ela_teste\ela_mvp\stt_service\gateway_comunicacao.py", line 277, in websocket_stt
+    is_final, texto, confianca = motor_stt.processar_audio(audio_bytes)
+  File "D:\ela_teste\ela_mvp\stt_service\motor_stt_vosk.py", line 186, in processar_audio
+    f"Transcrição final #{self.transcricoes_finais}: "
+ValueError: Invalid format specifier
+2026-01-14 18:39:54 - stt_service.gateway_comunicacao.6e89157c - INFO - Finalizando sessão...
+2026-01-14 18:39:54 - stt_service.gateway_comunicacao.6e89157c - INFO - Estatísticas STT: {'session_id': '6e89157c-27f5-4430-8d77-578956588536', 'bytes_processados': 106496, 'transcricoes_parciais': 5, 'transcricoes_finais': 1, 'mb_processados': 0.1}
+2026-01-14 18:39:54 - stt_service.gateway_comunicacao.6e89157c - INFO - Estatísticas envio: {'session_id': '6e89157c-27f5-4430-8d77-578956588536', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:39:54 - stt_service.gateway_comunicacao.6e89157c - INFO - Sessão 6e89157c encerrada
+2026-01-14 18:40:20 - stt_service.gateway_comunicacao.4450160b - INFO - Nova sessão WebSocket estabelecida: 4450160b-9523-4945-b02d-602a4142a98a
+2026-01-14 18:40:21 - stt_service.motor_stt_vosk.4450160b - INFO - Motor STT inicializado para sessão 4450160b (taxa: 16000Hz)
+2026-01-14 18:40:21 - stt_service.gateway_comunicacao.4450160b - INFO - Motor STT inicializado
+2026-01-14 18:40:21 - stt_service.orquestrador_envio.4450160b - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:40:21 - stt_service.gateway_comunicacao.4450160b - INFO - Orquestrador de envio inicializado
+2026-01-14 18:40:21 - stt_service.gateway_comunicacao.4450160b - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:40:28 - stt_service.gateway_comunicacao.4450160b - ERROR - Erro durante processamento: Invalid format specifier
+Traceback (most recent call last):
+  File "D:\ela_teste\ela_mvp\stt_service\gateway_comunicacao.py", line 277, in websocket_stt
+    is_final, texto, confianca = motor_stt.processar_audio(audio_bytes)
+  File "D:\ela_teste\ela_mvp\stt_service\motor_stt_vosk.py", line 186, in processar_audio
+    f"Transcrição final #{self.transcricoes_finais}: "
+ValueError: Invalid format specifier
+2026-01-14 18:40:28 - stt_service.gateway_comunicacao.4450160b - INFO - Finalizando sessão...
+2026-01-14 18:40:28 - stt_service.gateway_comunicacao.4450160b - INFO - Estatísticas STT: {'session_id': '4450160b-9523-4945-b02d-602a4142a98a', 'bytes_processados': 188416, 'transcricoes_parciais': 16, 'transcricoes_finais': 1, 'mb_processados': 0.18}
+2026-01-14 18:40:28 - stt_service.gateway_comunicacao.4450160b - INFO - Estatísticas envio: {'session_id': '4450160b-9523-4945-b02d-602a4142a98a', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:40:28 - stt_service.gateway_comunicacao.4450160b - INFO - Sessão 4450160b encerrada
+2026-01-14 18:41:12 - stt_service.gateway_comunicacao.0bf3d737 - INFO - Nova sessão WebSocket estabelecida: 0bf3d737-40e4-49f2-8849-7a88decf0eec
+2026-01-14 18:41:12 - stt_service.motor_stt_vosk.0bf3d737 - INFO - Motor STT inicializado para sessão 0bf3d737 (taxa: 16000Hz)
+2026-01-14 18:41:12 - stt_service.gateway_comunicacao.0bf3d737 - INFO - Motor STT inicializado
+2026-01-14 18:41:12 - stt_service.orquestrador_envio.0bf3d737 - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:41:12 - stt_service.gateway_comunicacao.0bf3d737 - INFO - Orquestrador de envio inicializado
+2026-01-14 18:41:12 - stt_service.gateway_comunicacao.0bf3d737 - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:41:40 - stt_service.gateway_comunicacao.0bf3d737 - INFO - Cliente desconectou WebSocket
+2026-01-14 18:41:40 - stt_service.gateway_comunicacao.0bf3d737 - INFO - Finalizando sessão...
+2026-01-14 18:41:40 - stt_service.gateway_comunicacao.0bf3d737 - INFO - Estatísticas STT: {'session_id': '0bf3d737-40e4-49f2-8849-7a88decf0eec', 'bytes_processados': 0, 'transcricoes_parciais': 0, 'transcricoes_finais': 0, 'mb_processados': 0.0}
+2026-01-14 18:41:40 - stt_service.gateway_comunicacao.0bf3d737 - INFO - Estatísticas envio: {'session_id': '0bf3d737-40e4-49f2-8849-7a88decf0eec', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:41:40 - stt_service.gateway_comunicacao.0bf3d737 - INFO - Sessão 0bf3d737 encerrada
+2026-01-14 18:41:41 - stt_service.gateway_comunicacao.27f956d7 - INFO - Nova sessão WebSocket estabelecida: 27f956d7-96b2-469e-a5e6-71ba692d9c53
+2026-01-14 18:41:41 - stt_service.motor_stt_vosk.27f956d7 - INFO - Motor STT inicializado para sessão 27f956d7 (taxa: 16000Hz)
+2026-01-14 18:41:41 - stt_service.gateway_comunicacao.27f956d7 - INFO - Motor STT inicializado
+2026-01-14 18:41:41 - stt_service.orquestrador_envio.27f956d7 - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:41:41 - stt_service.gateway_comunicacao.27f956d7 - INFO - Orquestrador de envio inicializado
+2026-01-14 18:41:41 - stt_service.gateway_comunicacao.27f956d7 - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:41:52 - stt_service.gateway_comunicacao.27f956d7 - ERROR - Erro durante processamento: Invalid format specifier
+Traceback (most recent call last):
+  File "D:\ela_teste\ela_mvp\stt_service\gateway_comunicacao.py", line 277, in websocket_stt
+    is_final, texto, confianca = motor_stt.processar_audio(audio_bytes)
+  File "D:\ela_teste\ela_mvp\stt_service\motor_stt_vosk.py", line 186, in processar_audio
+    f"Transcrição final #{self.transcricoes_finais}: "
+ValueError: Invalid format specifier
+2026-01-14 18:41:52 - stt_service.gateway_comunicacao.27f956d7 - INFO - Finalizando sessão...
+2026-01-14 18:41:52 - stt_service.gateway_comunicacao.27f956d7 - INFO - Estatísticas STT: {'session_id': '27f956d7-96b2-469e-a5e6-71ba692d9c53', 'bytes_processados': 245760, 'transcricoes_parciais': 20, 'transcricoes_finais': 1, 'mb_processados': 0.23}
+2026-01-14 18:41:52 - stt_service.gateway_comunicacao.27f956d7 - INFO - Estatísticas envio: {'session_id': '27f956d7-96b2-469e-a5e6-71ba692d9c53', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:41:52 - stt_service.gateway_comunicacao.27f956d7 - INFO - Sessão 27f956d7 encerrada
+2026-01-14 18:42:39 - stt_service.gateway_comunicacao.b224f545 - INFO - Nova sessão WebSocket estabelecida: b224f545-87ec-4778-9e8e-75cec4b2898f
+2026-01-14 18:42:39 - stt_service.motor_stt_vosk.b224f545 - INFO - Motor STT inicializado para sessão b224f545 (taxa: 16000Hz)
+2026-01-14 18:42:39 - stt_service.gateway_comunicacao.b224f545 - INFO - Motor STT inicializado
+2026-01-14 18:42:39 - stt_service.orquestrador_envio.b224f545 - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:42:39 - stt_service.gateway_comunicacao.b224f545 - INFO - Orquestrador de envio inicializado
+2026-01-14 18:42:39 - stt_service.gateway_comunicacao.b224f545 - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:42:51 - stt_service.gateway_comunicacao.b224f545 - ERROR - Erro durante processamento: Invalid format specifier
+Traceback (most recent call last):
+  File "D:\ela_teste\ela_mvp\stt_service\gateway_comunicacao.py", line 277, in websocket_stt
+    is_final, texto, confianca = motor_stt.processar_audio(audio_bytes)
+  File "D:\ela_teste\ela_mvp\stt_service\motor_stt_vosk.py", line 186, in processar_audio
+    f"Transcrição final #{self.transcricoes_finais}: "
+ValueError: Invalid format specifier
+2026-01-14 18:42:51 - stt_service.gateway_comunicacao.b224f545 - INFO - Finalizando sessão...
+2026-01-14 18:42:51 - stt_service.gateway_comunicacao.b224f545 - INFO - Estatísticas STT: {'session_id': 'b224f545-87ec-4778-9e8e-75cec4b2898f', 'bytes_processados': 319488, 'transcricoes_parciais': 26, 'transcricoes_finais': 1, 'mb_processados': 0.3}
+2026-01-14 18:42:51 - stt_service.gateway_comunicacao.b224f545 - INFO - Estatísticas envio: {'session_id': 'b224f545-87ec-4778-9e8e-75cec4b2898f', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:42:51 - stt_service.gateway_comunicacao.b224f545 - INFO - Sessão b224f545 encerrada
+2026-01-14 18:44:00 - stt_service.gateway_comunicacao.5772bd8c - INFO - Nova sessão WebSocket estabelecida: 5772bd8c-4b8b-4cc4-bfde-3df2b8194bfb
+2026-01-14 18:44:00 - stt_service.motor_stt_vosk.5772bd8c - INFO - Motor STT inicializado para sessão 5772bd8c (taxa: 16000Hz)
+2026-01-14 18:44:00 - stt_service.gateway_comunicacao.5772bd8c - INFO - Motor STT inicializado
+2026-01-14 18:44:00 - stt_service.orquestrador_envio.5772bd8c - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:44:00 - stt_service.gateway_comunicacao.5772bd8c - INFO - Orquestrador de envio inicializado
+2026-01-14 18:44:00 - stt_service.gateway_comunicacao.5772bd8c - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:44:16 - stt_service.gateway_comunicacao.5772bd8c - ERROR - Erro durante processamento: Invalid format specifier
+Traceback (most recent call last):
+  File "D:\ela_teste\ela_mvp\stt_service\gateway_comunicacao.py", line 277, in websocket_stt
+    is_final, texto, confianca = motor_stt.processar_audio(audio_bytes)
+  File "D:\ela_teste\ela_mvp\stt_service\motor_stt_vosk.py", line 186, in processar_audio
+    f"Transcrição final #{self.transcricoes_finais}: "
+ValueError: Invalid format specifier
+2026-01-14 18:44:16 - stt_service.gateway_comunicacao.5772bd8c - INFO - Finalizando sessão...
+2026-01-14 18:44:16 - stt_service.gateway_comunicacao.5772bd8c - INFO - Estatísticas STT: {'session_id': '5772bd8c-4b8b-4cc4-bfde-3df2b8194bfb', 'bytes_processados': 360448, 'transcricoes_parciais': 28, 'transcricoes_finais': 1, 'mb_processados': 0.34}
+2026-01-14 18:44:16 - stt_service.gateway_comunicacao.5772bd8c - INFO - Estatísticas envio: {'session_id': '5772bd8c-4b8b-4cc4-bfde-3df2b8194bfb', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:44:16 - stt_service.gateway_comunicacao.5772bd8c - INFO - Sessão 5772bd8c encerrada
+2026-01-14 18:47:24 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 18:47:24 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-14 18:47:24 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-14 18:47:24 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-14 18:47:24 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-14 18:47:24 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 18:47:24 - __main__ - INFO - Validando configurações...
+2026-01-14 18:47:24 - __main__ - INFO - ============================================================
+2026-01-14 18:47:24 - __main__ - INFO - Configurações do Serviço:
+2026-01-14 18:47:24 - __main__ - INFO -   porta: 9100
+2026-01-14 18:47:24 - __main__ - INFO -   versao: 1.0.0
+2026-01-14 18:47:24 - __main__ - INFO -   idioma: pt-br
+2026-01-14 18:47:24 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-14 18:47:24 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 18:47:24 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-14 18:47:24 - __main__ - INFO - ============================================================
+2026-01-14 18:47:24 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-14 18:47:24 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-14 18:47:24 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-14 18:47:24 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-14 18:47:24 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 18:47:25 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-14 18:47:25 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-14 18:47:25 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-14 18:47:57 - stt_service.gateway_comunicacao.29338e3a - INFO - Nova sessão WebSocket estabelecida: 29338e3a-27cf-4f9d-bb99-45d40bc99303
+2026-01-14 18:47:57 - stt_service.motor_stt_vosk.29338e3a - INFO - Motor STT inicializado para sessão 29338e3a (taxa: 16000Hz)
+2026-01-14 18:47:57 - stt_service.gateway_comunicacao.29338e3a - INFO - Motor STT inicializado
+2026-01-14 18:47:57 - stt_service.orquestrador_envio.29338e3a - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:47:57 - stt_service.gateway_comunicacao.29338e3a - INFO - Orquestrador de envio inicializado
+2026-01-14 18:47:57 - stt_service.gateway_comunicacao.29338e3a - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:48:24 - stt_service.gateway_comunicacao.29338e3a - INFO - Cliente desconectou WebSocket
+2026-01-14 18:48:24 - stt_service.gateway_comunicacao.29338e3a - INFO - Finalizando sessão...
+2026-01-14 18:48:24 - stt_service.gateway_comunicacao.29338e3a - INFO - Estatísticas STT: {'session_id': '29338e3a-27cf-4f9d-bb99-45d40bc99303', 'bytes_processados': 0, 'transcricoes_parciais': 0, 'transcricoes_finais': 0, 'mb_processados': 0.0}
+2026-01-14 18:48:24 - stt_service.gateway_comunicacao.29338e3a - INFO - Estatísticas envio: {'session_id': '29338e3a-27cf-4f9d-bb99-45d40bc99303', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:48:24 - stt_service.gateway_comunicacao.29338e3a - INFO - Sessão 29338e3a encerrada
+2026-01-14 18:49:05 - stt_service.gateway_comunicacao.d372168a - INFO - Nova sessão WebSocket estabelecida: d372168a-4ad1-49bc-970d-a074e4c3df5d
+2026-01-14 18:49:05 - stt_service.motor_stt_vosk.d372168a - INFO - Motor STT inicializado para sessão d372168a (taxa: 16000Hz)
+2026-01-14 18:49:05 - stt_service.gateway_comunicacao.d372168a - INFO - Motor STT inicializado
+2026-01-14 18:49:05 - stt_service.orquestrador_envio.d372168a - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:49:05 - stt_service.gateway_comunicacao.d372168a - INFO - Orquestrador de envio inicializado
+2026-01-14 18:49:05 - stt_service.gateway_comunicacao.d372168a - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:49:18 - stt_service.gateway_comunicacao.d372168a - INFO - Transcrição final detectada: 'olá'
+2026-01-14 18:49:18 - stt_service.gateway_comunicacao.d372168a - ERROR - Erro durante processamento: Invalid format specifier
+Traceback (most recent call last):
+  File "D:\ela_teste\ela_mvp\stt_service\gateway_comunicacao.py", line 284, in websocket_stt
+    resultado_dispatch = orquestrador.enviar_para_glossa(
+  File "D:\ela_teste\ela_mvp\stt_service\orquestrador_envio.py", line 184, in enviar_para_glossa
+    f"Enviando transcrição para glossa: '{texto}' "
+ValueError: Invalid format specifier
+2026-01-14 18:49:18 - stt_service.gateway_comunicacao.d372168a - INFO - Finalizando sessão...
+2026-01-14 18:49:18 - stt_service.gateway_comunicacao.d372168a - INFO - Estatísticas STT: {'session_id': 'd372168a-4ad1-49bc-970d-a074e4c3df5d', 'bytes_processados': 98304, 'transcricoes_parciais': 4, 'transcricoes_finais': 1, 'mb_processados': 0.09}
+2026-01-14 18:49:18 - stt_service.gateway_comunicacao.d372168a - INFO - Estatísticas envio: {'session_id': 'd372168a-4ad1-49bc-970d-a074e4c3df5d', 'total_envios': 1, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-14 18:49:18 - stt_service.gateway_comunicacao.d372168a - INFO - Sessão d372168a encerrada
+2026-01-14 18:53:35 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 18:53:35 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-14 18:53:35 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-14 18:53:35 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-14 18:53:35 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-14 18:53:35 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-14 18:53:35 - __main__ - INFO - Validando configurações...
+2026-01-14 18:53:35 - __main__ - INFO - ============================================================
+2026-01-14 18:53:35 - __main__ - INFO - Configurações do Serviço:
+2026-01-14 18:53:35 - __main__ - INFO -   porta: 9100
+2026-01-14 18:53:35 - __main__ - INFO -   versao: 1.0.0
+2026-01-14 18:53:35 - __main__ - INFO -   idioma: pt-br
+2026-01-14 18:53:35 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-14 18:53:35 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 18:53:35 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-14 18:53:35 - __main__ - INFO - ============================================================
+2026-01-14 18:53:35 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-14 18:53:35 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-14 18:53:35 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-14 18:53:35 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-14 18:53:35 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-14 18:53:36 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-14 18:53:36 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-14 18:53:36 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-14 18:53:46 - stt_service.gateway_comunicacao.90e4aa14 - INFO - Nova sessão WebSocket estabelecida: 90e4aa14-1349-47a8-bea3-074ea7670aee
+2026-01-14 18:53:46 - stt_service.motor_stt_vosk.90e4aa14 - INFO - Motor STT inicializado para sessão 90e4aa14 (taxa: 16000Hz)
+2026-01-14 18:53:46 - stt_service.gateway_comunicacao.90e4aa14 - INFO - Motor STT inicializado
+2026-01-14 18:53:46 - stt_service.orquestrador_envio.90e4aa14 - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-14 18:53:46 - stt_service.gateway_comunicacao.90e4aa14 - INFO - Orquestrador de envio inicializado
+2026-01-14 18:53:46 - stt_service.gateway_comunicacao.90e4aa14 - INFO - Mensagem de sessão iniciada enviada
+2026-01-14 18:53:56 - stt_service.gateway_comunicacao.90e4aa14 - INFO - Transcrição final detectada: 'olá tudo bem boa noite'
+2026-01-14 18:53:56 - stt_service.orquestrador_envio.90e4aa14 - INFO - Enviando transcrição para glossa: 'olá tudo bem boa noite' (confiança: 0.93)
+2026-01-14 18:54:01 - stt_service.orquestrador_envio.90e4aa14 - ERROR - ✗ Erro de rede ao contatar serviço de glossa: HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /traduzir (Caused by NewConnectionError("HTTPConnection(host='localhost', port=9000): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente"))
+2026-01-14 18:54:01 - stt_service.gateway_comunicacao.90e4aa14 - INFO - Mensagem de transcrição final enviada
