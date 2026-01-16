@@ -16,7 +16,7 @@ CORS(app)
 # Inicializar tradutor globalmente
 try:
     print("🚀 Inicializando tradutor...")
-    tradutor = DirectTranslator('models/mappings.pkl')
+    tradutor = DirectTranslator('translation_mappings.pkl')
     print("✅ Tradutor pronto!")
 except Exception as e:
     print(f"❌ Erro ao inicializar: {e}")

@@ -12,12 +12,7 @@
 
 ## 🚀 Como Usar
 
-### 1. Teste Rápido (Recomendado)
-```bash
-python teste_rapido.py
-```
-
-### 2. API Simples
+### 1. Iniciar API
 ```bash
 python api_simples.py
 ```
@@ -32,15 +27,18 @@ python api_simples.py
 ### Core System
 - `direct_translator.py` - Motor de tradução principal
 - `data_processor.py` - Processamento de dados
-- `models/mappings.pkl` - Mapeamentos PT-BR → LIBRAS
+- `models/word2vec_libras.model` - Modelo de tradução
 
 ### APIs Disponíveis
-- `api_simples.py` - API funcional (porta 5000)
-- `final_api.py` - API completa (porta 8083)
-- `postman_api.py` - API para Postman (porta 8082)
+- `api_simples.py` - API principal (porta 5000)
+- `professional_api.py` - API profissional
+- `final_api.py` - API completa
+- `postman_api.py` - API para Postman
 
-### Testes
-- `teste_rapido.py` - Teste direto do tradutor
+### Ferramentas
+- `professional_tests.py` - Testes automatizados
+- `professional_translator.py` - Tradutor profissional
+- `debug_mappings.py` - Debug de mapeamentos
 
 ---
 
@@ -130,7 +128,7 @@ Invoke-WebRequest -Uri "http://127.0.0.1:5000/translate" -Method POST -ContentTy
 
 ## 📝 Versão
 
-ELA MVP v4.0 - Outubro 2025
+ELA MVP v4.0 - Janeiro 2026
 
 Status: ✅ FUNCIONAL E TESTADO
 

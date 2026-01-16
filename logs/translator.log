@@ -444,3 +444,436 @@
 2025-10-10 19:16:13,563 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coração do Mundo, o novo longa da Filmes de Plástico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O Último Episódio retrata a trajetória de amadurecimento de três adolescentes da periferia, a partir de narrativas criadas sobre o fim da animação Caverna do Dragão. A obra gera reconhecimento e identificação, algo que já é marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurílio Martins, deve emocionar a todos os públicos.  “É um filme que retrata um momento muito específico do mundo, no qual a comunicação era distinta e passávamos por uma crise econômica que as novas gerações não entendem, mas as dores são iguais às de hoje. As dores do crescimento são iguais em qualquer lugar do mundo. Por isso, a identificação é muito imediata, tanto para quem está vivendo, quanto para quem já viveu essas situações”, explica, em entrevista ao Conversa Bem Viver. O enredo parte da história criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o último episódio do desenho que marcou as gerações dos anos 80 e 90. Mas, no desenrolar da narrativa, vão ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausência parental são alguns deles.  Tudo isso mantendo características fiéis da Filmes de Plástico, como o olhar cuidadoso ao cotidiano, a representação de pessoas negras sem estereotipá-las e a sensibilidade que gera intimismo. “Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste é saber que isso não existe com tanta frequência nos outros lugares. Mas, de nossa parte, não é um panfleto. É natural. A Filmes de Plástico parte do princípio da sinceridade sobre aquilo que nos rodeia”, enfatiza Martins.  A produtora, que comemora os seus 16 anos de história, conta também com André Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Além dos dois primeiros, o elenco de O Último Episódio tem a participação de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuição é da Malute e da Embaúba Filmes.'
 2025-10-10 19:16:13,585 - __main__ - INFO - Request 1760134573-2820461463344 completado em 0.0218s - Status: 200
 2025-10-10 19:16:13,587 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:16:13] "POST /translate HTTP/1.1" 200 -
+2025-10-16 09:36:13,439 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-16 09:36:13,539 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-16 09:36:13,562 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-16 09:36:13,563 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-16 09:36:13,644 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-16 09:36:13,645 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-16 09:36:13,667 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-16T09:36:13.656258', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-16 09:36:13,667 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-16 09:36:13,667 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-16 09:36:13,668 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-16 09:36:13,683 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-16 09:36:13,716 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 09:36:21,401 - __main__ - INFO - Request 1760618181-2833545791280: GET /health
+2025-10-16 09:36:21,402 - professional_translator - INFO - Traduzindo: 'teste'
+2025-10-16 09:36:21,402 - __main__ - INFO - Request 1760618181-2833545791280 completado em 0.0014s - Status: 200
+2025-10-16 09:36:21,404 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:36:21] "GET /health HTTP/1.1" 200 -
+2025-10-16 09:36:34,874 - __main__ - INFO - Request 1760618194-2833545791280: POST /translate
+2025-10-16 09:36:34,874 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coração do Mundo, o novo longa da Filmes de Plástico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O Último Episódio retrata a trajetória de amadurecimento de três adolescentes da periferia, a partir de narrativas criadas sobre o fim da animação Caverna do Dragão. A obra gera reconhecimento e identificação, algo que já é marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurílio Martins, deve emocionar a todos os públicos.  “É um filme que retrata um momento muito específico do mundo, no qual a comunicação era distinta e passávamos por uma crise econômica que as novas gerações não entendem, mas as dores são iguais às de hoje. As dores do crescimento são iguais em qualquer lugar do mundo. Por isso, a identificação é muito imediata, tanto para quem está vivendo, quanto para quem já viveu essas situações”, explica, em entrevista ao Conversa Bem Viver. O enredo parte da história criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o último episódio do desenho que marcou as gerações dos anos 80 e 90. Mas, no desenrolar da narrativa, vão ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausência parental são alguns deles.  Tudo isso mantendo características fiéis da Filmes de Plástico, como o olhar cuidadoso ao cotidiano, a representação de pessoas negras sem estereotipá-las e a sensibilidade que gera intimismo. “Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste é saber que isso não existe com tanta frequência nos outros lugares. Mas, de nossa parte, não é um panfleto. É natural. A Filmes de Plástico parte do princípio da sinceridade sobre aquilo que nos rodeia”, enfatiza Martins.  A produtora, que comemora os seus 16 anos de história, conta também com André Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Além dos dois primeiros, o elenco de O Último Episódio tem a participação de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuição é da Malute e da Embaúba Filmes.'
+2025-10-16 09:36:34,893 - __main__ - INFO - Request 1760618194-2833545791280 completado em 0.0197s - Status: 200
+2025-10-16 09:36:34,894 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:36:34] "POST /translate HTTP/1.1" 200 -
+2025-10-16 09:37:20,423 - __main__ - INFO - Request 1760618240-2833545791280: POST /translate
+2025-10-16 09:37:20,423 - professional_translator - INFO - Traduzindo: 'oi.z'
+2025-10-16 09:37:20,423 - __main__ - INFO - Request 1760618240-2833545791280 completado em 0.0000s - Status: 200
+2025-10-16 09:37:20,425 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:37:20] "POST /translate HTTP/1.1" 200 -
+2025-10-16 09:37:25,856 - __main__ - INFO - Request 1760618245-2833545791280: POST /translate
+2025-10-16 09:37:25,856 - professional_translator - INFO - Traduzindo: 'oi.'
+2025-10-16 09:37:25,856 - __main__ - INFO - Request 1760618245-2833545791280 completado em 0.0006s - Status: 200
+2025-10-16 09:37:25,857 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:37:25] "POST /translate HTTP/1.1" 200 -
+2025-10-16 09:38:01,787 - __main__ - INFO - Request 1760618281-2833545791280: POST /translate
+2025-10-16 09:38:01,788 - professional_translator - INFO - Traduzindo: 'oi, tudo bem?'
+2025-10-16 09:38:01,788 - __main__ - INFO - Request 1760618281-2833545791280 completado em 0.0011s - Status: 200
+2025-10-16 09:38:01,788 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:38:01] "POST /translate HTTP/1.1" 200 -
+2025-10-16 13:17:43,763 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-16 13:17:43,764 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-16 13:17:43,772 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-16 13:17:43,772 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-16 13:17:43,785 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-16 13:17:43,785 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-16 13:17:43,808 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-16T13:17:43.799063', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-16 13:17:43,809 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-16 13:17:43,809 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-16 13:17:43,809 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-16 13:17:43,832 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-16 13:17:43,832 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-16 13:17:47,328 - __main__ - INFO - Request 1760631467-2353936172848: GET /health
+2025-10-16 13:17:47,328 - professional_translator - INFO - Traduzindo: 'teste'
+2025-10-16 13:17:47,329 - __main__ - INFO - Request 1760631467-2353936172848 completado em 0.0011s - Status: 200
+2025-10-16 13:17:47,330 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 13:17:47] "GET /health HTTP/1.1" 200 -
+2025-10-16 13:50:28,460 - __main__ - INFO - Request 1760633428-2353936172848: POST /translate
+2025-10-16 13:50:28,462 - professional_translator - INFO - Traduzindo: 'ta ligado?'
+2025-10-16 13:50:28,463 - __main__ - INFO - Request 1760633428-2353936172848 completado em 0.0029s - Status: 200
+2025-10-16 13:50:28,464 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 13:50:28] "POST /translate HTTP/1.1" 200 -
+2025-10-16 13:50:43,903 - __main__ - INFO - Request 1760633443-2353936172848: POST /translate
+2025-10-16 13:50:43,903 - professional_translator - INFO - Traduzindo: 'hi'
+2025-10-16 13:50:43,904 - __main__ - INFO - Request 1760633443-2353936172848 completado em 0.0011s - Status: 200
+2025-10-16 13:50:43,905 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 13:50:43] "POST /translate HTTP/1.1" 200 -
+2025-10-16 13:51:49,849 - __main__ - INFO - Request 1760633509-2353936172848: POST /translate
+2025-10-16 13:51:49,850 - professional_translator - INFO - Traduzindo: 'divo'
+2025-10-16 13:51:49,851 - __main__ - INFO - Request 1760633509-2353936172848 completado em 0.0011s - Status: 200
+2025-10-16 13:51:49,851 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 13:51:49] "POST /translate HTTP/1.1" 200 -
+2025-10-17 15:42:19,932 - __main__ - INFO - Inicializando tradutor profissional...
+2025-10-17 15:42:19,940 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-17 15:42:19,965 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-10-17 15:42:19,965 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-10-17 15:42:20,050 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-10-17 15:42:20,050 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-10-17 15:42:20,076 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-17T15:42:20.064325', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-10-17 15:42:20,077 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-10-17 15:42:20,077 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-10-17 15:42:20,077 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-10-17 15:42:20,102 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-10-17 15:42:20,102 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-17 15:44:14,229 - __main__ - INFO - Request 1760726654-2082046641968: GET /health
+2025-10-17 15:44:14,229 - professional_translator - INFO - Traduzindo: 'teste'
+2025-10-17 15:44:14,230 - __main__ - INFO - Request 1760726654-2082046641968 completado em 0.0010s - Status: 200
+2025-10-17 15:44:14,231 - werkzeug - INFO - 127.0.0.1 - - [17/Oct/2025 15:44:14] "GET /health HTTP/1.1" 200 -
+2025-10-17 15:47:19,232 - __main__ - INFO - Request 1760726839-2082046641968: POST /translate
+2025-10-17 15:47:19,242 - professional_translator - INFO - Traduzindo: 'Feliz dia do Profissional de TI!'
+2025-10-17 15:47:19,244 - __main__ - INFO - Request 1760726839-2082046641968 completado em 0.0115s - Status: 200
+2025-10-17 15:47:19,244 - werkzeug - INFO - 127.0.0.1 - - [17/Oct/2025 15:47:19] "POST /translate HTTP/1.1" 200 -
+2025-10-17 16:14:03,529 - __main__ - INFO - Request 1760728443-2082046641968: POST /translate
+2025-10-17 16:14:03,530 - professional_translator - INFO - Traduzindo: 'Feliz dia do Profissional de TI!'
+2025-10-17 16:14:03,530 - __main__ - INFO - Request 1760728443-2082046641968 completado em 0.0010s - Status: 200
+2025-10-17 16:14:03,531 - werkzeug - INFO - 127.0.0.1 - - [17/Oct/2025 16:14:03] "POST /translate HTTP/1.1" 200 -
+2025-10-17 16:14:05,766 - __main__ - INFO - Request 1760728445-2082046641968: POST /translate
+2025-10-17 16:14:05,766 - professional_translator - INFO - Traduzindo: 'Feliz dia do Profissional de TI!'
+2025-10-17 16:14:05,767 - __main__ - INFO - Request 1760728445-2082046641968 completado em 0.0010s - Status: 200
+2025-10-17 16:14:05,767 - werkzeug - INFO - 127.0.0.1 - - [17/Oct/2025 16:14:05] "POST /translate HTTP/1.1" 200 -
+2025-11-07 09:18:32,079 - __main__ - INFO - Inicializando tradutor profissional...
+2025-11-07 09:18:32,170 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-11-07 09:18:32,174 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2025-11-07 09:18:32,176 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2025-11-07 09:18:32,268 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2025-11-07 09:18:32,268 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2025-11-07 09:18:32,297 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-11-07T09:18:32.288194', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
+2025-11-07 09:18:32,297 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2025-11-07 09:18:32,297 - professional_translator - INFO - Sistema inicializado com sucesso
+2025-11-07 09:18:32,299 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2025-11-07 09:18:32,308 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2025-11-07 09:18:32,327 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 09:19:12,841 - __main__ - INFO - Request 1762517952-1675415160624: GET /health
+2025-11-07 09:19:12,841 - professional_translator - INFO - Traduzindo: 'teste'
+2025-11-07 09:19:12,842 - __main__ - INFO - Request 1762517952-1675415160624 completado em 0.0010s - Status: 200
+2025-11-07 09:19:12,843 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 09:19:12] "GET /health HTTP/1.1" 200 -
+2025-11-07 09:19:50,436 - __main__ - INFO - Request 1762517990-1675415160624: POST /translate
+2025-11-07 09:19:50,436 - professional_translator - INFO - Traduzindo: 'Bem vindos ao Ela!'
+2025-11-07 09:19:50,437 - __main__ - INFO - Request 1762517990-1675415160624 completado em 0.0020s - Status: 200
+2025-11-07 09:19:50,437 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 09:19:50] "POST /translate HTTP/1.1" 200 -
+2025-11-07 09:42:03,737 - __main__ - INFO - Request 1762519323-1675415160624: GET /health
+2025-11-07 09:42:03,738 - professional_translator - INFO - Traduzindo: 'teste'
+2025-11-07 09:42:03,738 - __main__ - INFO - Request 1762519323-1675415160624 completado em 0.0010s - Status: 200
+2025-11-07 09:42:03,739 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 09:42:03] "GET /health HTTP/1.1" 200 -
+2025-11-07 09:43:47,411 - __main__ - INFO - Request 1762519427-1675415160624: POST /translate
+2025-11-07 09:43:47,411 - professional_translator - INFO - Traduzindo: 'Saudades dela'
+2025-11-07 09:43:47,412 - __main__ - INFO - Request 1762519427-1675415160624 completado em 0.0010s - Status: 200
+2025-11-07 09:43:47,412 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 09:43:47] "POST /translate HTTP/1.1" 200 -
+2025-11-07 09:44:34,579 - __main__ - INFO - Request 1762519474-1675415160624: POST /translate
+2025-11-07 09:44:34,579 - professional_translator - INFO - Traduzindo: 'best Day of my life'
+2025-11-07 09:44:34,580 - __main__ - INFO - Request 1762519474-1675415160624 completado em 0.0010s - Status: 200
+2025-11-07 09:44:34,581 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 09:44:34] "POST /translate HTTP/1.1" 200 -
+2025-11-07 10:05:45,679 - __main__ - INFO - Request 1762520745-1675415160624: POST /translate
+2025-11-07 10:05:45,680 - professional_translator - INFO - Traduzindo: 'flamengo e peerdedor'
+2025-11-07 10:05:45,680 - __main__ - INFO - Request 1762520745-1675415160624 completado em 0.0010s - Status: 200
+2025-11-07 10:05:45,681 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 10:05:45] "POST /translate HTTP/1.1" 200 -
+2026-01-14 18:56:11,174 - __main__ - INFO - Inicializando tradutor profissional...
+2026-01-14 18:56:11,294 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2026-01-14 18:56:11,297 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2026-01-14 18:56:11,298 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2026-01-14 18:56:11,391 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2026-01-14 18:56:11,391 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2026-01-14 18:56:11,442 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2026-01-14T18:56:11.421718', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26200-SP0', 'event': 'loaded'}
+2026-01-14 18:56:11,442 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2026-01-14 18:56:11,443 - professional_translator - INFO - Sistema inicializado com sucesso
+2026-01-14 18:56:11,443 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2026-01-14 18:56:11,470 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2026-01-14 18:56:11,470 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 18:56:17,302 - __main__ - INFO - Request 1768427777-2621791897392: GET /
+2026-01-14 18:56:17,303 - __main__ - INFO - Request 1768427777-2621791897392 completado em 0.0010s - Status: 200
+2026-01-14 18:56:17,306 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 18:56:17] "GET / HTTP/1.1" 200 -
+2026-01-14 18:56:17,506 - __main__ - INFO - Request 1768427777-2621791897392: GET /favicon.ico
+2026-01-14 18:56:17,509 - __main__ - INFO - Request 1768427777-2621791897392 completado em 0.0030s - Status: 404
+2026-01-14 18:56:17,510 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 18:56:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-14 18:57:45,050 - __main__ - INFO - Request 1768427865-2621791897392: GET /
+2026-01-14 18:57:45,052 - __main__ - INFO - Request 1768427865-2621791897392 completado em 0.0010s - Status: 200
+2026-01-14 18:57:45,052 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 18:57:45] "GET / HTTP/1.1" 200 -
+2026-01-14 18:59:16,211 - __main__ - INFO - Request 1768427956-2621791897392: POST /translate
+2026-01-14 18:59:16,212 - professional_translator - INFO - Traduzindo: 'Luyza é se é furona, me fez acordar cedo e ela esta dormindo'
+2026-01-14 18:59:16,215 - __main__ - INFO - Request 1768427956-2621791897392 completado em 0.0040s - Status: 200
+2026-01-14 18:59:16,215 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 18:59:16] "POST /translate HTTP/1.1" 200 -
+2026-01-14 19:03:32,004 - __main__ - INFO - Inicializando tradutor profissional...
+2026-01-14 19:03:32,004 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2026-01-14 19:03:32,006 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2026-01-14 19:03:32,007 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2026-01-14 19:03:32,009 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2026-01-14 19:03:32,010 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2026-01-14 19:03:32,042 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2026-01-14T19:03:32.029075', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26200-SP0', 'event': 'loaded'}
+2026-01-14 19:03:32,043 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2026-01-14 19:03:32,043 - professional_translator - INFO - Sistema inicializado com sucesso
+2026-01-14 19:03:32,043 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2026-01-14 19:03:32,060 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2026-01-14 19:03:32,060 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 19:04:48,550 - __main__ - INFO - Request 1768428288-2519762634544: POST /traduzir
+2026-01-14 19:04:48,551 - __main__ - INFO - Request 1768428288-2519762634544 completado em 0.0010s - Status: 404
+2026-01-14 19:04:48,552 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:04:48] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:05:00,294 - __main__ - INFO - Request 1768428300-2519762634544: POST /traduzir
+2026-01-14 19:05:00,295 - __main__ - INFO - Request 1768428300-2519762634544 completado em 0.0015s - Status: 404
+2026-01-14 19:05:00,296 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:05:00] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:09:50,673 - __main__ - INFO - Request 1768428590-2519762634544: POST /traduzir
+2026-01-14 19:09:50,674 - __main__ - INFO - Request 1768428590-2519762634544 completado em 0.0010s - Status: 404
+2026-01-14 19:09:50,675 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:09:50] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:10:35,358 - __main__ - INFO - Request 1768428635-2519762634544: POST /traduzir
+2026-01-14 19:10:35,358 - __main__ - INFO - Request 1768428635-2519762634544 completado em 0.0000s - Status: 404
+2026-01-14 19:10:35,360 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:10:35] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:10:48,665 - __main__ - INFO - Request 1768428648-2519762634544: POST /traduzir
+2026-01-14 19:10:48,665 - __main__ - INFO - Request 1768428648-2519762634544 completado em 0.0000s - Status: 404
+2026-01-14 19:10:48,666 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:10:48] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:10:59,603 - __main__ - INFO - Request 1768428659-2519762634544: POST /traduzir
+2026-01-14 19:10:59,603 - __main__ - INFO - Request 1768428659-2519762634544 completado em 0.0000s - Status: 404
+2026-01-14 19:10:59,603 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:10:59] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:11:02,906 - __main__ - INFO - Request 1768428662-2519762634544: POST /traduzir
+2026-01-14 19:11:02,908 - __main__ - INFO - Request 1768428662-2519762634544 completado em 0.0015s - Status: 404
+2026-01-14 19:11:02,908 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:11:02] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:11:08,098 - __main__ - INFO - Request 1768428668-2519762634544: POST /traduzir
+2026-01-14 19:11:08,101 - __main__ - INFO - Request 1768428668-2519762634544 completado em 0.0026s - Status: 404
+2026-01-14 19:11:08,102 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:11:08] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:12:24,556 - __main__ - INFO - Request 1768428744-2519762634544: POST /traduzir
+2026-01-14 19:12:24,557 - __main__ - INFO - Request 1768428744-2519762634544 completado em 0.0015s - Status: 404
+2026-01-14 19:12:24,559 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:12:24] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:13:01,182 - __main__ - INFO - Request 1768428781-2519762634544: POST /traduzir
+2026-01-14 19:13:01,185 - __main__ - INFO - Request 1768428781-2519762634544 completado em 0.0030s - Status: 404
+2026-01-14 19:13:01,186 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:13:01] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:26:50,696 - __main__ - INFO - Inicializando tradutor profissional...
+2026-01-14 19:26:50,697 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2026-01-14 19:26:50,698 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2026-01-14 19:26:50,699 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2026-01-14 19:26:50,701 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2026-01-14 19:26:50,702 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2026-01-14 19:26:50,726 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2026-01-14T19:26:50.714892', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26200-SP0', 'event': 'loaded'}
+2026-01-14 19:26:50,726 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2026-01-14 19:26:50,727 - professional_translator - INFO - Sistema inicializado com sucesso
+2026-01-14 19:26:50,727 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2026-01-14 19:26:50,744 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2026-01-14 19:26:50,745 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 19:33:23,320 - __main__ - INFO - Request 1768430003-1304358979376: POST /traduzir
+2026-01-14 19:33:23,324 - __main__ - INFO - Request 1768430003-1304358979376 completado em 0.0040s - Status: 404
+2026-01-14 19:33:23,325 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:33:23] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:33:48,824 - __main__ - INFO - Request 1768430028-1304358979376: POST /traduzir
+2026-01-14 19:33:48,825 - __main__ - INFO - Request 1768430028-1304358979376 completado em 0.0010s - Status: 404
+2026-01-14 19:33:48,825 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:33:48] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:41:53,175 - __main__ - INFO - Inicializando tradutor profissional...
+2026-01-14 19:41:53,192 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2026-01-14 19:41:53,222 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
+2026-01-14 19:41:53,223 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
+2026-01-14 19:41:53,330 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
+2026-01-14 19:41:53,330 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2026-01-14 19:41:53,365 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2026-01-14T19:41:53.352533', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26200-SP0', 'event': 'loaded'}
+2026-01-14 19:41:53,365 - professional_translator - INFO - Modelo carregado: 1728 palavras
+2026-01-14 19:41:53,365 - professional_translator - INFO - Sistema inicializado com sucesso
+2026-01-14 19:41:53,365 - __main__ - INFO - Tradutor profissional inicializado com sucesso
+2026-01-14 19:41:53,385 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+2026-01-14 19:41:53,385 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 19:52:39,244 - __main__ - INFO - Request 1768431159-1558828189488: POST /traduzir
+2026-01-14 19:52:39,246 - __main__ - INFO - Request 1768431159-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 19:52:39,248 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:52:39] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:52:43,634 - __main__ - INFO - Request 1768431163-1558828189488: POST /traduzir
+2026-01-14 19:52:43,636 - __main__ - INFO - Request 1768431163-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 19:52:43,637 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:52:43] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:53:11,094 - __main__ - INFO - Request 1768431191-1558828189488: POST /traduzir
+2026-01-14 19:53:11,097 - __main__ - INFO - Request 1768431191-1558828189488 completado em 0.0030s - Status: 404
+2026-01-14 19:53:11,098 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:53:11] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:53:13,444 - __main__ - INFO - Request 1768431193-1558828189488: POST /traduzir
+2026-01-14 19:53:13,446 - __main__ - INFO - Request 1768431193-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 19:53:13,447 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:53:13] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:53:18,174 - __main__ - INFO - Request 1768431198-1558828189488: POST /traduzir
+2026-01-14 19:53:18,174 - __main__ - INFO - Request 1768431198-1558828189488 completado em 0.0000s - Status: 404
+2026-01-14 19:53:18,175 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:53:18] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:53:41,238 - __main__ - INFO - Request 1768431221-1558828189488: POST /traduzir
+2026-01-14 19:53:41,239 - __main__ - INFO - Request 1768431221-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 19:53:41,240 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:53:41] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:53:43,866 - __main__ - INFO - Request 1768431223-1558828189488: POST /traduzir
+2026-01-14 19:53:43,869 - __main__ - INFO - Request 1768431223-1558828189488 completado em 0.0025s - Status: 404
+2026-01-14 19:53:43,871 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:53:43] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:53:49,402 - __main__ - INFO - Request 1768431229-1558828189488: POST /traduzir
+2026-01-14 19:53:49,405 - __main__ - INFO - Request 1768431229-1558828189488 completado em 0.0030s - Status: 404
+2026-01-14 19:53:49,406 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:53:49] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:54:04,777 - __main__ - INFO - Request 1768431244-1558828189488: POST /traduzir
+2026-01-14 19:54:04,777 - __main__ - INFO - Request 1768431244-1558828189488 completado em 0.0000s - Status: 404
+2026-01-14 19:54:04,779 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:54:04] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:54:32,742 - __main__ - INFO - Request 1768431272-1558828189488: POST /traduzir
+2026-01-14 19:54:32,745 - __main__ - INFO - Request 1768431272-1558828189488 completado em 0.0035s - Status: 404
+2026-01-14 19:54:32,746 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:54:32] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:54:39,379 - __main__ - INFO - Request 1768431279-1558828189488: POST /traduzir
+2026-01-14 19:54:39,380 - __main__ - INFO - Request 1768431279-1558828189488 completado em 0.0015s - Status: 404
+2026-01-14 19:54:39,381 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:54:39] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:55:53,535 - __main__ - INFO - Request 1768431353-1558828189488: POST /traduzir
+2026-01-14 19:55:53,536 - __main__ - INFO - Request 1768431353-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 19:55:53,536 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:55:53] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:56:00,976 - __main__ - INFO - Request 1768431360-1558828189488: POST /traduzir
+2026-01-14 19:56:00,978 - __main__ - INFO - Request 1768431360-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 19:56:00,979 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:56:00] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:56:03,845 - __main__ - INFO - Request 1768431363-1558828189488: POST /traduzir
+2026-01-14 19:56:03,847 - __main__ - INFO - Request 1768431363-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 19:56:03,848 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:56:03] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:56:06,301 - __main__ - INFO - Request 1768431366-1558828189488: POST /traduzir
+2026-01-14 19:56:06,302 - __main__ - INFO - Request 1768431366-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 19:56:06,303 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:56:06] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:56:09,655 - __main__ - INFO - Request 1768431369-1558828189488: POST /traduzir
+2026-01-14 19:56:09,657 - __main__ - INFO - Request 1768431369-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 19:56:09,662 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:56:09] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:56:13,837 - __main__ - INFO - Request 1768431373-1558828189488: POST /traduzir
+2026-01-14 19:56:13,838 - __main__ - INFO - Request 1768431373-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 19:56:13,839 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:56:13] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:56:31,345 - __main__ - INFO - Request 1768431391-1558828189488: POST /traduzir
+2026-01-14 19:56:31,347 - __main__ - INFO - Request 1768431391-1558828189488 completado em 0.0030s - Status: 404
+2026-01-14 19:56:31,348 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:56:31] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:56:38,389 - __main__ - INFO - Request 1768431398-1558828189488: POST /traduzir
+2026-01-14 19:56:38,391 - __main__ - INFO - Request 1768431398-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 19:56:38,392 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:56:38] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:56:41,128 - __main__ - INFO - Request 1768431401-1558828189488: POST /traduzir
+2026-01-14 19:56:41,130 - __main__ - INFO - Request 1768431401-1558828189488 completado em 0.0026s - Status: 404
+2026-01-14 19:56:41,132 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:56:41] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:56:44,095 - __main__ - INFO - Request 1768431404-1558828189488: POST /traduzir
+2026-01-14 19:56:44,097 - __main__ - INFO - Request 1768431404-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 19:56:44,100 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:56:44] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:57:06,855 - __main__ - INFO - Request 1768431426-1558828189488: POST /traduzir
+2026-01-14 19:57:06,858 - __main__ - INFO - Request 1768431426-1558828189488 completado em 0.0025s - Status: 404
+2026-01-14 19:57:06,859 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:57:06] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 19:57:15,335 - __main__ - INFO - Request 1768431435-1558828189488: POST /traduzir
+2026-01-14 19:57:15,339 - __main__ - INFO - Request 1768431435-1558828189488 completado em 0.0035s - Status: 404
+2026-01-14 19:57:15,340 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:57:15] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:00:32,026 - __main__ - INFO - Request 1768431632-1558828189488: POST /traduzir
+2026-01-14 20:00:32,027 - __main__ - INFO - Request 1768431632-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 20:00:32,027 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:00:32] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:00:46,946 - __main__ - INFO - Request 1768431646-1558828189488: POST /traduzir
+2026-01-14 20:00:46,949 - __main__ - INFO - Request 1768431646-1558828189488 completado em 0.0030s - Status: 404
+2026-01-14 20:00:46,951 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:00:46] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:01:28,460 - __main__ - INFO - Request 1768431688-1558828189488: POST /traduzir
+2026-01-14 20:01:28,461 - __main__ - INFO - Request 1768431688-1558828189488 completado em 0.0015s - Status: 404
+2026-01-14 20:01:28,464 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:01:28] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:03:32,801 - __main__ - INFO - Request 1768431812-1558828189488: POST /traduzir
+2026-01-14 20:03:32,803 - __main__ - INFO - Request 1768431812-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 20:03:32,804 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:03:32] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:03:37,535 - __main__ - INFO - Request 1768431817-1558828189488: POST /traduzir
+2026-01-14 20:03:37,537 - __main__ - INFO - Request 1768431817-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 20:03:37,537 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:03:37] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:03:59,281 - __main__ - INFO - Request 1768431839-1558828189488: POST /traduzir
+2026-01-14 20:03:59,281 - __main__ - INFO - Request 1768431839-1558828189488 completado em 0.0000s - Status: 404
+2026-01-14 20:03:59,282 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:03:59] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:04:01,971 - __main__ - INFO - Request 1768431841-1558828189488: POST /traduzir
+2026-01-14 20:04:01,973 - __main__ - INFO - Request 1768431841-1558828189488 completado em 0.0021s - Status: 404
+2026-01-14 20:04:01,974 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:04:01] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:04:21,640 - __main__ - INFO - Request 1768431861-1558828189488: POST /traduzir
+2026-01-14 20:04:21,643 - __main__ - INFO - Request 1768431861-1558828189488 completado em 0.0026s - Status: 404
+2026-01-14 20:04:21,645 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:04:21] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:04:29,306 - __main__ - INFO - Request 1768431869-1558828189488: POST /traduzir
+2026-01-14 20:04:29,308 - __main__ - INFO - Request 1768431869-1558828189488 completado em 0.0026s - Status: 404
+2026-01-14 20:04:29,310 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:04:29] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:04:34,448 - __main__ - INFO - Request 1768431874-1558828189488: POST /traduzir
+2026-01-14 20:04:34,449 - __main__ - INFO - Request 1768431874-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 20:04:34,450 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:04:34] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:04:41,614 - __main__ - INFO - Request 1768431881-1558828189488: POST /traduzir
+2026-01-14 20:04:41,616 - __main__ - INFO - Request 1768431881-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 20:04:41,617 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:04:41] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:04:49,287 - __main__ - INFO - Request 1768431889-1558828189488: POST /traduzir
+2026-01-14 20:04:49,289 - __main__ - INFO - Request 1768431889-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 20:04:49,290 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:04:49] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:04:54,484 - __main__ - INFO - Request 1768431894-1558828189488: POST /traduzir
+2026-01-14 20:04:54,485 - __main__ - INFO - Request 1768431894-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 20:04:54,485 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:04:54] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:05:00,279 - __main__ - INFO - Request 1768431900-1558828189488: POST /traduzir
+2026-01-14 20:05:00,281 - __main__ - INFO - Request 1768431900-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 20:05:00,282 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:05:00] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:07:07,448 - __main__ - INFO - Request 1768432027-1558828189488: POST /traduzir
+2026-01-14 20:07:07,450 - __main__ - INFO - Request 1768432027-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 20:07:07,452 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:07:07] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:07:12,600 - __main__ - INFO - Request 1768432032-1558828189488: POST /traduzir
+2026-01-14 20:07:12,602 - __main__ - INFO - Request 1768432032-1558828189488 completado em 0.0015s - Status: 404
+2026-01-14 20:07:12,603 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:07:12] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:08:12,109 - __main__ - INFO - Request 1768432092-1558828189488: POST /traduzir
+2026-01-14 20:08:12,111 - __main__ - INFO - Request 1768432092-1558828189488 completado em 0.0015s - Status: 404
+2026-01-14 20:08:12,112 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:08:12] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:08:15,698 - __main__ - INFO - Request 1768432095-1558828189488: POST /traduzir
+2026-01-14 20:08:15,700 - __main__ - INFO - Request 1768432095-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 20:08:15,701 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:08:15] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:08:32,358 - __main__ - INFO - Request 1768432112-1558828189488: POST /traduzir
+2026-01-14 20:08:32,359 - __main__ - INFO - Request 1768432112-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 20:08:32,362 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:08:32] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 20:08:36,517 - __main__ - INFO - Request 1768432116-1558828189488: POST /traduzir
+2026-01-14 20:08:36,518 - __main__ - INFO - Request 1768432116-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 20:08:36,519 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 20:08:36] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:31:44,883 - __main__ - INFO - Request 1768437104-1558828189488: POST /traduzir
+2026-01-14 21:31:44,887 - __main__ - INFO - Request 1768437104-1558828189488 completado em 0.0040s - Status: 404
+2026-01-14 21:31:44,888 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:31:44] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:34:13,565 - __main__ - INFO - Request 1768437253-1558828189488: POST /traduzir
+2026-01-14 21:34:13,565 - __main__ - INFO - Request 1768437253-1558828189488 completado em 0.0005s - Status: 404
+2026-01-14 21:34:13,565 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:34:13] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:34:20,719 - __main__ - INFO - Request 1768437260-1558828189488: POST /traduzir
+2026-01-14 21:34:20,719 - __main__ - INFO - Request 1768437260-1558828189488 completado em 0.0000s - Status: 404
+2026-01-14 21:34:20,719 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:34:20] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:34:25,324 - __main__ - INFO - Request 1768437265-1558828189488: POST /traduzir
+2026-01-14 21:34:25,324 - __main__ - INFO - Request 1768437265-1558828189488 completado em 0.0000s - Status: 404
+2026-01-14 21:34:25,325 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:34:25] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:34:28,166 - __main__ - INFO - Request 1768437268-1558828189488: POST /traduzir
+2026-01-14 21:34:28,166 - __main__ - INFO - Request 1768437268-1558828189488 completado em 0.0000s - Status: 404
+2026-01-14 21:34:28,167 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:34:28] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:34:58,537 - __main__ - INFO - Request 1768437298-1558828189488: POST /traduzir
+2026-01-14 21:34:58,538 - __main__ - INFO - Request 1768437298-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 21:34:58,539 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:34:58] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:35:18,771 - __main__ - INFO - Request 1768437318-1558828189488: POST /traduzir
+2026-01-14 21:35:18,772 - __main__ - INFO - Request 1768437318-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 21:35:18,772 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:35:18] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:35:26,897 - __main__ - INFO - Request 1768437326-1558828189488: POST /traduzir
+2026-01-14 21:35:26,898 - __main__ - INFO - Request 1768437326-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 21:35:26,899 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:35:26] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:36:02,494 - __main__ - INFO - Request 1768437362-1558828189488: POST /traduzir
+2026-01-14 21:36:02,495 - __main__ - INFO - Request 1768437362-1558828189488 completado em 0.0000s - Status: 404
+2026-01-14 21:36:02,495 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:36:02] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:36:22,756 - __main__ - INFO - Request 1768437382-1558828189488: POST /traduzir
+2026-01-14 21:36:22,757 - __main__ - INFO - Request 1768437382-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 21:36:22,757 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:36:22] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:36:29,366 - __main__ - INFO - Request 1768437389-1558828189488: POST /traduzir
+2026-01-14 21:36:29,367 - __main__ - INFO - Request 1768437389-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 21:36:29,368 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:36:29] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:36:34,771 - __main__ - INFO - Request 1768437394-1558828189488: POST /traduzir
+2026-01-14 21:36:34,771 - __main__ - INFO - Request 1768437394-1558828189488 completado em 0.0000s - Status: 404
+2026-01-14 21:36:34,771 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:36:34] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:36:42,026 - __main__ - INFO - Request 1768437402-1558828189488: POST /traduzir
+2026-01-14 21:36:42,028 - __main__ - INFO - Request 1768437402-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 21:36:42,029 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:36:42] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:39:39,783 - __main__ - INFO - Request 1768437579-1558828189488: POST /traduzir
+2026-01-14 21:39:39,785 - __main__ - INFO - Request 1768437579-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 21:39:39,786 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:39:39] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:39:57,965 - __main__ - INFO - Request 1768437597-1558828189488: POST /traduzir
+2026-01-14 21:39:57,967 - __main__ - INFO - Request 1768437597-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 21:39:57,968 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:39:57] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:40:17,801 - __main__ - INFO - Request 1768437617-1558828189488: POST /traduzir
+2026-01-14 21:40:17,802 - __main__ - INFO - Request 1768437617-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 21:40:17,803 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:40:17] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:40:25,488 - __main__ - INFO - Request 1768437625-1558828189488: POST /traduzir
+2026-01-14 21:40:25,490 - __main__ - INFO - Request 1768437625-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 21:40:25,491 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:40:25] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:40:31,820 - __main__ - INFO - Request 1768437631-1558828189488: POST /traduzir
+2026-01-14 21:40:31,821 - __main__ - INFO - Request 1768437631-1558828189488 completado em 0.0010s - Status: 404
+2026-01-14 21:40:31,822 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:40:31] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:40:37,996 - __main__ - INFO - Request 1768437637-1558828189488: POST /traduzir
+2026-01-14 21:40:37,999 - __main__ - INFO - Request 1768437637-1558828189488 completado em 0.0025s - Status: 404
+2026-01-14 21:40:38,001 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:40:38] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:40:43,271 - __main__ - INFO - Request 1768437643-1558828189488: POST /traduzir
+2026-01-14 21:40:43,273 - __main__ - INFO - Request 1768437643-1558828189488 completado em 0.0011s - Status: 404
+2026-01-14 21:40:43,274 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:40:43] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:40:53,365 - __main__ - INFO - Request 1768437653-1558828189488: POST /traduzir
+2026-01-14 21:40:53,367 - __main__ - INFO - Request 1768437653-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 21:40:53,368 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:40:53] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:41:08,351 - __main__ - INFO - Request 1768437668-1558828189488: POST /traduzir
+2026-01-14 21:41:08,354 - __main__ - INFO - Request 1768437668-1558828189488 completado em 0.0026s - Status: 404
+2026-01-14 21:41:08,355 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:41:08] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:41:11,650 - __main__ - INFO - Request 1768437671-1558828189488: POST /traduzir
+2026-01-14 21:41:11,652 - __main__ - INFO - Request 1768437671-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 21:41:11,653 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:41:11] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:41:14,398 - __main__ - INFO - Request 1768437674-1558828189488: POST /traduzir
+2026-01-14 21:41:14,398 - __main__ - INFO - Request 1768437674-1558828189488 completado em 0.0005s - Status: 404
+2026-01-14 21:41:14,399 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:41:14] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
+2026-01-14 21:41:17,409 - __main__ - INFO - Request 1768437677-1558828189488: POST /traduzir
+2026-01-14 21:41:17,411 - __main__ - INFO - Request 1768437677-1558828189488 completado em 0.0020s - Status: 404
+2026-01-14 21:41:17,413 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 21:41:17] "[33mPOST /traduzir HTTP/1.1[0m" 404 -

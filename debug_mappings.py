@@ -48,13 +48,11 @@ def debug_mappings():
         print(f"📊 Word dict: {len(translator.word_dict)} palavras")
         print(f"📊 Phrase mappings: {len(translator.phrase_mappings)} frases")
         
-        # Mostrar algumas palavras
         if translator.word_dict:
             print("\n🔤 PRIMEIRAS 10 PALAVRAS:")
             for i, (pt, libras) in enumerate(list(translator.word_dict.items())[:10]):
                 print(f"   {pt} → {libras}")
         
-        # Testar tradução simples
         print("\n🧪 TESTE DE TRADUÇÃO:")
         test_words = ['quero', 'agua', 'bom', 'dia', 'obrigado']
         for word in test_words:
