@@ -48,7 +48,7 @@ class ConfiguracaoSTT:
     # Decisão arquitetural: desacoplamento via HTTP POST
     URL_SERVICO_GLOSSA: str = os.getenv(
         "GLOSSA_SERVICE_URL",
-        "http://localhost:9000/traduzir"  # Porta do professional_api.py
+        "http://127.0.0.1:5000/translate"  # API de tradução PT-BR -> LIBRAS
     )
     
     # Timeout para requisições ao serviço de glossa (segundos)

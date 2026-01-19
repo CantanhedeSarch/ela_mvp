@@ -1,0 +1,31 @@
+2026-01-19 08:49:34,524 - websockets.server - INFO - server listening on 127.0.0.1:8765
+2026-01-19 08:49:34,543 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-19 08:49:34,544 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-19 08:49:34,546 - werkzeug - INFO -  * Restarting with stat
+2026-01-19 08:49:35,285 - werkzeug - WARNING -  * Debugger is active!
+2026-01-19 08:49:35,295 - werkzeug - INFO -  * Debugger PIN: 138-466-843
+2026-01-19 15:15:54,377 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-19 15:15:54,383 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-19 15:16:34,936 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-19 15:16:34,937 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-19 15:17:26,771 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-19 15:17:26,771 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-19 15:17:30,759 - api_simples - INFO - Request 1768846650-2552762997808: GET /health
+2026-01-19 15:17:30,766 - api_simples - INFO - Request 1768846650-2552762997808 completado em 0.0074s - Status: 200
+2026-01-19 15:17:30,768 - werkzeug - INFO - 127.0.0.1 - - [19/Jan/2026 15:17:30] "GET /health HTTP/1.1" 200 -
+2026-01-19 15:33:41,041 - api_simples - INFO - Request 1768847621-2552762997808: POST /translate
+2026-01-19 15:33:41,049 - api_simples - INFO - Request 1768847621-2552762997808 completado em 0.0082s - Status: 200
+2026-01-19 15:33:41,050 - werkzeug - INFO - 127.0.0.1 - - [19/Jan/2026 15:33:41] "POST /translate HTTP/1.1" 200 -
+2026-01-19 15:34:49,807 - api_simples - INFO - Request 1768847689-2552762997808: POST /translate
+2026-01-19 15:34:49,808 - api_simples - INFO - Request 1768847689-2552762997808 completado em 0.0015s - Status: 200
+2026-01-19 15:34:49,808 - werkzeug - INFO - 127.0.0.1 - - [19/Jan/2026 15:34:49] "POST /translate HTTP/1.1" 200 -
+2026-01-19 15:36:55,320 - api_simples - INFO - Request 1768847815-2552762997808: POST /translate
+2026-01-19 15:36:55,320 - api_simples - INFO - Request 1768847815-2552762997808 completado em 0.0000s - Status: 200
+2026-01-19 15:36:55,321 - werkzeug - INFO - 127.0.0.1 - - [19/Jan/2026 15:36:55] "POST /translate HTTP/1.1" 200 -
+2026-01-19 15:38:51,266 - api_simples - INFO - Request 1768847931-2552762997808: POST /translate
+2026-01-19 15:38:51,268 - api_simples - INFO - Request 1768847931-2552762997808 completado em 0.0010s - Status: 200
+2026-01-19 15:38:51,269 - werkzeug - INFO - 127.0.0.1 - - [19/Jan/2026 15:38:51] "POST /translate HTTP/1.1" 200 -

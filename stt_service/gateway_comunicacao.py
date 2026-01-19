@@ -293,7 +293,20 @@ async def websocket_stt(websocket: WebSocket):
                     confidence=confianca,
                     dispatch=resultado_dispatch
                 )
-                await websocket.send_json(mensagem_final.dict())
+                
+                # Converter para dict e garantir serialização correta
+                import json
+                mensagem_dict = mensagem_final.dict()
+                
+                # Debug: logar o conteúdo do dispatch
+                if mensagem_dict.get('dispatch'):
+                    session_logger.info(f"Dispatch response_body tipo: {type(mensagem_dict['dispatch'].get('response_body'))}")
+                    session_logger.info(f"Dispatch response_body: {mensagem_dict['dispatch'].get('response_body')}")
+                
+                # Forçar serialização JSON para garantir tipos corretos
+                mensagem_json = json.loads(json.dumps(mensagem_dict, default=str))
+                
+                await websocket.send_json(mensagem_json)
                 session_logger.info("Mensagem de transcrição final enviada")
             
             elif not is_final and texto:

@@ -363,3 +363,369 @@ ValueError: Invalid format specifier
 2026-01-14 18:53:56 - stt_service.orquestrador_envio.90e4aa14 - INFO - Enviando transcrição para glossa: 'olá tudo bem boa noite' (confiança: 0.93)
 2026-01-14 18:54:01 - stt_service.orquestrador_envio.90e4aa14 - ERROR - ✗ Erro de rede ao contatar serviço de glossa: HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /traduzir (Caused by NewConnectionError("HTTPConnection(host='localhost', port=9000): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente"))
 2026-01-14 18:54:01 - stt_service.gateway_comunicacao.90e4aa14 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:22:38 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:22:38 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-19 15:22:38 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-19 15:22:38 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-19 15:22:38 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-19 15:22:38 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:22:38 - __main__ - INFO - Validando configurações...
+2026-01-19 15:22:38 - __main__ - INFO - ============================================================
+2026-01-19 15:22:38 - __main__ - INFO - Configurações do Serviço:
+2026-01-19 15:22:38 - __main__ - INFO -   porta: 9100
+2026-01-19 15:22:38 - __main__ - INFO -   versao: 1.0.0
+2026-01-19 15:22:38 - __main__ - INFO -   idioma: pt-br
+2026-01-19 15:22:38 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-19 15:22:38 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:22:38 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-19 15:22:38 - __main__ - INFO - ============================================================
+2026-01-19 15:22:38 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-19 15:22:38 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-19 15:22:39 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-19 15:22:39 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-19 15:22:39 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:22:41 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-19 15:22:41 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-19 15:22:41 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-19 15:23:09 - stt_service.gateway_comunicacao.d31731f5 - INFO - Nova sessão WebSocket estabelecida: d31731f5-e575-4206-b112-efdea32dbc4d
+2026-01-19 15:23:09 - stt_service.motor_stt_vosk.d31731f5 - INFO - Motor STT inicializado para sessão d31731f5 (taxa: 16000Hz)
+2026-01-19 15:23:09 - stt_service.gateway_comunicacao.d31731f5 - INFO - Motor STT inicializado
+2026-01-19 15:23:09 - stt_service.orquestrador_envio.d31731f5 - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-19 15:23:09 - stt_service.gateway_comunicacao.d31731f5 - INFO - Orquestrador de envio inicializado
+2026-01-19 15:23:09 - stt_service.gateway_comunicacao.d31731f5 - INFO - Mensagem de sessão iniciada enviada
+2026-01-19 15:23:17 - stt_service.gateway_comunicacao.d31731f5 - INFO - Transcrição final detectada: 'um dois três'
+2026-01-19 15:23:17 - stt_service.orquestrador_envio.d31731f5 - INFO - Enviando transcrição para glossa: 'um dois três' (confiança: 0.99)
+2026-01-19 15:23:21 - stt_service.orquestrador_envio.d31731f5 - ERROR - ✗ Erro de rede ao contatar serviço de glossa: HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /traduzir (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EE660A8190>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+2026-01-19 15:23:21 - stt_service.gateway_comunicacao.d31731f5 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:23:39 - stt_service.gateway_comunicacao.d31731f5 - INFO - Transcrição final detectada: 'eu quero beber água'
+2026-01-19 15:23:39 - stt_service.orquestrador_envio.d31731f5 - INFO - Enviando transcrição para glossa: 'eu quero beber água' (confiança: 1.00)
+2026-01-19 15:23:43 - stt_service.orquestrador_envio.d31731f5 - ERROR - ✗ Erro de rede ao contatar serviço de glossa: HTTPConnectionPool(host='localhost', port=9000): Max retries exceeded with url: /traduzir (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EE660A99F0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+2026-01-19 15:23:43 - stt_service.gateway_comunicacao.d31731f5 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:24:22 - stt_service.gateway_comunicacao.d31731f5 - INFO - Cliente desconectou WebSocket
+2026-01-19 15:24:22 - stt_service.gateway_comunicacao.d31731f5 - INFO - Finalizando sessão...
+2026-01-19 15:24:22 - stt_service.gateway_comunicacao.d31731f5 - INFO - Estatísticas STT: {'session_id': 'd31731f5-e575-4206-b112-efdea32dbc4d', 'bytes_processados': 1122304, 'transcricoes_parciais': 17, 'transcricoes_finais': 2, 'mb_processados': 1.07}
+2026-01-19 15:24:22 - stt_service.gateway_comunicacao.d31731f5 - INFO - Estatísticas envio: {'session_id': 'd31731f5-e575-4206-b112-efdea32dbc4d', 'total_envios': 2, 'envios_sucesso': 0, 'envios_falha': 2, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-19 15:24:22 - stt_service.gateway_comunicacao.d31731f5 - INFO - Sessão d31731f5 encerrada
+2026-01-19 15:30:42 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:30:42 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-19 15:30:42 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-19 15:30:42 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-19 15:30:42 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-19 15:30:42 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:30:42 - __main__ - INFO - Validando configurações...
+2026-01-19 15:30:42 - __main__ - INFO - ============================================================
+2026-01-19 15:30:42 - __main__ - INFO - Configurações do Serviço:
+2026-01-19 15:30:42 - __main__ - INFO -   porta: 9100
+2026-01-19 15:30:42 - __main__ - INFO -   versao: 1.0.0
+2026-01-19 15:30:42 - __main__ - INFO -   idioma: pt-br
+2026-01-19 15:30:42 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-19 15:30:42 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:30:42 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-19 15:30:42 - __main__ - INFO - ============================================================
+2026-01-19 15:30:42 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-19 15:30:42 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-19 15:30:42 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-19 15:30:42 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-19 15:30:42 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:30:43 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-19 15:30:43 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-19 15:30:43 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-19 15:31:16 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:31:16 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-19 15:31:16 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-19 15:31:16 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-19 15:31:16 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-19 15:31:16 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:31:16 - __main__ - INFO - Validando configurações...
+2026-01-19 15:31:16 - __main__ - INFO - ============================================================
+2026-01-19 15:31:16 - __main__ - INFO - Configurações do Serviço:
+2026-01-19 15:31:16 - __main__ - INFO -   porta: 9100
+2026-01-19 15:31:16 - __main__ - INFO -   versao: 1.0.0
+2026-01-19 15:31:16 - __main__ - INFO -   idioma: pt-br
+2026-01-19 15:31:16 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-19 15:31:16 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:31:16 - __main__ - INFO -   url_glossa: http://localhost:9000/traduzir
+2026-01-19 15:31:16 - __main__ - INFO - ============================================================
+2026-01-19 15:31:16 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-19 15:31:16 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-19 15:31:16 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-19 15:31:16 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-19 15:31:16 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:31:17 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-19 15:31:17 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-19 15:31:17 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-19 15:31:33 - stt_service.gateway_comunicacao.ced7fca5 - INFO - Nova sessão WebSocket estabelecida: ced7fca5-5526-4ee8-a9a1-c7ef9ed50c7d
+2026-01-19 15:31:33 - stt_service.motor_stt_vosk.ced7fca5 - INFO - Motor STT inicializado para sessão ced7fca5 (taxa: 16000Hz)
+2026-01-19 15:31:33 - stt_service.gateway_comunicacao.ced7fca5 - INFO - Motor STT inicializado
+2026-01-19 15:31:33 - stt_service.orquestrador_envio.ced7fca5 - INFO - Orquestrador de envio inicializado (destino: http://localhost:9000/traduzir, timeout: 10s)
+2026-01-19 15:31:33 - stt_service.gateway_comunicacao.ced7fca5 - INFO - Orquestrador de envio inicializado
+2026-01-19 15:31:33 - stt_service.gateway_comunicacao.ced7fca5 - INFO - Mensagem de sessão iniciada enviada
+2026-01-19 15:32:18 - stt_service.gateway_comunicacao.ced7fca5 - INFO - Cliente desconectou WebSocket
+2026-01-19 15:32:18 - stt_service.gateway_comunicacao.ced7fca5 - INFO - Finalizando sessão...
+2026-01-19 15:32:18 - stt_service.gateway_comunicacao.ced7fca5 - INFO - Estatísticas STT: {'session_id': 'ced7fca5-5526-4ee8-a9a1-c7ef9ed50c7d', 'bytes_processados': 0, 'transcricoes_parciais': 0, 'transcricoes_finais': 0, 'mb_processados': 0.0}
+2026-01-19 15:32:18 - stt_service.gateway_comunicacao.ced7fca5 - INFO - Estatísticas envio: {'session_id': 'ced7fca5-5526-4ee8-a9a1-c7ef9ed50c7d', 'total_envios': 0, 'envios_sucesso': 0, 'envios_falha': 0, 'taxa_sucesso_pct': 0.0, 'latencia_media_ms': 0.0, 'url_destino': 'http://localhost:9000/traduzir'}
+2026-01-19 15:32:18 - stt_service.gateway_comunicacao.ced7fca5 - INFO - Sessão ced7fca5 encerrada
+2026-01-19 15:32:43 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:32:43 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-19 15:32:43 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-19 15:32:43 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-19 15:32:43 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-19 15:32:43 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:32:43 - __main__ - INFO - Validando configurações...
+2026-01-19 15:32:43 - __main__ - INFO - ============================================================
+2026-01-19 15:32:43 - __main__ - INFO - Configurações do Serviço:
+2026-01-19 15:32:43 - __main__ - INFO -   porta: 9100
+2026-01-19 15:32:43 - __main__ - INFO -   versao: 1.0.0
+2026-01-19 15:32:43 - __main__ - INFO -   idioma: pt-br
+2026-01-19 15:32:43 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-19 15:32:43 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:32:43 - __main__ - INFO -   url_glossa: http://127.0.0.1:5000/translate
+2026-01-19 15:32:43 - __main__ - INFO - ============================================================
+2026-01-19 15:32:43 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-19 15:32:43 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-19 15:32:43 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-19 15:32:43 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-19 15:32:43 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:32:44 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-19 15:32:44 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-19 15:32:44 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-19 15:33:28 - stt_service.gateway_comunicacao.3a79d486 - INFO - Nova sessão WebSocket estabelecida: 3a79d486-a898-4fe9-adcc-573abb22d77a
+2026-01-19 15:33:28 - stt_service.motor_stt_vosk.3a79d486 - INFO - Motor STT inicializado para sessão 3a79d486 (taxa: 16000Hz)
+2026-01-19 15:33:28 - stt_service.gateway_comunicacao.3a79d486 - INFO - Motor STT inicializado
+2026-01-19 15:33:28 - stt_service.orquestrador_envio.3a79d486 - INFO - Orquestrador de envio inicializado (destino: http://127.0.0.1:5000/translate, timeout: 10s)
+2026-01-19 15:33:28 - stt_service.gateway_comunicacao.3a79d486 - INFO - Orquestrador de envio inicializado
+2026-01-19 15:33:28 - stt_service.gateway_comunicacao.3a79d486 - INFO - Mensagem de sessão iniciada enviada
+2026-01-19 15:33:41 - stt_service.gateway_comunicacao.3a79d486 - INFO - Transcrição final detectada: 'eu quero beber água'
+2026-01-19 15:33:41 - stt_service.orquestrador_envio.3a79d486 - INFO - Enviando transcrição para glossa: 'eu quero beber água' (confiança: 1.00)
+2026-01-19 15:33:41 - stt_service.orquestrador_envio.3a79d486 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 26.2ms)
+2026-01-19 15:33:41 - stt_service.gateway_comunicacao.3a79d486 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:34:29 - stt_service.gateway_comunicacao.3a79d486 - INFO - Cliente desconectou WebSocket
+2026-01-19 15:34:29 - stt_service.gateway_comunicacao.3a79d486 - INFO - Finalizando sessão...
+2026-01-19 15:34:29 - stt_service.gateway_comunicacao.3a79d486 - INFO - Estatísticas STT: {'session_id': '3a79d486-a898-4fe9-adcc-573abb22d77a', 'bytes_processados': 1736704, 'transcricoes_parciais': 9, 'transcricoes_finais': 1, 'mb_processados': 1.66}
+2026-01-19 15:34:29 - stt_service.gateway_comunicacao.3a79d486 - INFO - Estatísticas envio: {'session_id': '3a79d486-a898-4fe9-adcc-573abb22d77a', 'total_envios': 1, 'envios_sucesso': 1, 'envios_falha': 0, 'taxa_sucesso_pct': 100.0, 'latencia_media_ms': 26.2, 'url_destino': 'http://127.0.0.1:5000/translate'}
+2026-01-19 15:34:29 - stt_service.gateway_comunicacao.3a79d486 - INFO - Sessão 3a79d486 encerrada
+2026-01-19 15:34:41 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Nova sessão WebSocket estabelecida: f0f0dff9-5640-4731-b71f-d8e4b1195f84
+2026-01-19 15:34:41 - stt_service.motor_stt_vosk.f0f0dff9 - INFO - Motor STT inicializado para sessão f0f0dff9 (taxa: 16000Hz)
+2026-01-19 15:34:41 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Motor STT inicializado
+2026-01-19 15:34:41 - stt_service.orquestrador_envio.f0f0dff9 - INFO - Orquestrador de envio inicializado (destino: http://127.0.0.1:5000/translate, timeout: 10s)
+2026-01-19 15:34:41 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Orquestrador de envio inicializado
+2026-01-19 15:34:41 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Mensagem de sessão iniciada enviada
+2026-01-19 15:34:49 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Transcrição final detectada: 'eu quero beber água'
+2026-01-19 15:34:49 - stt_service.orquestrador_envio.f0f0dff9 - INFO - Enviando transcrição para glossa: 'eu quero beber água' (confiança: 1.00)
+2026-01-19 15:34:49 - stt_service.orquestrador_envio.f0f0dff9 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 26.4ms)
+2026-01-19 15:34:49 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:35:17 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Cliente desconectou WebSocket
+2026-01-19 15:35:17 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Finalizando sessão...
+2026-01-19 15:35:17 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Estatísticas STT: {'session_id': 'f0f0dff9-5640-4731-b71f-d8e4b1195f84', 'bytes_processados': 1064960, 'transcricoes_parciais': 11, 'transcricoes_finais': 1, 'mb_processados': 1.02}
+2026-01-19 15:35:17 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Estatísticas envio: {'session_id': 'f0f0dff9-5640-4731-b71f-d8e4b1195f84', 'total_envios': 1, 'envios_sucesso': 1, 'envios_falha': 0, 'taxa_sucesso_pct': 100.0, 'latencia_media_ms': 26.4, 'url_destino': 'http://127.0.0.1:5000/translate'}
+2026-01-19 15:35:17 - stt_service.gateway_comunicacao.f0f0dff9 - INFO - Sessão f0f0dff9 encerrada
+2026-01-19 15:36:17 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:36:17 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-19 15:36:17 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-19 15:36:17 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-19 15:36:17 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-19 15:36:17 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:36:17 - __main__ - INFO - Validando configurações...
+2026-01-19 15:36:17 - __main__ - INFO - ============================================================
+2026-01-19 15:36:17 - __main__ - INFO - Configurações do Serviço:
+2026-01-19 15:36:17 - __main__ - INFO -   porta: 9100
+2026-01-19 15:36:17 - __main__ - INFO -   versao: 1.0.0
+2026-01-19 15:36:17 - __main__ - INFO -   idioma: pt-br
+2026-01-19 15:36:17 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-19 15:36:17 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:36:17 - __main__ - INFO -   url_glossa: http://127.0.0.1:5000/translate
+2026-01-19 15:36:17 - __main__ - INFO - ============================================================
+2026-01-19 15:36:17 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-19 15:36:17 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-19 15:36:18 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-19 15:36:18 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-19 15:36:18 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:36:18 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-19 15:36:18 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-19 15:36:18 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-19 15:36:48 - stt_service.gateway_comunicacao.ec08482e - INFO - Nova sessão WebSocket estabelecida: ec08482e-8602-4634-9a65-629d2e6989e1
+2026-01-19 15:36:48 - stt_service.motor_stt_vosk.ec08482e - INFO - Motor STT inicializado para sessão ec08482e (taxa: 16000Hz)
+2026-01-19 15:36:48 - stt_service.gateway_comunicacao.ec08482e - INFO - Motor STT inicializado
+2026-01-19 15:36:48 - stt_service.orquestrador_envio.ec08482e - INFO - Orquestrador de envio inicializado (destino: http://127.0.0.1:5000/translate, timeout: 10s)
+2026-01-19 15:36:48 - stt_service.gateway_comunicacao.ec08482e - INFO - Orquestrador de envio inicializado
+2026-01-19 15:36:48 - stt_service.gateway_comunicacao.ec08482e - INFO - Mensagem de sessão iniciada enviada
+2026-01-19 15:36:55 - stt_service.gateway_comunicacao.ec08482e - INFO - Transcrição final detectada: 'eu quero beber água'
+2026-01-19 15:36:55 - stt_service.orquestrador_envio.ec08482e - INFO - Enviando transcrição para glossa: 'eu quero beber água' (confiança: 1.00)
+2026-01-19 15:36:55 - stt_service.orquestrador_envio.ec08482e - INFO - ✓ Envio bem-sucedido (status: 200, latência: 27.5ms)
+2026-01-19 15:36:55 - stt_service.gateway_comunicacao.ec08482e - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:37:20 - stt_service.gateway_comunicacao.ec08482e - INFO - Cliente desconectou WebSocket
+2026-01-19 15:37:20 - stt_service.gateway_comunicacao.ec08482e - INFO - Finalizando sessão...
+2026-01-19 15:37:20 - stt_service.gateway_comunicacao.ec08482e - INFO - Estatísticas STT: {'session_id': 'ec08482e-8602-4634-9a65-629d2e6989e1', 'bytes_processados': 958464, 'transcricoes_parciais': 9, 'transcricoes_finais': 1, 'mb_processados': 0.91}
+2026-01-19 15:37:20 - stt_service.gateway_comunicacao.ec08482e - INFO - Estatísticas envio: {'session_id': 'ec08482e-8602-4634-9a65-629d2e6989e1', 'total_envios': 1, 'envios_sucesso': 1, 'envios_falha': 0, 'taxa_sucesso_pct': 100.0, 'latencia_media_ms': 27.5, 'url_destino': 'http://127.0.0.1:5000/translate'}
+2026-01-19 15:37:20 - stt_service.gateway_comunicacao.ec08482e - INFO - Sessão ec08482e encerrada
+2026-01-19 15:37:35 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:37:35 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-19 15:37:35 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-19 15:37:35 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-19 15:37:35 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-19 15:37:35 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:37:35 - __main__ - INFO - Validando configurações...
+2026-01-19 15:37:35 - __main__ - INFO - ============================================================
+2026-01-19 15:37:35 - __main__ - INFO - Configurações do Serviço:
+2026-01-19 15:37:35 - __main__ - INFO -   porta: 9100
+2026-01-19 15:37:35 - __main__ - INFO -   versao: 1.0.0
+2026-01-19 15:37:35 - __main__ - INFO -   idioma: pt-br
+2026-01-19 15:37:35 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-19 15:37:35 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:37:35 - __main__ - INFO -   url_glossa: http://127.0.0.1:5000/translate
+2026-01-19 15:37:35 - __main__ - INFO - ============================================================
+2026-01-19 15:37:35 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-19 15:37:35 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-19 15:37:35 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-19 15:37:35 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-19 15:37:35 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:37:36 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-19 15:37:36 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-19 15:37:36 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-19 15:40:25 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:40:25 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-19 15:40:25 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-19 15:40:25 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-19 15:40:25 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-19 15:40:25 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:40:25 - __main__ - INFO - Validando configurações...
+2026-01-19 15:40:25 - __main__ - INFO - ============================================================
+2026-01-19 15:40:25 - __main__ - INFO - Configurações do Serviço:
+2026-01-19 15:40:25 - __main__ - INFO -   porta: 9100
+2026-01-19 15:40:25 - __main__ - INFO -   versao: 1.0.0
+2026-01-19 15:40:25 - __main__ - INFO -   idioma: pt-br
+2026-01-19 15:40:25 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-19 15:40:25 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:40:25 - __main__ - INFO -   url_glossa: http://127.0.0.1:5000/translate
+2026-01-19 15:40:25 - __main__ - INFO - ============================================================
+2026-01-19 15:40:25 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-19 15:40:25 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-19 15:40:25 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-19 15:40:25 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-19 15:40:25 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:40:26 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-19 15:40:26 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-19 15:40:26 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-19 15:40:33 - stt_service.gateway_comunicacao.27ce381c - INFO - Nova sessão WebSocket estabelecida: 27ce381c-9b8f-4c48-baa5-878f570d37d6
+2026-01-19 15:40:33 - stt_service.motor_stt_vosk.27ce381c - INFO - Motor STT inicializado para sessão 27ce381c (taxa: 16000Hz)
+2026-01-19 15:40:33 - stt_service.gateway_comunicacao.27ce381c - INFO - Motor STT inicializado
+2026-01-19 15:40:33 - stt_service.orquestrador_envio.27ce381c - INFO - Orquestrador de envio inicializado (destino: http://127.0.0.1:5000/translate, timeout: 10s)
+2026-01-19 15:40:33 - stt_service.gateway_comunicacao.27ce381c - INFO - Orquestrador de envio inicializado
+2026-01-19 15:40:33 - stt_service.gateway_comunicacao.27ce381c - INFO - Mensagem de sessão iniciada enviada
+2026-01-19 15:40:39 - stt_service.gateway_comunicacao.27ce381c - INFO - Transcrição final detectada: 'eu quero beber água'
+2026-01-19 15:40:39 - stt_service.orquestrador_envio.27ce381c - INFO - Enviando transcrição para glossa: 'eu quero beber água' (confiança: 0.99)
+2026-01-19 15:40:39 - stt_service.orquestrador_envio.27ce381c - INFO - ✓ Envio bem-sucedido (status: 200, latência: 25.0ms)
+2026-01-19 15:40:39 - stt_service.gateway_comunicacao.27ce381c - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:40:39 - stt_service.gateway_comunicacao.27ce381c - INFO - Dispatch response_body: {'confidence': 0.75, 'input': 'eu quero beber água', 'method': 'word_mapping', 'output': 'EU QUERER BEBER ÁGUA', 'success': True}
+2026-01-19 15:40:39 - stt_service.gateway_comunicacao.27ce381c - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:40:57 - stt_service.gateway_comunicacao.27ce381c - INFO - Transcrição final detectada: 'meu nome é sarah'
+2026-01-19 15:40:57 - stt_service.orquestrador_envio.27ce381c - INFO - Enviando transcrição para glossa: 'meu nome é sarah' (confiança: 1.00)
+2026-01-19 15:40:57 - stt_service.orquestrador_envio.27ce381c - INFO - ✓ Envio bem-sucedido (status: 200, latência: 24.2ms)
+2026-01-19 15:40:57 - stt_service.gateway_comunicacao.27ce381c - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:40:57 - stt_service.gateway_comunicacao.27ce381c - INFO - Dispatch response_body: {'confidence': 0.5, 'input': 'meu nome é sarah', 'method': 'word_mapping', 'output': 'MEU NOME SER SARAH', 'success': True}
+2026-01-19 15:40:57 - stt_service.gateway_comunicacao.27ce381c - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:41:07 - stt_service.gateway_comunicacao.27ce381c - INFO - Transcrição final detectada: 'essa minha primeira tradução com transcrição'
+2026-01-19 15:41:07 - stt_service.orquestrador_envio.27ce381c - INFO - Enviando transcrição para glossa: 'essa minha primeira tradução com transcrição' (confiança: 0.99)
+2026-01-19 15:41:07 - stt_service.orquestrador_envio.27ce381c - INFO - ✓ Envio bem-sucedido (status: 200, latência: 3.4ms)
+2026-01-19 15:41:07 - stt_service.gateway_comunicacao.27ce381c - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:41:07 - stt_service.gateway_comunicacao.27ce381c - INFO - Dispatch response_body: {'confidence': 0.17, 'input': 'essa minha primeira tradução com transcrição', 'method': 'word_mapping', 'output': 'ESSA MINHA PRIMEIRA TRADUÇÃO COM TRANSCRIÇÃO', 'success': True}
+2026-01-19 15:41:07 - stt_service.gateway_comunicacao.27ce381c - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:44:59 - stt_service.gateway_comunicacao.27ce381c - INFO - Transcrição final detectada: 'aula de hoje é sobre desenvolvimento de software'
+2026-01-19 15:44:59 - stt_service.orquestrador_envio.27ce381c - INFO - Enviando transcrição para glossa: 'aula de hoje é sobre desenvolvimento de software' (confiança: 1.00)
+2026-01-19 15:44:59 - stt_service.orquestrador_envio.27ce381c - INFO - ✓ Envio bem-sucedido (status: 200, latência: 19.3ms)
+2026-01-19 15:44:59 - stt_service.gateway_comunicacao.27ce381c - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:44:59 - stt_service.gateway_comunicacao.27ce381c - INFO - Dispatch response_body: {'confidence': 0.5, 'input': 'aula de hoje é sobre desenvolvimento de software', 'method': 'word_mapping', 'output': 'AULA DE HOJE SER SOBRE DESENVOLVIMENTO DE SOFTWARE', 'success': True}
+2026-01-19 15:44:59 - stt_service.gateway_comunicacao.27ce381c - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:47:37 - stt_service.gateway_comunicacao.27ce381c - INFO - Cliente desconectou WebSocket
+2026-01-19 15:47:37 - stt_service.gateway_comunicacao.27ce381c - INFO - Finalizando sessão...
+2026-01-19 15:47:37 - stt_service.gateway_comunicacao.27ce381c - INFO - Estatísticas STT: {'session_id': '27ce381c-9b8f-4c48-baa5-878f570d37d6', 'bytes_processados': 13467648, 'transcricoes_parciais': 52, 'transcricoes_finais': 4, 'mb_processados': 12.84}
+2026-01-19 15:47:37 - stt_service.gateway_comunicacao.27ce381c - INFO - Estatísticas envio: {'session_id': '27ce381c-9b8f-4c48-baa5-878f570d37d6', 'total_envios': 4, 'envios_sucesso': 4, 'envios_falha': 0, 'taxa_sucesso_pct': 100.0, 'latencia_media_ms': 18.0, 'url_destino': 'http://127.0.0.1:5000/translate'}
+2026-01-19 15:47:37 - stt_service.gateway_comunicacao.27ce381c - INFO - Sessão 27ce381c encerrada
+2026-01-19 15:54:35 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:54:35 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-19 15:54:35 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-19 15:54:35 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-19 15:54:35 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-19 15:54:35 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 15:54:35 - __main__ - INFO - Validando configurações...
+2026-01-19 15:54:35 - __main__ - INFO - ============================================================
+2026-01-19 15:54:35 - __main__ - INFO - Configurações do Serviço:
+2026-01-19 15:54:35 - __main__ - INFO -   porta: 9100
+2026-01-19 15:54:35 - __main__ - INFO -   versao: 1.0.0
+2026-01-19 15:54:35 - __main__ - INFO -   idioma: pt-br
+2026-01-19 15:54:35 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-19 15:54:35 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:54:35 - __main__ - INFO -   url_glossa: http://127.0.0.1:5000/translate
+2026-01-19 15:54:35 - __main__ - INFO - ============================================================
+2026-01-19 15:54:35 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-19 15:54:35 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-19 15:54:35 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-19 15:54:35 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-19 15:54:35 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 15:54:36 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-19 15:54:36 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-19 15:54:36 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
+2026-01-19 15:54:39 - stt_service.gateway_comunicacao.238acf69 - INFO - Nova sessão WebSocket estabelecida: 238acf69-78ed-4bb0-9c19-189cb1677eac
+2026-01-19 15:54:39 - stt_service.motor_stt_vosk.238acf69 - INFO - Motor STT inicializado para sessão 238acf69 (taxa: 16000Hz)
+2026-01-19 15:54:39 - stt_service.gateway_comunicacao.238acf69 - INFO - Motor STT inicializado
+2026-01-19 15:54:39 - stt_service.orquestrador_envio.238acf69 - INFO - Orquestrador de envio inicializado (destino: http://127.0.0.1:5000/translate, timeout: 10s)
+2026-01-19 15:54:39 - stt_service.gateway_comunicacao.238acf69 - INFO - Orquestrador de envio inicializado
+2026-01-19 15:54:39 - stt_service.gateway_comunicacao.238acf69 - INFO - Mensagem de sessão iniciada enviada
+2026-01-19 15:54:55 - stt_service.gateway_comunicacao.238acf69 - INFO - Transcrição final detectada: 'eu estou com fome'
+2026-01-19 15:54:55 - stt_service.orquestrador_envio.238acf69 - INFO - Enviando transcrição para glossa: 'eu estou com fome' (confiança: 1.00)
+2026-01-19 15:54:55 - stt_service.orquestrador_envio.238acf69 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 16.5ms)
+2026-01-19 15:54:55 - stt_service.gateway_comunicacao.238acf69 - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:54:55 - stt_service.gateway_comunicacao.238acf69 - INFO - Dispatch response_body: {'confidence': 0.75, 'input': 'eu estou com fome', 'method': 'word_mapping', 'output': 'EU ESTAR COM FOME', 'success': True}
+2026-01-19 15:54:55 - stt_service.gateway_comunicacao.238acf69 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:54:58 - stt_service.gateway_comunicacao.238acf69 - INFO - Cliente desconectou WebSocket
+2026-01-19 15:54:58 - stt_service.gateway_comunicacao.238acf69 - INFO - Finalizando sessão...
+2026-01-19 15:54:58 - stt_service.gateway_comunicacao.238acf69 - INFO - Estatísticas STT: {'session_id': '238acf69-78ed-4bb0-9c19-189cb1677eac', 'bytes_processados': 409600, 'transcricoes_parciais': 9, 'transcricoes_finais': 1, 'mb_processados': 0.39}
+2026-01-19 15:54:58 - stt_service.gateway_comunicacao.238acf69 - INFO - Estatísticas envio: {'session_id': '238acf69-78ed-4bb0-9c19-189cb1677eac', 'total_envios': 1, 'envios_sucesso': 1, 'envios_falha': 0, 'taxa_sucesso_pct': 100.0, 'latencia_media_ms': 16.5, 'url_destino': 'http://127.0.0.1:5000/translate'}
+2026-01-19 15:54:58 - stt_service.gateway_comunicacao.238acf69 - INFO - Sessão 238acf69 encerrada
+2026-01-19 15:55:35 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Nova sessão WebSocket estabelecida: 8f7ae275-110c-42bf-b1dc-2dd6987ef078
+2026-01-19 15:55:35 - stt_service.motor_stt_vosk.8f7ae275 - INFO - Motor STT inicializado para sessão 8f7ae275 (taxa: 16000Hz)
+2026-01-19 15:55:35 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Motor STT inicializado
+2026-01-19 15:55:35 - stt_service.orquestrador_envio.8f7ae275 - INFO - Orquestrador de envio inicializado (destino: http://127.0.0.1:5000/translate, timeout: 10s)
+2026-01-19 15:55:35 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Orquestrador de envio inicializado
+2026-01-19 15:55:35 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Mensagem de sessão iniciada enviada
+2026-01-19 15:55:41 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Transcrição final detectada: 'eu quero com mim'
+2026-01-19 15:55:41 - stt_service.orquestrador_envio.8f7ae275 - INFO - Enviando transcrição para glossa: 'eu quero com mim' (confiança: 0.97)
+2026-01-19 15:55:41 - stt_service.orquestrador_envio.8f7ae275 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 4.3ms)
+2026-01-19 15:55:41 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:55:41 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body: {'confidence': 0.75, 'input': 'eu quero com mim', 'method': 'word_mapping', 'output': 'EU QUERER COM MIM', 'success': True}
+2026-01-19 15:55:41 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:55:48 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Transcrição final detectada: 'capitão mim'
+2026-01-19 15:55:48 - stt_service.orquestrador_envio.8f7ae275 - INFO - Enviando transcrição para glossa: 'capitão mim' (confiança: 0.43)
+2026-01-19 15:55:48 - stt_service.orquestrador_envio.8f7ae275 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 25.0ms)
+2026-01-19 15:55:48 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:55:48 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body: {'confidence': 0.0, 'input': 'capitão mim', 'method': 'word_mapping', 'output': 'CAPITÃO MIM', 'success': True}
+2026-01-19 15:55:48 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:55:53 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Transcrição final detectada: 'com a'
+2026-01-19 15:55:53 - stt_service.orquestrador_envio.8f7ae275 - INFO - Enviando transcrição para glossa: 'com a' (confiança: 0.55)
+2026-01-19 15:55:53 - stt_service.orquestrador_envio.8f7ae275 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 5.2ms)
+2026-01-19 15:55:53 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:55:53 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body: {'confidence': 0.5, 'input': 'com a', 'method': 'word_mapping', 'output': 'COM A', 'success': True}
+2026-01-19 15:55:53 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:55:54 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Transcrição final detectada: 'está funcionando'
+2026-01-19 15:55:54 - stt_service.orquestrador_envio.8f7ae275 - INFO - Enviando transcrição para glossa: 'está funcionando' (confiança: 0.99)
+2026-01-19 15:55:54 - stt_service.orquestrador_envio.8f7ae275 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 27.7ms)
+2026-01-19 15:55:54 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:55:54 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body: {'confidence': 0.5, 'input': 'está funcionando', 'method': 'word_mapping', 'output': 'ESTAR FUNCIONANDO', 'success': True}
+2026-01-19 15:55:54 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:55:59 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Transcrição final detectada: 'confiança'
+2026-01-19 15:55:59 - stt_service.orquestrador_envio.8f7ae275 - INFO - Enviando transcrição para glossa: 'confiança' (confiança: 0.78)
+2026-01-19 15:55:59 - stt_service.orquestrador_envio.8f7ae275 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 26.4ms)
+2026-01-19 15:55:59 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:55:59 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body: {'confidence': 0.0, 'input': 'confiança', 'method': 'word_mapping', 'output': 'CONFIANÇA', 'success': True}
+2026-01-19 15:55:59 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:56:05 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Transcrição final detectada: 'de água'
+2026-01-19 15:56:05 - stt_service.orquestrador_envio.8f7ae275 - INFO - Enviando transcrição para glossa: 'de água' (confiança: 0.62)
+2026-01-19 15:56:05 - stt_service.orquestrador_envio.8f7ae275 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 15.5ms)
+2026-01-19 15:56:05 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-01-19 15:56:05 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Dispatch response_body: {'confidence': 1.0, 'input': 'de água', 'method': 'word_mapping', 'output': 'DE ÁGUA', 'success': True}
+2026-01-19 15:56:05 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Mensagem de transcrição final enviada
+2026-01-19 15:56:11 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Cliente desconectou WebSocket
+2026-01-19 15:56:11 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Finalizando sessão...
+2026-01-19 15:56:11 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Estatísticas STT: {'session_id': '8f7ae275-110c-42bf-b1dc-2dd6987ef078', 'bytes_processados': 1089536, 'transcricoes_parciais': 22, 'transcricoes_finais': 6, 'mb_processados': 1.04}
+2026-01-19 15:56:11 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Estatísticas envio: {'session_id': '8f7ae275-110c-42bf-b1dc-2dd6987ef078', 'total_envios': 6, 'envios_sucesso': 6, 'envios_falha': 0, 'taxa_sucesso_pct': 100.0, 'latencia_media_ms': 17.4, 'url_destino': 'http://127.0.0.1:5000/translate'}
+2026-01-19 15:56:11 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Sessão 8f7ae275 encerrada

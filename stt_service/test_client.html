@@ -252,6 +252,13 @@
             </div>
         </div>
         
+        <div class="transcription-box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+            <span class="transcription-label" style="color: white; font-weight: bold;">🤟 Tradução LIBRAS (Glossa):</span>
+            <div class="transcription-text final" id="libras-text" style="color: white; font-size: 20px; font-weight: bold; letter-spacing: 2px;">
+                Aguardando tradução...
+            </div>
+        </div>
+        
         <div class="log" id="log">
             <div class="log-entry info">
                 <span class="timestamp">[00:00:00]</span>
@@ -279,6 +286,7 @@
         const btnStop = document.getElementById('btn-stop');
         const partialText = document.getElementById('partial-text');
         const finalText = document.getElementById('final-text');
+        const librasText = document.getElementById('libras-text');
         const confidenceDiv = document.getElementById('confidence');
         const confidenceValue = document.getElementById('confidence-value');
         const logDiv = document.getElementById('log');
@@ -450,13 +458,41 @@
                 
                 if (data.dispatch) {
                     const d = data.dispatch;
+                    
                     if (d.request_sent && d.response_status === 200) {
                         log(`📤 Enviado para glossa (${d.duration_ms.toFixed(1)}ms)`, 'success');
-                        if (d.response_body && d.response_body.translation) {
-                            log(`   Glossa: "${d.response_body.translation}"`, 'info');
+                        
+                        if (d.response_body) {
+                            let traducao = null;
+                            
+                            // Tentar acessar o campo output (resposta padrão da API)
+                            if (d.response_body.output) {
+                                traducao = d.response_body.output;
+                            } 
+                            // Se não houver, tentar converter toString
+                            else if (typeof d.response_body === 'object') {
+                                // Se for um objeto, procurar pelos campos
+                                traducao = d.response_body.translation || 
+                                          d.response_body.glossa || 
+                                          d.response_body.result;
+                                
+                                // Se ainda não encontrou, usar JSON.stringify
+                                if (!traducao) {
+                                    console.warn('Response body:', d.response_body);
+                                    traducao = JSON.stringify(d.response_body, null, 2);
+                                }
+                            }
+                            
+                            if (traducao) {
+                                librasText.textContent = traducao;
+                                log(`🤟 LIBRAS: "${traducao}"`, 'success');
+                            } else {
+                                librasText.textContent = 'Sem tradução';
+                            }
                         }
                     } else if (d.error) {
                         log(`✗ Erro no dispatch: ${d.error}`, 'error');
+                        librasText.textContent = 'Erro ao traduzir';
                     }
                 }
                 

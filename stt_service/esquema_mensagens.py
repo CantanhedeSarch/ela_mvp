@@ -207,6 +207,15 @@ class ResultadoDespachoGlossa(BaseModel):
                 "error": None
             }
         }
+    
+    def dict(self, **kwargs):
+        """Sobrescreve dict para garantir response_body seja sempre um dicionário limpo"""
+        d = super().dict(**kwargs)
+        # Garantir que response_body é um dict Python puro
+        if d.get('response_body') is not None:
+            if isinstance(d['response_body'], dict):
+                d['response_body'] = dict(d['response_body'])
+        return d
 
 
 # ==========================================
