@@ -3,6 +3,9 @@
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.1.2-orange.svg)](https://flask.palletsprojects.com/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115.5-green.svg)](https://fastapi.tiangolo.com/)
+[![Vosk](https://img.shields.io/badge/Vosk-0.3.45-red.svg)](https://alphacephei.com/vosk/)
+[![Gensim](https://img.shields.io/badge/Gensim-4.3.3-yellow.svg)](https://radimrehurek.com/gensim/)
+[![ML](https://img.shields.io/badge/Machine_Learning-Word2Vec-purple.svg)](https://en.wikipedia.org/wiki/Word2vec)
 
 ## Sobre o Projeto
 
