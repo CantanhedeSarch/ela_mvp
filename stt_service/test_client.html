@@ -217,7 +217,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>serase vai dar certo</h1>
+        <h1>ELA MVP - Cliente de Teste STT</h1>
         <p class="subtitle">Microsserviço de Transcrição em Tempo Real</p>
         
         <div class="status disconnected" id="status">
@@ -231,8 +231,8 @@
         </div>
         
         <div class="controls">
-            <button class="btn-record" id="btn-record" onclick="iniciarGravacao()" disabled>🔴 Gravar</button>
-            <button class="btn-stop" id="btn-stop" onclick="pararGravacao()" disabled>⏹️ Parar</button>
+            <button class="btn-record" id="btn-record" onclick="iniciarGravacao()" disabled>Gravar</button>
+            <button class="btn-stop" id="btn-stop" onclick="pararGravacao()" disabled>Parar</button>
         </div>
         
         <div class="transcription-box">
@@ -253,7 +253,7 @@
         </div>
         
         <div class="transcription-box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-            <span class="transcription-label" style="color: white; font-weight: bold;">🤟 Tradução LIBRAS (Glossa):</span>
+            <span class="transcription-label" style="color: white; font-weight: bold;">Tradução LIBRAS (Glossa):</span>
             <div class="transcription-text final" id="libras-text" style="color: white; font-size: 20px; font-weight: bold; letter-spacing: 2px;">
                 Aguardando tradução...
             </div>
@@ -309,7 +309,7 @@
                 websocket = new WebSocket(WS_URL);
                 
                 websocket.onopen = () => {
-                    log('✓ Conexão WebSocket estabelecida', 'success');
+                    log('Conexão WebSocket estabelecida', 'success');
                     updateStatus('connected', 'Conectado');
                     btnConnect.disabled = true;
                     btnDisconnect.disabled = false;
@@ -322,7 +322,7 @@
                 };
                 
                 websocket.onerror = (error) => {
-                    log('✗ Erro na conexão WebSocket', 'error');
+                    log('Erro na conexão WebSocket', 'error');
                     console.error(error);
                 };
                 
@@ -366,18 +366,7 @@
                     }
                 });
                 
-                log('✓ Acesso ao microfone concedido', 'success');
-                
-                // Criar AudioContext para conversão PCM
-                audioContext = new (window.AudioContext || window.webkitAudioContext)({
-                    sampleRate: 16000
-                });
-                
-                const source = audioContext.createMediaStreamSource(stream);
-                const processor = audioContext.createScriptProcessor(4096, 1, 1);
-                
-                processor.onaudioprocess = (e) => {
-                    if (websocket && websocket.readyState === WebSocket.OPEN) {
+                log('Acesso ao microfone concedido', 'success');
                         const inputData = e.inputBuffer.getChannelData(0);
                         const pcmData = float32ToPCM16(inputData);
                         websocket.send(pcmData);
@@ -393,7 +382,7 @@
                 btnRecord.disabled = true;
                 btnStop.disabled = false;
                 
-                log('🔴 Gravação iniciada', 'success');
+                log('Gravação iniciada', 'success');
                 partialText.textContent = 'Ouvindo...';
                 
             } catch (error) {
@@ -419,7 +408,7 @@
                 btnRecord.disabled = false;
                 btnStop.disabled = true;
                 
-                log('⏹️ Gravação parada', 'info');
+                log('Gravação parada', 'info');
             }
         }
         
@@ -439,7 +428,7 @@
             
             if (type === 'session_started') {
                 sessionId = data.session_id;
-                log(`📨 Sessão iniciada: ${sessionId.substring(0, 8)}...`, 'success');
+                log(`Sessão iniciada: ${sessionId.substring(0, 8)}...`, 'success');
                 log(`   Language: ${data.language}, Sample Rate: ${data.sample_rate}Hz`, 'info');
             }
             else if (type === 'partial') {
@@ -454,13 +443,13 @@
                     confidenceDiv.style.display = 'inline-block';
                 }
                 
-                log(`✅ Transcrição final: "${data.text}"`, 'success');
+                log(`Transcrição final: "${data.text}"`, 'success');
                 
                 if (data.dispatch) {
                     const d = data.dispatch;
                     
                     if (d.request_sent && d.response_status === 200) {
-                        log(`📤 Enviado para glossa (${d.duration_ms.toFixed(1)}ms)`, 'success');
+                        log(`Enviado para glossa (${d.duration_ms.toFixed(1)}ms)`, 'success');
                         
                         if (d.response_body) {
                             let traducao = null;
@@ -485,13 +474,13 @@
                             
                             if (traducao) {
                                 librasText.textContent = traducao;
-                                log(`🤟 LIBRAS: "${traducao}"`, 'success');
+                                log(`LIBRAS: "${traducao}"`, 'success');
                             } else {
                                 librasText.textContent = 'Sem tradução';
                             }
                         }
                     } else if (d.error) {
-                        log(`✗ Erro no dispatch: ${d.error}`, 'error');
+                        log(`Erro no dispatch: ${d.error}`, 'error');
                         librasText.textContent = 'Erro ao traduzir';
                     }
                 }
@@ -499,7 +488,7 @@
                 partialText.textContent = 'Ouvindo...';
             }
             else if (type === 'error') {
-                log(`✗ Erro: ${data.error_message} (${data.error_code})`, 'error');
+                log(`Erro: ${data.error_message} (${data.error_code})`, 'error');
             }
         }
         

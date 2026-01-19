@@ -1,65 +1,58 @@
-# 🤟 ELA MVP - Tradutor PT-BR → LIBRAS em Tempo Real
+# ELA MVP - Tradutor PT-BR para LIBRAS em Tempo Real
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.1.2-orange.svg)](https://flask.palletsprojects.com/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115.5-green.svg)](https://fastapi.tiangolo.com/)
-[![Vosk](https://img.shields.io/badge/Vosk-0.3.45-red.svg)](https://alphacephei.com/vosk/)
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
-**ELA MVP** é um sistema de tradução automática de fala em **português brasileiro** para **glossa em LIBRAS** (representação textual de Língua Brasileira de Sinais), desenvolvido com foco em acessibilidade.
+Sistema de tradução automática de português brasileiro para glossa LIBRAS (representação textual da Língua Brasileira de Sinais), focado em fornecer acessibilidade através da tecnologia de reconhecimento de voz.
 
-### 🎯 Funcionalidades Principais
+### Funcionalidades
 
-✅ **Transcrição em Tempo Real**: Captura áudio via microfone e transcreve em português usando Vosk  
-✅ **Tradução Automática**: Converte português para LIBRAS usando dicionário e mapeamento de palavras  
-✅ **Interface Web Interativa**: Cliente HTML/JavaScript para gravação e visualização em tempo real  
-✅ **Arquitetura Desacoplada**: Separação clara entre STT, tradução e comunicação  
-✅ **WebSocket para Comunicação**: Envio de dados em tempo real com baixa latência  
+- Transcrição em tempo real via microfone usando Vosk
+- Tradução automática de português para LIBRAS
+- Interface web para gravação e visualização
+- Comunicação via WebSocket para baixa latência
+- Arquitetura modular separando STT e tradução
 
-### 🏗️ Arquitetura do Sistema
+### Arquitetura
 
 ```
-┌─────────────────────┐
-│  Cliente Web        │
-│  (test_client.html) │
-└──────────┬──────────┘
-           │ WebSocket
-           ▼
-    ┌─────────────────────────────┐
-    │  Serviço STT (porta 9100)   │
-    │  - Motor Vosk               │
-    │  - Processamento de áudio   │
-    └──────────┬──────────────────┘
-               │ HTTP POST
-               ▼
-    ┌──────────────────────────────┐
-    │  API de Tradução (porta 5000)│
-    │  - Transdutor PT-BR→LIBRAS   │
-    │  - Mapeamento de palavras    │
-    └──────────────────────────────┘
+Cliente Web (HTML/JS)
+    |
+    | WebSocket
+    v
+Serviço STT (porta 9100)
+- Motor Vosk
+- Processamento de áudio
+    |
+    | HTTP POST
+    v
+API de Tradução (porta 5000)
+- Transdutor PT-BR para LIBRAS
+- Mapeamento de palavras
 ```
 
 ---
 
-## 🚀 Começando
+## Instalação
 
-### 📋 Pré-requisitos
+### Requisitos
 
-- **Python 3.10+**
-- **Microfone** funcionando no seu sistema
-- **Navegador moderno** (Chrome, Firefox, Edge)
-- **Acesso à internet** (para download de dependências)
+- Python 3.10 ou superior
+- Microfone funcionando
+- Navegador moderno (Chrome, Firefox ou Edge)
 
-### 1️⃣ Instalação
+### Configuração
 
-#### Clone o repositório
+Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/ela-mvp.git
 cd ela_mvp
 ```
 
-#### Crie um ambiente virtual
+Crie e ative o ambiente virtual:
 ```bash
 # Windows
 python -m venv ela_env
@@ -70,166 +63,122 @@ python3 -m venv ela_env
 source ela_env/bin/activate
 ```
 
-#### Instale as dependências
+Instale as dependências:
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## ▶️ Executando a Aplicação
+## Executando
 
-### Iniciar ambos os serviços
+Você precisa rodar dois serviços em terminais separados.
 
-Abra **dois terminais**:
-
-#### Terminal 1: API de Tradução (porta 5000)
+**Terminal 1 - API de Tradução:**
 ```bash
 python api_simples.py
 ```
 
-Esperado:
+Saída esperada:
 ```
-🌟 ELA MVP v4.0 - API Simples
-========================================
-🔗 URL: http://127.0.0.1:5000
-📋 Teste: POST /translate
-📝 Body: {"text": "quero agua"}
-
-🚀 Iniciando...
- * Running on http://127.0.0.1:5000
+API Simples - Sistema de Tradução PT-BR → LIBRAS
+URL: http://127.0.0.1:5000
+Iniciando...
+Running on http://127.0.0.1:5000
 ```
 
-#### Terminal 2: Serviço STT (porta 9100)
+**Terminal 2 - Serviço STT:**
 ```bash
 cd stt_service
 python run_stt_service.py
 ```
 
-Esperado:
+Saída esperada:
 ```
-✓ Modelo Vosk pré-carregado
-✓ Serviço STT pronto para aceitar conexões
-Uvicorn running on http://0.0.0.0:9100 (Press CTRL+C to quit)
+Modelo Vosk carregado com sucesso
+Serviço STT pronto para aceitar conexões
+Uvicorn running on http://0.0.0.0:9100
 ```
 
-### 3️⃣ Abrir o Cliente Web
+**Acesse o cliente:**
 
-1. Abra o arquivo `stt_service/test_client.html` em seu navegador
-2. Ou acesse: `file:///D:/ela_teste/ela_mvp/stt_service/test_client.html`
+Abra o arquivo `stt_service/test_client.html` no navegador.
 
 ---
 
-## 📱 Como Usar o Cliente
+## Como Usar
 
-### Interface de Uso
+1. Clique em "Conectar" para estabelecer conexão com o serviço STT
+2. Clique em "Gravar" para iniciar a captura de áudio
+3. Fale em português (ex: "eu quero beber água")
+4. Clique em "Parar" para finalizar
+5. A transcrição e tradução aparecem automaticamente na tela
 
-```
-┌────────────────────────────────────┐
-│  ELA MVP - Tradutor PT-BR → LIBRAS │
-├────────────────────────────────────┤
-│ Status: ✓ Conectado                │
-├────────────────────────────────────┤
-│ [Conectar]  [Desconectar]          │
-│ [🔴 Gravar] [⏹️  Parar]            │
-├────────────────────────────────────┤
-│ Transcrição Parcial:               │
-│ "Ouvindo..."                       │
-├────────────────────────────────────┤
-│ Transcrição Final:                 │
-│ "eu quero beber água"              │
-├────────────────────────────────────┤
-│ 🤟 Tradução LIBRAS (Glossa):       │
-│ "EU QUERER BEBER ÁGUA"             │
-├────────────────────────────────────┤
-│ Log:                               │
-│ [15:40:33] ✓ Conexão estabelecida  │
-│ [15:40:45] ✅ Transcrição final    │
-│ [15:40:46] 📤 Enviado para glossa  │
-│ [15:40:46] 🤟 LIBRAS: ...          │
-└────────────────────────────────────┘
-```
-
-### Passo a Passo
-
-1. **Clique em "Conectar"** para estabelecer conexão WebSocket
-2. **Clique em "🔴 Gravar"** para iniciar gravação de áudio
-3. **Fale algo em português**, exemplo:
-   - "eu quero beber água"
-   - "meu nome é Sarah"
-   - "boa noite"
-4. **Clique em "⏹️ Parar"** para finalizar a gravação
-5. Veja a **transcrição em português** e a **tradução em LIBRAS** aparecerem em tempo real
+A interface mostra:
+- Transcrição parcial (enquanto você fala)
+- Transcrição final (após parar)
+- Tradução para LIBRAS (logo após a transcrição)
 
 ---
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 ela_mvp/
 ├── api_simples.py                    # API Flask de tradução
-├── direct_translator.py              # Motor de tradução PT-BR → LIBRAS
+├── direct_translator.py              # Motor de tradução
 ├── translation_mappings.pkl          # Dicionário de mapeamentos
-├── requirements.txt                  # Dependências Python
-├── .env                              # Configurações de ambiente
-├── README.md                         # Este arquivo
+├── requirements.txt                  # Dependências
+├── .env                              # Configurações
+├── README.md                         
 │
 ├── data/
-│   └── pt-br2libras-gloss_sample_500.csv  # Dataset de treinamento
+│   └── pt-br2libras-gloss_sample_500.csv
 │
 ├── models/
-│   └── vosk-model-small-pt-0.3/      # Modelo STT Vosk (português)
+│   └── vosk-model-small-pt-0.3/
 │
-├── stt_service/                      # Microsserviço de STT
-│   ├── run_stt_service.py           # Ponto de entrada
-│   ├── gateway_comunicacao.py        # WebSocket gateway
-│   ├── motor_stt_vosk.py            # Motor de transcrição
-│   ├── orquestrador_envio.py        # Orquestração de envio
-│   ├── configuracao.py              # Configurações
-│   ├── esquema_mensagens.py         # Schemas Pydantic
-│   ├── test_client.html             # Cliente web interativo
-│   └── requirements.txt             # Dependências do serviço
+├── stt_service/
+│   ├── run_stt_service.py
+│   ├── gateway_comunicacao.py
+│   ├── motor_stt_vosk.py
+│   ├── orquestrador_envio.py
+│   ├── configuracao.py
+│   ├── esquema_mensagens.py
+│   └── test_client.html
 │
-└── logs/                             # Arquivos de log
+└── logs/
 ```
 
 ---
 
-## 🔧 Configuração
+## Configuração
 
-### Variáveis de Ambiente (.env)
-
-Arquivo `.env` na raiz do projeto:
+Arquivo `.env` na raiz:
 
 ```bash
-# Caminho do modelo Vosk
 VOSK_MODEL_PATH=D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
-
-# URL do serviço de tradução
 GLOSSA_SERVICE_URL=http://127.0.0.1:5000/translate
-
-# Porta do serviço STT
 STT_PORT=9100
-
-# Nível de log
 STT_LOG_LEVEL=INFO
 ```
 
 ---
 
-## 📊 Endpoints da API
+## API
 
-### POST `/translate`
-Traduz texto em português para LIBRAS.
+### POST /translate
 
-**Request:**
+Traduz texto de português para LIBRAS.
+
+Request:
 ```json
 {
   "text": "eu quero beber água"
 }
 ```
 
-**Response:**
+Response:
 ```json
 {
   "success": true,
@@ -240,71 +189,51 @@ Traduz texto em português para LIBRAS.
 }
 ```
 
-### GET `/`
-Retorna informações da API.
+### GET /
 
-**Response:**
-```json
-{
-  "name": "ELA MVP - Tradutor PT-BR → LIBRAS",
-  "version": "4.0",
-  "status": "online",
-  "examples": [...]
-}
-```
+Retorna status da API.
 
 ---
 
-## 🧪 Testando a Aplicação
+## Testes
 
-### Via cURL
-
+Via cURL:
 ```bash
-# Testar API de tradução
 curl -X POST http://127.0.0.1:5000/translate \
   -H "Content-Type: application/json" \
   -d "{\"text\": \"quero agua\"}"
-
-# Verificar status
-curl http://127.0.0.1:5000/
 ```
 
-### Via Postman
-
-1. Crie uma nova requisição **POST**
-2. URL: `http://127.0.0.1:5000/translate`
-3. Headers: `Content-Type: application/json`
-4. Body (raw):
-```json
-{
-  "text": "eu quero beber água"
-}
-```
+Via Postman:
+- Método: POST
+- URL: `http://127.0.0.1:5000/translate`
+- Headers: `Content-Type: application/json`
+- Body: `{"text": "eu quero beber água"}`
 
 ---
 
-## 🎓 Conceitos Principais
+## Detalhes Técnicos
 
-### STT (Speech-to-Text)
-- **Motor**: Vosk (reconhecimento de fala offline)
-- **Taxa de amostragem**: 16kHz (mono)
-- **Idioma**: Português Brasileiro
-- **Latência**: ~2-5ms por frame
+**STT (Speech-to-Text):**
+- Motor: Vosk
+- Taxa de amostragem: 16kHz mono
+- Idioma: Português brasileiro
+- Latência: 2-5ms por frame
 
-### Tradução PT-BR → LIBRAS
-- **Método**: Mapeamento de palavras + word_mapping
-- **Entrada**: Texto em português
-- **Saída**: Glossa (representação textual de LIBRAS)
-- **Exemplo**: "eu quero água" → "EU QUERER ÁGUA"
+**Tradução:**
+- Método: Mapeamento de palavras
+- Entrada: Texto em português
+- Saída: Glossa LIBRAS
+- Exemplo: "eu quero água" vira "EU QUERER ÁGUA"
 
-### WebSocket
-- **Protocolo**: RFC 6455
-- **Compressão**: Dados de áudio PCM 16-bit mono
-- **Taxa**: ~16000 bytes/segundo
+**Comunicação:**
+- WebSocket para dados de áudio
+- HTTP POST para tradução
+- PCM 16-bit mono
 
 ---
 
-## 📈 Performance
+## Performance
 
 | Métrica | Valor |
 |---------|-------|
@@ -312,82 +241,51 @@ curl http://127.0.0.1:5000/
 | Latência Tradução | 20-30ms |
 | Latência Total | 30-50ms |
 | Taxa de amostragem | 16000 Hz |
-| Resolução de áudio | 16-bit |
-| Canais | 1 (mono) |
+| Resolução | 16-bit mono |
 
 ---
 
-## 🐛 Troubleshooting
+## Problemas Comuns
 
-### Erro: "Conexão WebSocket recusada"
-- ✅ Verifique se `run_stt_service.py` está rodando na porta 9100
-- ✅ Verifique firewall/antivírus
+**Erro de conexão WebSocket**
+- Verifique se o serviço STT está rodando na porta 9100
+- Confira o firewall
 
-### Erro: "Serviço de glossa indisponível"
-- ✅ Verifique se `api_simples.py` está rodando na porta 5000
-- ✅ Verifique se arquivo `translation_mappings.pkl` existe
+**Serviço de tradução indisponível**
+- Confirme que api_simples.py está rodando na porta 5000
+- Verifique se translation_mappings.pkl existe
 
-### Sem áudio sendo capturado
-- ✅ Verifique permissões do microfone no navegador
-- ✅ Teste microfone em outro aplicativo
-- ✅ Verifique se o navegador suporta `getUserMedia()`
+**Sem captura de áudio**
+- Permita acesso ao microfone no navegador
+- Teste o microfone em outro aplicativo
+- Verifique suporte a getUserMedia no navegador
 
-### Transcrição vazia
-- ✅ Fale mais alto/claro
-- ✅ Aproxime do microfone
-- ✅ Reduza ruído de fundo
+**Transcrição vazia ou incorreta**
+- Fale mais alto e claro
+- Reduza ruído ambiente
+- Aproxime-se do microfone
 
 ---
 
-## 📝 Logs
+## Logs
 
-Os logs são salvos em `stt_service/logs/stt_service.log`:
+Logs salvos em `stt_service/logs/stt_service.log`:
 
 ```
-2026-01-19 15:40:33 - stt_service.gateway_comunicacao - INFO - Nova sessão estabelecida
-2026-01-19 15:40:39 - stt_service.motor_stt_vosk - INFO - Transcrição final detectada: 'eu quero beber água'
-2026-01-19 15:40:39 - stt_service.orquestrador_envio - INFO - ✓ Envio bem-sucedido (status: 200, latência: 25.0ms)
+2026-01-19 15:40:33 - Nova sessão estabelecida
+2026-01-19 15:40:39 - Transcrição final: 'eu quero beber água'
+2026-01-19 15:40:39 - Envio bem-sucedido (status: 200, latência: 25.0ms)
 ```
 
 ---
 
-## 🤝 Contribuindo
+## Licença
 
-Contribuições são bem-vindas! Por favor:
-
-1. Faça um Fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+Este projeto usa a Licença MIT.
 
 ---
 
-## 📄 Licença
-
-Este projeto é licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
-
----
-
-## 📞 Suporte
-
-Para dúvidas ou reportar problemas:
-- 📧 Email: [seu-email@example.com]
-- 🐛 Issues: [GitHub Issues](https://github.com/seu-usuario/ela-mvp/issues)
-- 💬 Discussões: [GitHub Discussions](https://github.com/seu-usuario/ela-mvp/discussions)
-
----
-
-## 🙏 Agradecimentos
-
-- [Vosk](https://alphacephei.com/vosk/) - Motor STT offline
-- [FastAPI](https://fastapi.tiangolo.com/) - Framework web assíncrono
-- [Flask](https://flask.palletsprojects.com/) - Framework web
-- [Comunidade LIBRAS](https://www.libras.gov.br/) - Suporte à acessibilidade
-
----
-
-**Desenvolvido com ❤️ para acessibilidade**
+**Desenvolvido para acessibilidade**
 
 
 ---
