@@ -729,3 +729,27 @@ ValueError: Invalid format specifier
 2026-01-19 15:56:11 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Estatísticas STT: {'session_id': '8f7ae275-110c-42bf-b1dc-2dd6987ef078', 'bytes_processados': 1089536, 'transcricoes_parciais': 22, 'transcricoes_finais': 6, 'mb_processados': 1.04}
 2026-01-19 15:56:11 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Estatísticas envio: {'session_id': '8f7ae275-110c-42bf-b1dc-2dd6987ef078', 'total_envios': 6, 'envios_sucesso': 6, 'envios_falha': 0, 'taxa_sucesso_pct': 100.0, 'latencia_media_ms': 17.4, 'url_destino': 'http://127.0.0.1:5000/translate'}
 2026-01-19 15:56:11 - stt_service.gateway_comunicacao.8f7ae275 - INFO - Sessão 8f7ae275 encerrada
+2026-01-19 16:11:09 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 16:11:09 - stt_service.gateway_comunicacao - INFO - STT Microsserviço - Inicialização
+2026-01-19 16:11:09 - stt_service.gateway_comunicacao - INFO - Versão: 1.0.0
+2026-01-19 16:11:09 - stt_service.gateway_comunicacao - INFO - Porta: 9100
+2026-01-19 16:11:09 - stt_service.gateway_comunicacao - INFO - Logs: logs\stt_service.log
+2026-01-19 16:11:09 - stt_service.gateway_comunicacao - INFO - ============================================================
+2026-01-19 16:11:09 - __main__ - INFO - Validando configurações...
+2026-01-19 16:11:09 - __main__ - INFO - ============================================================
+2026-01-19 16:11:09 - __main__ - INFO - Configurações do Serviço:
+2026-01-19 16:11:09 - __main__ - INFO -   porta: 9100
+2026-01-19 16:11:09 - __main__ - INFO -   versao: 1.0.0
+2026-01-19 16:11:09 - __main__ - INFO -   idioma: pt-br
+2026-01-19 16:11:09 - __main__ - INFO -   taxa_amostragem: 16000
+2026-01-19 16:11:09 - __main__ - INFO -   modelo_vosk: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 16:11:09 - __main__ - INFO -   url_glossa: http://127.0.0.1:5000/translate
+2026-01-19 16:11:09 - __main__ - INFO - ============================================================
+2026-01-19 16:11:09 - __main__ - INFO - Iniciando servidor na porta 9100...
+2026-01-19 16:11:09 - __main__ - INFO - Documentação disponível em: http://localhost:9100/docs
+2026-01-19 16:11:09 - stt_service.gateway_comunicacao - INFO - Iniciando serviço STT...
+2026-01-19 16:11:09 - stt_service.gateway_comunicacao - INFO - ✓ Configurações validadas
+2026-01-19 16:11:09 - stt_service.motor_stt_vosk - INFO - Carregando modelo Vosk de: D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3
+2026-01-19 16:11:10 - stt_service.motor_stt_vosk - INFO - ✓ Modelo Vosk carregado com sucesso (taxa: 16000Hz)
+2026-01-19 16:11:10 - stt_service.gateway_comunicacao - INFO - ✓ Modelo Vosk pré-carregado
+2026-01-19 16:11:10 - stt_service.gateway_comunicacao - INFO - ✓ Serviço STT pronto para aceitar conexões
