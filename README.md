@@ -69,7 +69,10 @@ source ela_env/bin/activate
 Instale as dependências:
 ```bash
 pip install -r requirements.txt
+pip install -r stt_service/requirements.txt
 ```
+
+> O serviço STT possui dependências próprias, incluindo `python-dotenv`, `fastapi` e `vosk`.
 
 ---
 
@@ -91,6 +94,12 @@ Running on http://127.0.0.1:5000
 ```
 
 **Terminal 2 - Serviço STT:**
+```bash
+python stt_service/run_stt_service.py
+```
+
+Alternativamente:
+
 ```bash
 cd stt_service
 python run_stt_service.py

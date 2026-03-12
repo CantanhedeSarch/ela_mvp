@@ -165,13 +165,26 @@ Cliente → Servidor: bytes de áudio PCM mono 16kHz (frames contínuos)
 - Windows 10/11 (testado)
 - Modelo Vosk pt-BR (download necessário)
 
-### Passo 1: Clonar/Copiar Código
+### Passo 1: Entrar na pasta do serviço
 
 ```bash
 cd stt_service/
 ```
 
-### Passo 2: Criar Ambiente Virtual
+### Passo 2: Preparar ambiente Python
+
+Você pode usar **um ambiente virtual dedicado** para o STT ou reutilizar o ambiente da raiz do projeto.
+
+**Opção A - Reutilizar o ambiente da raiz (mais simples no projeto atual):**
+
+```powershell
+cd ..
+ela_env\Scripts\activate
+python -m pip install -r stt_service\requirements.txt
+cd stt_service
+```
+
+**Opção B - Criar ambiente virtual dedicado:**
 
 ```powershell
 python -m venv venv_stt
@@ -195,25 +208,29 @@ Acesse: https://alphacephei.com/vosk/models
 | `vosk-model-small-pt-0.3` | 50 MB | Boa | Desenvolvimento, testes rápidos |
 | `vosk-model-pt-fb-v0.1.1-20220516_2113` | 1.6 GB | Excelente | Produção, avaliação científica |
 
-**Extrair para:**
+**Extrair para a pasta de modelos na raiz do projeto:**
 
 ```
-models/
-  └── vosk-model-small-pt-0.3/
-      ├── am/
-      ├── graph/
-      ├── ivector/
-      └── conf/
+ela_mvp/
+├── models/
+│   └── vosk-model-small-pt-0.3/
+│       ├── am/
+│       ├── graph/
+│       ├── ivector/
+│       └── conf/
+└── stt_service/
 ```
 
 ### Passo 5: Configurar Variáveis de Ambiente
 
+O serviço carrega automaticamente o arquivo `.env` da raiz do projeto. Exemplo:
+
 ```powershell
 # Caminho do modelo Vosk (OBRIGATÓRIO)
-$env:VOSK_MODEL_PATH = "models/vosk-model-small-pt-0.3"
+$env:VOSK_MODEL_PATH = "D:/ela_teste/ela_mvp/models/vosk-model-small-pt-0.3"
 
-# URL do serviço de glossa (opcional, padrão: http://localhost:9000/traduzir)
-$env:GLOSSA_SERVICE_URL = "http://localhost:9000/traduzir"
+# URL do serviço de glossa (opcional, padrão do projeto atual)
+$env:GLOSSA_SERVICE_URL = "http://127.0.0.1:5000/translate"
 
 # Porta do serviço STT (opcional, padrão: 9100)
 $env:STT_PORT = "9100"
@@ -227,10 +244,17 @@ $env:STT_LOG_LEVEL = "DEBUG"
 **Opção 1: Direto via Python**
 
 ```powershell
-python -m stt_service.gateway_comunicacao
+python run_stt_service.py
 ```
 
-**Opção 2: Via Uvicorn (recomendado)**
+**Opção 2: Pela raiz do projeto**
+
+```powershell
+cd ..
+python stt_service\run_stt_service.py
+```
+
+**Opção 3: Via Uvicorn**
 
 ```powershell
 uvicorn stt_service.gateway_comunicacao:app --host 0.0.0.0 --port 9100 --log-level info
