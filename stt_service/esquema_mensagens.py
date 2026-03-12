@@ -1,19 +1,8 @@
 """
 Esquemas de Mensagens - Contratos de Dados
-==========================================
 
 Define estruturas de dados padronizadas para comunicação via WebSocket,
 garantindo consistência de tipos e facilitando validação automática.
-
-Decisão arquitetural:
-- Uso de Pydantic para validação declarativa e serialização JSON
-- Timestamps em formato ISO-8601 para interoperabilidade
-- Enumerações explícitas para tipos de mensagem
-- Estruturas aninhadas para metadados de despacho
-
-Fundamentação acadêmica:
-A padronização de mensagens permite rastreabilidade completa do fluxo
-de dados, essencial para avaliação experimental e análise de latência.
 """
 
 from datetime import datetime
@@ -22,9 +11,6 @@ from typing import Optional, Any
 from pydantic import BaseModel, Field
 
 
-# ==========================================
-# Enumerações de Tipos
-# ==========================================
 
 class TipoMensagemSTT(str, Enum):
     """
@@ -41,25 +27,12 @@ class TipoMensagemSTT(str, Enum):
     ERRO = "error"
 
 
-# ==========================================
-# Utilitários de Timestamp
-# ==========================================
 
 def obter_timestamp_iso() -> str:
-    """
-    Retorna timestamp atual em formato ISO-8601 com UTC.
-    
-    Exemplo: "2026-01-14T15:30:45.123456Z"
-    
-    Fundamentação: ISO-8601 é o padrão internacional para representação
-    de data/hora, garantindo parsing consistente em diferentes plataformas.
-    """
+    """Retorna timestamp atual em formato ISO-8601. Exemplo: '2026-01-14T15:30:45.123456Z'"""
     return datetime.utcnow().isoformat() + "Z"
 
 
-# ==========================================
-# Mensagem: Sessão Iniciada
-# ==========================================
 
 class MensagemSessaoIniciada(BaseModel):
     """
@@ -111,18 +84,11 @@ class MensagemSessaoIniciada(BaseModel):
         }
 
 
-# ==========================================
-# Mensagem: Transcrição Parcial
-# ==========================================
 
 class MensagemTranscricaoParcial(BaseModel):
     """
     Emitida durante processamento incremental.
-    
-    Fundamentação acadêmica:
-    Transcrições parciais permitem análise em tempo real e
-    reduzem latência percebida pelo usuário, mas NÃO disparam
-    tradução para glossa (apenas transcrições finais fazem isso).
+    Transcrições parciais são resultádos intermediários e NÃO disparam tradução para glossa.
     """
     type: str = Field(
         default=TipoMensagemSTT.TRANSCRICAO_PARCIAL.value,
@@ -159,18 +125,9 @@ class MensagemTranscricaoParcial(BaseModel):
         }
 
 
-# ==========================================
-# Mensagem: Resultado de Despacho
-# ==========================================
 
 class ResultadoDespachoGlossa(BaseModel):
-    """
-    Metadados sobre o envio da transcrição final ao serviço de tradução.
-    
-    Decisão arquitetural:
-    Incluir resultado do despacho na mensagem final permite ao cliente
-    rastrear todo o pipeline e identificar falhas na integração.
-    """
+    """Metadados sobre o envio da transcrição final ao serviço de tradução."""
     target_url: str = Field(
         ...,
         description="URL do serviço de tradução contatado"
@@ -218,23 +175,11 @@ class ResultadoDespachoGlossa(BaseModel):
         return d
 
 
-# ==========================================
-# Mensagem: Transcrição Final
-# ==========================================
 
 class MensagemTranscricaoFinal(BaseModel):
     """
     Emitida após detecção de fronteira semântica (fim da fala).
-    
-    Decisão arquitetural crítica:
-    APENAS transcrições finais disparam envio ao serviço de tradução.
-    Esta mensagem encapsula tanto o resultado da transcrição quanto
-    o status do despacho para o serviço de glossa.
-    
-    Fundamentação acadêmica:
-    A separação entre parcial/final implementa o desacoplamento entre
-    STT e tradução, permitindo que o motor STT opere de forma agnóstica
-    ao domínio enquanto o orquestrador decide quando traduzir.
+    Apenas transcrições finais disparam envio ao serviço de tradução.
     """
     type: str = Field(
         default=TipoMensagemSTT.TRANSCRICAO_FINAL.value,
@@ -283,17 +228,9 @@ class MensagemTranscricaoFinal(BaseModel):
         }
 
 
-# ==========================================
-# Mensagem: Erro
-# ==========================================
 
 class MensagemErro(BaseModel):
-    """
-    Emitida quando ocorre erro durante processamento.
-    
-    Permite ao cliente distinguir entre diferentes tipos de falha
-    e tomar ações apropriadas (retry, fallback, notificação).
-    """
+    """Emitida quando ocorre erro durante processamento."""
     type: str = Field(
         default=TipoMensagemSTT.ERRO.value,
         description="Tipo fixo da mensagem"
@@ -332,16 +269,9 @@ class MensagemErro(BaseModel):
         }
 
 
-# ==========================================
-# Schema: Health Check
-# ==========================================
 
 class RespostaHealthCheck(BaseModel):
-    """
-    Resposta do endpoint de saúde do serviço.
-    
-    Permite monitoramento externo e validação de prontidão operacional.
-    """
+    """Resposta do endpoint de saúde do serviço."""
     status: str = Field(
         ...,
         description="Status geral do serviço (healthy, degraded, unhealthy)"

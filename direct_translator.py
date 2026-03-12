@@ -184,7 +184,7 @@ class DirectTranslator:
         # 2. Adicionar mapeamentos dos dados
         if self.mappings and 'word_mappings' in self.mappings:
             for pt_word, libras_word in self.mappings['word_mappings'].items():
-                if pt_word not in self.word_dict:  # Não sobrescrever mapeamentos diretos
+                if pt_word not in self.word_dict:
                     self.word_dict[pt_word] = libras_word.upper()
         
         # 3. Adicionar palavras do vocabulário LIBRAS que são iguais em PT
@@ -197,19 +197,14 @@ class DirectTranslator:
         print(f"✅ Dicionário criado com {len(self.word_dict)} palavras")
     
     def _preprocess_text(self, text: str) -> str:
-        """Preprocessa o texto de entrada"""
+        """Preprocessa o texto de entrada: lowercasing, remoção de pontuação e normalização de espaços."""
         if not text:
             return ""
-        
-        # Converter para minúsculas
+
         text = text.lower().strip()
-        
-        # Remover pontuação
         text = re.sub(r'[^\w\s]', ' ', text)
-        
-        # Normalizar espaços
         text = re.sub(r'\s+', ' ', text)
-        
+
         return text.strip()
     
     def _translate_phrase(self, text: str) -> Optional[str]:
@@ -246,19 +241,16 @@ class DirectTranslator:
                 if word_no_accent in self.word_dict:
                     translated.append(self.word_dict[word_no_accent])
                     found = True
-                
-                # Tentar buscar palavra similar no vocabulário LIBRAS (apenas se muito parecida)
+
                 if not found and self.mappings and 'libras_vocab' in self.mappings:
                     for libras_word in self.mappings['libras_vocab'].keys():
-                        # Só aceitar se a palavra for muito similar (diferença de 1 caractere ou menos)
-                        if (len(word) > 3 and len(libras_word) > 3 and 
+                        if (len(word) > 3 and len(libras_word) > 3 and
                             abs(len(word) - len(libras_word)) <= 1 and
                             (word in libras_word.lower() or libras_word.lower() in word)):
                             translated.append(libras_word.upper())
                             found = True
                             break
                 
-                # Se não encontrou, manter a palavra original em maiúsculas
                 if not found:
                     translated.append(word.upper())
         

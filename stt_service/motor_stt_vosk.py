@@ -1,22 +1,9 @@
 """
 Motor STT - Camada de Processamento de Áudio
-============================================
 
 Encapsula a lógica de transcrição de áudio usando Vosk,
 isolando dependências de bibliotecas externas e fornecendo
 interface simplificada para o gateway de comunicação.
-
-Decisão arquitetural:
-- Separação entre inicialização do modelo e processamento de áudio
-- Gerenciamento de estado do reconhecedor por sessão
-- Distinção clara entre resultados parciais e finais
-- Buffer de áudio para janelamento temporal
-
-Fundamentação acadêmica:
-Esta camada implementa o núcleo do pipeline STT, processando
-áudio PCM em janelas temporais e produzindo transcrições incrementais.
-A arquitetura permite substituição futura do motor (ex: Whisper streaming)
-sem impactar as camadas de comunicação e orquestração.
 """
 
 import json
@@ -30,23 +17,8 @@ from .configuracao import ConfiguracaoSTT
 logger = logging.getLogger(__name__)
 
 
-# ==========================================
-# Carregador de Modelo Vosk
-# ==========================================
-
 class CarregadorModeloVosk:
-    """
-    Singleton responsável por carregar e manter o modelo Vosk em memória.
-    
-    Decisão de design:
-    - Carregamento lazy (apenas quando necessário)
-    - Cache do modelo para evitar recarregamentos
-    - Validação de compatibilidade no momento da carga
-    
-    Justificativa:
-    Modelos Vosk podem ocupar centenas de MB em RAM.
-    Carregamento único na inicialização do serviço otimiza recursos.
-    """
+    """Singleton que carrega e mantém o modelo Vosk em memória. Carregamento único para otimizar recursos."""
     
     _instancia_modelo: Optional[Model] = None
     _modelo_carregado: bool = False
@@ -90,28 +62,14 @@ class CarregadorModeloVosk:
         return cls._modelo_carregado and cls._instancia_modelo is not None
 
 
-# ==========================================
-# Motor STT - Processador de Áudio
-# ==========================================
-
 class MotorSTTVosk:
     """
     Processa áudio em streaming e gera transcrições incrementais.
-    
-    Fluxo de processamento:
-    1. Cliente envia frames de áudio PCM mono 16kHz
-    2. Motor acumula frames em buffer interno
-    3. Vosk processa buffer e retorna resultados parciais/finais
-    4. Motor extrai texto e confiança, formatando resposta
-    
+
     Conceitos Vosk:
     - Partial result: transcrição intermediária (pode mudar)
     - Final result: transcrição estável (fim de frase/pausa)
-    - AcceptWaveform: alimenta áudio e retorna se detectou fronteira
-    
-    Fundamentação acadêmica:
-    O processamento incremental reduz latência percebida e permite
-    análise em tempo real, essencial para aplicações de acessibilidade.
+    - AcceptWaveform: alimenta áudio e retorna se detectou fronteira (fim de frase)
     """
     
     def __init__(self, session_id: str):
@@ -133,8 +91,7 @@ class MotorSTTVosk:
             ConfiguracaoSTT.TAXA_AMOSTRAGEM
         )
         
-        # Configura reconhecedor para retornar mais detalhes
-        self.recognizer.SetWords(True)  # Timestamps por palavra (futuro)
+        self.recognizer.SetWords(True)  # Habilita timestamps por palavra
         
         self.logger.info(
             f"Motor STT inicializado para sessão {session_id[:8]} "
@@ -159,17 +116,13 @@ class MotorSTTVosk:
             - texto: Transcrição parcial ou final
             - confianca: Score de confiança [0-1], se disponível
         
-        Decisão de implementação:
         Vosk retorna JSON com estrutura:
         - Partial: {"partial": "texto..."}
         - Final: {"text": "texto...", "result": [...palavras...]}
-        
-        Extraímos o texto apropriado dependendo do tipo de resultado.
         """
         self.bytes_processados += len(audio_bytes)
-        
-        # Alimenta reconhecedor com áudio
-        # AcceptWaveform retorna True quando detecta fronteira (final)
+
+        # AcceptWaveform retorna True quando detecta fronteira (fim de frase)
         detectou_fronteira = self.recognizer.AcceptWaveform(audio_bytes)
         
         if detectou_fronteira:
@@ -211,7 +164,6 @@ class MotorSTTVosk:
                     )
                 return False, texto, None
             else:
-                # Parcial vazio, sem texto ainda
                 return False, "", None
     
     def finalizar_sessao(self) -> Optional[Tuple[str, Optional[float]]]:

@@ -1,24 +1,11 @@
 """
 Gateway de Comunicação - Camada de Entrada WebSocket
-====================================================
 
 Ponto de entrada do microsserviço, responsável por:
 - Gerenciar conexões WebSocket
 - Validar protocolo de comunicação
 - Orquestrar interação entre motor STT e despachante
 - Emitir mensagens padronizadas para o cliente
-
-Decisão arquitetural:
-Esta camada NÃO conhece detalhes de Vosk ou do serviço de glossa.
-Ela apenas coordena o fluxo de dados entre componentes especializados,
-mantendo baixo acoplamento e alta coesão.
-
-Fundamentação acadêmica:
-A separação clara de responsabilidades facilita:
-- Testes unitários de cada camada isoladamente
-- Substituição de componentes (ex: trocar Vosk por Whisper)
-- Análise de latência por etapa do pipeline
-- Documentação e explicação em artigos científicos
 """
 
 import asyncio
@@ -43,18 +30,11 @@ from .orquestrador_envio import OrquestradorEnvioGlossa
 
 
 # ==========================================
-# Configuração de Logging
+# Aplicação FastAPI
 # ==========================================
 
-def configurar_logging():
-    """
-    Configura logging estruturado com handlers de arquivo e console.
-    
-    Alinhado com padrão do professional_api.py:
-    - Logs em arquivo rotativo
-    - Logs no console para desenvolvimento
-    - Formato com timestamp, nível e módulo
-    """
+app = FastAPI(
+    """Configura logging com handlers de arquivo e console."""
     log_file = ConfiguracaoSTT.DIRETORIO_LOGS / ConfiguracaoSTT.ARQUIVO_LOG
     
     logging.basicConfig(
@@ -103,26 +83,17 @@ app.add_middleware(
 logger = logging.getLogger(__name__)
 
 
-# ==========================================
-# Lifecycle: Startup
-# ==========================================
-
 @app.on_event("startup")
 async def startup():
-    """
-    Inicialização do serviço.
-    
-    Decisão de design: Validar configurações e pré-carregar
-    modelo Vosk no startup para fail-fast em caso de erro.
-    """
+    """Valida configurações e pré-carrega modelo Vosk no startup (fail-fast)."""
     try:
         logger.info("Iniciando serviço STT...")
         
-        # Valida configurações
+
         ConfiguracaoSTT.validar()
         logger.info("✓ Configurações validadas")
         
-        # Pré-carrega modelo Vosk
+
         CarregadorModeloVosk.obter_modelo()
         logger.info("✓ Modelo Vosk pré-carregado")
         
@@ -132,10 +103,6 @@ async def startup():
         logger.critical(f"✗ Falha na inicialização: {e}")
         raise
 
-
-# ==========================================
-# Endpoint: Health Check
-# ==========================================
 
 @app.get(
     "/health",
@@ -182,10 +149,6 @@ async def health_check():
     )
 
 
-# ==========================================
-# Endpoint: Root
-# ==========================================
-
 @app.get("/", tags=["Informações"])
 async def root():
     """
@@ -202,54 +165,33 @@ async def root():
     }
 
 
-# ==========================================
-# Endpoint: WebSocket /stt
-# ==========================================
 
 @app.websocket("/stt")
 async def websocket_stt(websocket: WebSocket):
-    """
-    Endpoint WebSocket para streaming de áudio e transcrição.
-    
+    """Endpoint WebSocket para streaming de áudio e transcrição em tempo real.
+
     Protocolo:
     1. Cliente conecta ao WebSocket
     2. Servidor envia MensagemSessaoIniciada com session_id
     3. Cliente envia frames de áudio binário (PCM mono 16kHz)
     4. Servidor processa e emite:
        - MensagemTranscricaoParcial (incrementais)
-       - MensagemTranscricaoFinal (após fronteira + dispatch)
+       - MensagemTranscricaoFinal (após fronteira + dispatch para tradução)
     5. Ao fechar conexão, servidor finaliza sessão
-    
-    Decisão de fluxo:
-    - Aceita conexão imediatamente (sem autenticação inicial)
-    - Gera session_id único (UUID v4)
-    - Instancia motor STT e orquestrador por sessão
-    - Loop de recepção de áudio até desconexão
-    - Cleanup automático ao fechar
-    
-    Fundamentação acadêmica:
-    O fluxo implementa o conceito de "sessão de transcrição",
-    onde cada conexão mantém estado isolado, permitindo
-    análise granular de performance por usuário/sessão.
     """
-    # Gera ID único para esta sessão
     session_id = str(uuid.uuid4())
     session_logger = logging.getLogger(f"{__name__}.{session_id[:8]}")
-    
-    # Aceita conexão WebSocket
+
     await websocket.accept()
     session_logger.info(f"Nova sessão WebSocket estabelecida: {session_id}")
     
-    # Inicializa componentes da sessão
     motor_stt: Optional[MotorSTTVosk] = None
     orquestrador: Optional[OrquestradorEnvioGlossa] = None
     
     try:
-        # Instancia motor STT
         motor_stt = MotorSTTVosk(session_id)
         session_logger.info("Motor STT inicializado")
-        
-        # Instancia orquestrador de envio
+
         orquestrador = OrquestradorEnvioGlossa(session_id)
         session_logger.info("Orquestrador de envio inicializado")
         
@@ -273,20 +215,17 @@ async def websocket_stt(websocket: WebSocket):
                 session_logger.warning("Frame vazio recebido, ignorando")
                 continue
             
-            # Processa áudio com motor STT
             is_final, texto, confianca = motor_stt.processar_audio(audio_bytes)
             
             if is_final and texto:
                 # Transcrição final: envia para glossa e emite mensagem
                 session_logger.info(f"Transcrição final detectada: '{texto}'")
                 
-                # Despacha para serviço de glossa
                 resultado_dispatch = orquestrador.enviar_para_glossa(
                     texto,
                     confianca
                 )
-                
-                # Emite mensagem final para cliente
+
                 mensagem_final = MensagemTranscricaoFinal(
                     session_id=session_id,
                     text=texto,
@@ -342,55 +281,38 @@ async def websocket_stt(websocket: WebSocket):
             await websocket.send_json(mensagem_erro.dict())
         except Exception:
             pass  # Cliente já desconectou
-    
+
     finally:
-        # Cleanup: finaliza sessão e exibe estatísticas
         session_logger.info("Finalizando sessão...")
-        
+
         if motor_stt:
-            # Tenta extrair última transcrição pendente
             resultado_final = motor_stt.finalizar_sessao()
             if resultado_final:
                 texto_final, confianca_final = resultado_final
-                session_logger.info(
-                    f"Transcrição final forçada: '{texto_final}'"
-                )
-                
-                # Opcionalmente, envia para glossa
+                session_logger.info(f"Transcrição final forçada: '{texto_final}'")
                 if orquestrador:
                     orquestrador.enviar_para_glossa(texto_final, confianca_final)
-            
-            # Log estatísticas do motor
+
             stats_motor = motor_stt.obter_estatisticas()
             session_logger.info(f"Estatísticas STT: {stats_motor}")
-        
+
         if orquestrador:
-            # Log estatísticas do orquestrador
             stats_orquestrador = orquestrador.obter_estatisticas()
             session_logger.info(f"Estatísticas envio: {stats_orquestrador}")
-        
+
         session_logger.info(f"Sessão {session_id[:8]} encerrada")
 
 
-# ==========================================
-# Ponto de Entrada
-# ==========================================
-
 if __name__ == "__main__":
     import uvicorn
-    
-    # Configura logging antes de iniciar servidor
+
     configurar_logging()
-    
-    logger.info(
-        f"Iniciando servidor na porta {ConfiguracaoSTT.PORTA_SERVICO}..."
-    )
-    
-    # Inicia servidor Uvicorn
+    logger.info(f"Iniciando servidor na porta {ConfiguracaoSTT.PORTA_SERVICO}...")
+
     uvicorn.run(
         "gateway_comunicacao:app",
         host="0.0.0.0",
         port=ConfiguracaoSTT.PORTA_SERVICO,
         log_level=ConfiguracaoSTT.NIVEL_LOG.lower(),
-        reload=False  # Desabilitar reload em produção
+        reload=False
     )

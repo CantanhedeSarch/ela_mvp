@@ -1,23 +1,8 @@
 """
 Orquestrador de Envio - Camada de Decisão
-=========================================
 
-Responsável por detectar fronteiras semânticas e despachar
-transcrições finais para o serviço de tradução de glossa.
-
-Decisão arquitetural crítica:
-Esta camada implementa a lógica de QUANDO enviar transcrições
-para tradução, mantendo o motor STT agnóstico ao domínio.
-
-Fundamentação acadêmica:
-A separação entre "detectar fim de fala" (motor STT) e "decidir
-enviar para tradução" (orquestrador) permite flexibilidade para:
-- Filtrar transcrições curtas/irrelevantes
-- Implementar debouncing/throttling
-- Adicionar pré-processamento (normalização, PII removal)
-- Medir latência end-to-end do pipeline
-
-Esta arquitetura desacoplada é o diferencial autoral do trabalho.
+Detecta fronteiras semânticas e despacha transcrições finais
+para o serviço de tradução de glossa PT-BR → LIBRAS.
 """
 
 import logging
@@ -33,31 +18,16 @@ from .esquema_mensagens import ResultadoDespachoGlossa
 logger = logging.getLogger(__name__)
 
 
-# ==========================================
-# Orquestrador de Envio para Glossa
-# ==========================================
-
 class OrquestradorEnvioGlossa:
     """
     Gerencia envio de transcrições finais para o serviço de tradução.
-    
+
     Responsabilidades:
     1. Validar se transcrição deve ser enviada (filtros)
     2. Formatar payload conforme contrato do serviço de glossa
     3. Realizar requisição HTTP POST com timeout
     4. Capturar metadados de performance (latência)
     5. Tratar erros de rede/timeout gracefully
-    
-    Decisão de design:
-    - Envio síncrono (bloqueante) por simplicidade
-    - Timeout configurável para evitar travamento
-    - Não implementa retry (responsabilidade do cliente)
-    - Retorna metadados completos para rastreabilidade
-    
-    Futuras extensões (fora do escopo inicial):
-    - Fila assíncrona para envios não-bloqueantes
-    - Circuit breaker para proteção contra falhas
-    - Retry com backoff exponencial
     """
     
     def __init__(self, session_id: str):
@@ -90,22 +60,10 @@ class OrquestradorEnvioGlossa:
     def deve_enviar(self, texto: str, confianca: Optional[float] = None) -> bool:
         """
         Decide se transcrição deve ser enviada para tradução.
-        
-        Args:
-            texto: Texto transcrito
-            confianca: Score de confiança [0-1], se disponível
-        
-        Returns:
-            True se deve enviar, False caso contrário
-        
-        Decisão de filtros (configurável):
-        - Textos muito curtos (< 3 caracteres) são descartados
+
+        Filtros aplicados:
+        - Textos vazios ou muito curtos (< 3 caracteres) são descartados
         - Textos com confiança muito baixa (< 0.3) são descartados
-        - Textos vazios ou só espaços são descartados
-        
-        Fundamentação:
-        Filtros reduzem ruído e carga no serviço de tradução,
-        melhorando qualidade geral do pipeline.
         """
         # Filtro: texto vazio ou só espaços
         if not texto or not texto.strip():
@@ -132,35 +90,10 @@ class OrquestradorEnvioGlossa:
         texto: str,
         confianca: Optional[float] = None
     ) -> ResultadoDespachoGlossa:
-        """
-        Envia transcrição final para o serviço de tradução.
-        
-        Args:
-            texto: Texto transcrito final
-            confianca: Score de confiança, se disponível
-        
-        Returns:
-            ResultadoDespachoGlossa com metadados do envio
-        
-        Decisão de formato:
-        Alinhado com estrutura do professional_api.py, enviamos:
-        {
-            "text": "<transcrição>",
-            "metadata": {
-                "session_id": "...",
-                "confidence": 0.XX,
-                "source": "stt_microservice"
-            }
-        }
-        
-        Fundamentação:
-        Metadados adicionais permitem rastreabilidade end-to-end
-        e análises futuras de correlação entre confiança STT e
-        qualidade da tradução para glossa.
-        """
+        """Envia transcrição final para o serviço de tradução PT-BR → LIBRAS."""
         self.total_envios += 1
         
-        # Verifica se deve enviar (filtros)
+
         if not self.deve_enviar(texto, confianca):
             self.logger.info("Envio cancelado por filtros de validação")
             return ResultadoDespachoGlossa(
@@ -169,7 +102,7 @@ class OrquestradorEnvioGlossa:
                 error="Transcrição filtrada (texto muito curto ou confiança baixa)"
             )
         
-        # Monta payload
+
         payload = {
             "text": texto,
             "metadata": {
@@ -188,9 +121,9 @@ class OrquestradorEnvioGlossa:
             f"Enviando transcrição para glossa: '{texto}' (confiança: {conf_str})"
         )
         
-        # Realiza requisição HTTP POST
+
         inicio = time.perf_counter()
-        
+
         try:
             response = requests.post(
                 self.url_glossa,
