@@ -1,6 +1,8 @@
-2025-10-09 14:15:59,479 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+// Logs de traduÃ§Ã£o - 2025-10-09
+
+2025-10-09 14:15:59,479 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 14:15:59,480 - professional_translator - INFO - Mapeamentos carregados: 0 palavras, 187 frases
-2025-10-09 14:15:59,480 - professional_translator - INFO - Modelo Word2Vec não encontrado. Será treinado automaticamente.
+2025-10-09 14:15:59,480 - professional_translator - INFO - Modelo Word2Vec nï¿½o encontrado. Serï¿½ treinado automaticamente.
 2025-10-09 14:15:59,526 - professional_translator - INFO - Iniciando treinamento do modelo Word2Vec...
 2025-10-09 14:15:59,527 - gensim.models.word2vec - INFO - collecting all words and their counts
 2025-10-09 14:15:59,527 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
@@ -123,7 +125,7 @@
 2025-10-09 14:16:03,277 - professional_translator - INFO - Modelo treinado com 1728 palavras
 2025-10-09 14:16:03,279 - professional_translator - INFO - Sistema inicializado com sucesso
 2025-10-09 14:16:03,280 - professional_translator - INFO - Traduzindo: 'quero agua'
-2025-10-09 14:16:40,514 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:16:40,514 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 14:16:40,516 - professional_translator - INFO - Mapeamentos carregados: 0 palavras, 187 frases
 2025-10-09 14:16:40,516 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 14:16:40,535 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -134,8 +136,8 @@
 2025-10-09 14:16:40,559 - professional_translator - INFO - Traduzindo: 'quero agua'
 2025-10-09 14:16:40,560 - professional_translator - INFO - Traduzindo: 'bom dia'
 2025-10-09 14:16:40,560 - professional_translator - INFO - Traduzindo: 'obrigado'
-2025-10-09 14:16:40,561 - professional_translator - INFO - Traduzindo: 'eu gosto muito de você'
-2025-10-09 14:16:40,562 - professional_translator - INFO - Traduzindo: 'como você está?'
+2025-10-09 14:16:40,561 - professional_translator - INFO - Traduzindo: 'eu gosto muito de vocï¿½'
+2025-10-09 14:16:40,562 - professional_translator - INFO - Traduzindo: 'como vocï¿½ estï¿½?'
 2025-10-09 14:16:40,563 - professional_translator - INFO - Traduzindo: 'oi'
 2025-10-09 14:16:40,563 - professional_translator - INFO - Traduzindo: 'tchau'
 2025-10-09 14:16:40,563 - professional_translator - INFO - Traduzindo: 'obrigado'
@@ -143,17 +145,17 @@
 2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'bom dia'
 2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'como vai'
 2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'tudo bem'
-2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'até logo'
+2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'atï¿½ logo'
 2025-10-09 14:16:40,564 - professional_translator - INFO - Traduzindo: 'boa noite'
-2025-10-09 14:16:40,565 - professional_translator - INFO - Traduzindo: 'teste rápido'
+2025-10-09 14:16:40,565 - professional_translator - INFO - Traduzindo: 'teste rï¿½pido'
 2025-10-09 14:16:40,565 - professional_translator - INFO - Traduzindo: 'frase um pouco mais longa para teste'
 2025-10-09 14:16:40,565 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
 2025-10-09 14:16:40,566 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
 2025-10-09 14:16:40,566 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
 2025-10-09 14:16:40,566 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
-2025-10-09 14:16:40,566 - professional_translator - INFO - Traduzindo: 'meu nome é João'
-2025-10-09 14:16:40,567 - professional_translator - INFO - Traduzindo: 'meu nome é João'
-2025-10-09 14:18:59,800 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:16:40,566 - professional_translator - INFO - Traduzindo: 'meu nome ï¿½ Joï¿½o'
+2025-10-09 14:16:40,567 - professional_translator - INFO - Traduzindo: 'meu nome ï¿½ Joï¿½o'
+2025-10-09 14:18:59,800 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 14:18:59,800 - professional_translator - INFO - Mapeamentos carregados: 0 palavras, 187 frases
 2025-10-09 14:18:59,801 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 14:18:59,803 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -164,8 +166,8 @@
 2025-10-09 14:18:59,828 - professional_translator - INFO - Traduzindo: 'quero agua'
 2025-10-09 14:18:59,829 - professional_translator - INFO - Traduzindo: 'bom dia'
 2025-10-09 14:18:59,830 - professional_translator - INFO - Traduzindo: 'obrigado'
-2025-10-09 14:18:59,831 - professional_translator - INFO - Traduzindo: 'eu gosto muito de você'
-2025-10-09 14:18:59,831 - professional_translator - INFO - Traduzindo: 'como você está?'
+2025-10-09 14:18:59,831 - professional_translator - INFO - Traduzindo: 'eu gosto muito de vocï¿½'
+2025-10-09 14:18:59,831 - professional_translator - INFO - Traduzindo: 'como vocï¿½ estï¿½?'
 2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'oi'
 2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'tchau'
 2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'obrigado'
@@ -173,17 +175,17 @@
 2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'bom dia'
 2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'como vai'
 2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'tudo bem'
-2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'até logo'
+2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'atï¿½ logo'
 2025-10-09 14:18:59,833 - professional_translator - INFO - Traduzindo: 'boa noite'
-2025-10-09 14:18:59,834 - professional_translator - INFO - Traduzindo: 'teste rápido'
+2025-10-09 14:18:59,834 - professional_translator - INFO - Traduzindo: 'teste rï¿½pido'
 2025-10-09 14:18:59,834 - professional_translator - INFO - Traduzindo: 'frase um pouco mais longa para teste'
 2025-10-09 14:18:59,835 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
 2025-10-09 14:18:59,835 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
 2025-10-09 14:18:59,835 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
 2025-10-09 14:18:59,835 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
-2025-10-09 14:18:59,836 - professional_translator - INFO - Traduzindo: 'meu nome é João'
-2025-10-09 14:18:59,836 - professional_translator - INFO - Traduzindo: 'meu nome é João'
-2025-10-09 14:20:07,615 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:18:59,836 - professional_translator - INFO - Traduzindo: 'meu nome ï¿½ Joï¿½o'
+2025-10-09 14:18:59,836 - professional_translator - INFO - Traduzindo: 'meu nome ï¿½ Joï¿½o'
+2025-10-09 14:20:07,615 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 14:20:07,616 - professional_translator - INFO - Mapeamentos carregados: 0 palavras, 187 frases
 2025-10-09 14:20:07,616 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 14:20:07,620 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -191,7 +193,7 @@
 2025-10-09 14:20:07,642 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T14:20:07.631199', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
 2025-10-09 14:20:07,642 - professional_translator - INFO - Modelo carregado: 1728 palavras
 2025-10-09 14:20:07,642 - professional_translator - INFO - Sistema inicializado com sucesso
-2025-10-09 14:20:31,318 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:20:31,318 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 14:20:31,320 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-09 14:20:31,320 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 14:20:31,323 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -199,7 +201,7 @@
 2025-10-09 14:20:31,344 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'models/word2vec_libras.model', 'datetime': '2025-10-09T14:20:31.334207', 'gensim': '4.3.3', 'python': '3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'loaded'}
 2025-10-09 14:20:31,344 - professional_translator - INFO - Modelo carregado: 1728 palavras
 2025-10-09 14:20:31,344 - professional_translator - INFO - Sistema inicializado com sucesso
-2025-10-09 14:20:42,041 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:20:42,041 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 14:20:42,042 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-09 14:20:42,043 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 14:20:42,045 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -210,8 +212,8 @@
 2025-10-09 14:20:42,068 - professional_translator - INFO - Traduzindo: 'quero agua'
 2025-10-09 14:20:42,069 - professional_translator - INFO - Traduzindo: 'bom dia'
 2025-10-09 14:20:42,069 - professional_translator - INFO - Traduzindo: 'obrigado'
-2025-10-09 14:20:42,069 - professional_translator - INFO - Traduzindo: 'eu gosto muito de você'
-2025-10-09 14:20:42,071 - professional_translator - INFO - Traduzindo: 'como você está?'
+2025-10-09 14:20:42,069 - professional_translator - INFO - Traduzindo: 'eu gosto muito de vocï¿½'
+2025-10-09 14:20:42,071 - professional_translator - INFO - Traduzindo: 'como vocï¿½ estï¿½?'
 2025-10-09 14:20:42,073 - professional_translator - INFO - Traduzindo: 'oi'
 2025-10-09 14:20:42,073 - professional_translator - INFO - Traduzindo: 'tchau'
 2025-10-09 14:20:42,074 - professional_translator - INFO - Traduzindo: 'obrigado'
@@ -219,18 +221,18 @@
 2025-10-09 14:20:42,074 - professional_translator - INFO - Traduzindo: 'bom dia'
 2025-10-09 14:20:42,074 - professional_translator - INFO - Traduzindo: 'como vai'
 2025-10-09 14:20:42,074 - professional_translator - INFO - Traduzindo: 'tudo bem'
-2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'até logo'
+2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'atï¿½ logo'
 2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'boa noite'
-2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'teste rápido'
+2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'teste rï¿½pido'
 2025-10-09 14:20:42,075 - professional_translator - INFO - Traduzindo: 'frase um pouco mais longa para teste'
 2025-10-09 14:20:42,076 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
 2025-10-09 14:20:42,076 - professional_translator - INFO - Traduzindo: 'eu preciso de ajuda'
 2025-10-09 14:20:42,077 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
 2025-10-09 14:20:42,077 - professional_translator - INFO - Traduzindo: 'onde fica o banheiro?'
-2025-10-09 14:20:42,078 - professional_translator - INFO - Traduzindo: 'meu nome é João'
-2025-10-09 14:20:42,078 - professional_translator - INFO - Traduzindo: 'meu nome é João'
+2025-10-09 14:20:42,078 - professional_translator - INFO - Traduzindo: 'meu nome ï¿½ Joï¿½o'
+2025-10-09 14:20:42,078 - professional_translator - INFO - Traduzindo: 'meu nome ï¿½ Joï¿½o'
 2025-10-09 14:21:16,154 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-09 14:21:16,154 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 14:21:16,154 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 14:21:16,156 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-09 14:21:16,157 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 14:21:16,160 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -243,7 +245,7 @@
  * Running on http://127.0.0.1:9000
 2025-10-09 14:21:16,196 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
 2025-10-09 14:22:13,097 - __main__ - INFO - Request 1760030533-2756612425520: POST /translate
-2025-10-09 14:22:13,098 - professional_translator - INFO - Traduzindo: 'inovaçao é transformar o impossivel em realidade'
+2025-10-09 14:22:13,098 - professional_translator - INFO - Traduzindo: 'inovaï¿½ao ï¿½ transformar o impossivel em realidade'
 2025-10-09 14:22:13,098 - __main__ - INFO - Request 1760030533-2756612425520 completado em 0.0010s - Status: 200
 2025-10-09 14:22:13,099 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:22:13] "POST /translate HTTP/1.1" 200 -
 2025-10-09 14:22:50,303 - __main__ - INFO - Request 1760030570-2756612425520: POST /translate
@@ -263,7 +265,7 @@
 2025-10-09 14:23:27,991 - __main__ - INFO - Request 1760030607-2756612425520 completado em 0.0015s - Status: 200
 2025-10-09 14:23:27,992 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:23:27] "POST /translate HTTP/1.1" 200 -
 2025-10-09 14:24:44,473 - __main__ - INFO - Request 1760030684-2756612425520: POST /translate
-2025-10-09 14:24:44,474 - professional_translator - INFO - Traduzindo: 'Yan quer muito dar um abraço'
+2025-10-09 14:24:44,474 - professional_translator - INFO - Traduzindo: 'Yan quer muito dar um abraï¿½o'
 2025-10-09 14:24:44,475 - __main__ - INFO - Request 1760030684-2756612425520 completado em 0.0020s - Status: 200
 2025-10-09 14:24:44,475 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:24:44] "POST /translate HTTP/1.1" 200 -
 2025-10-09 14:29:27,762 - __main__ - INFO - Request 1760030967-2756612425520: POST /translate
@@ -275,7 +277,7 @@
 2025-10-09 14:34:41,673 - __main__ - INFO - Request 1760031281-2756612425520 completado em 0.0025s - Status: 200
 2025-10-09 14:34:41,673 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:34:41] "POST /translate HTTP/1.1" 200 -
 2025-10-09 14:35:58,463 - __main__ - INFO - Request 1760031358-2756612425520: POST /translate
-2025-10-09 14:35:58,464 - professional_translator - INFO - Traduzindo: 'Olá mundo'
+2025-10-09 14:35:58,464 - professional_translator - INFO - Traduzindo: 'Olï¿½ mundo'
 2025-10-09 14:35:58,464 - __main__ - INFO - Request 1760031358-2756612425520 completado em 0.0010s - Status: 200
 2025-10-09 14:35:58,465 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:35:58] "POST /translate HTTP/1.1" 200 -
 2025-10-09 14:56:30,987 - __main__ - INFO - Request 1760032590-2756612425520: GET /health
@@ -287,7 +289,7 @@
 2025-10-09 14:58:55,626 - __main__ - INFO - Request 1760032735-2756612425520 completado em 0.0160s - Status: 200
 2025-10-09 14:58:55,627 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 14:58:55] "GET /health HTTP/1.1" 200 -
 2025-10-09 15:04:52,729 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-09 15:04:52,729 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:04:52,729 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 15:04:52,730 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-09 15:04:52,730 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 15:04:52,732 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -304,14 +306,14 @@
 2025-10-09 15:05:08,128 - __main__ - INFO - Request 1760033108-2861064357680 completado em 0.0010s - Status: 200
 2025-10-09 15:05:08,129 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:05:08] "GET /health HTTP/1.1" 200 -
 2025-10-09 15:05:12,484 - __main__ - INFO - Request 1760033112-2861064357680: POST /translate
-2025-10-09 15:05:12,485 - professional_translator - INFO - Traduzindo: 'Olá mundo'
+2025-10-09 15:05:12,485 - professional_translator - INFO - Traduzindo: 'Olï¿½ mundo'
 2025-10-09 15:05:12,485 - __main__ - INFO - Request 1760033112-2861064357680 completado em 0.0010s - Status: 200
 2025-10-09 15:05:12,485 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:05:12] "POST /translate HTTP/1.1" 200 -
 2025-10-09 15:07:22,178 - __main__ - INFO - Request 1760033242-2861064357680: POST /translate
 2025-10-09 15:07:22,179 - __main__ - INFO - Request 1760033242-2861064357680 completado em 0.0010s - Status: 400
 2025-10-09 15:07:22,179 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:07:22] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
 2025-10-09 15:08:48,818 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-09 15:08:48,818 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:08:48,818 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 15:08:48,819 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-09 15:08:48,820 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 15:08:48,822 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -333,7 +335,7 @@
 2025-10-09 15:09:14,922 - __main__ - INFO - Request 1760033354-2861064357680 completado em 0.0000s - Status: 400
 2025-10-09 15:09:14,923 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:09:14] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
 2025-10-09 15:09:55,004 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-09 15:09:55,004 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:09:55,004 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 15:09:55,006 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-09 15:09:55,006 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 15:09:55,009 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -355,7 +357,7 @@
 2025-10-09 15:10:44,673 - __main__ - INFO - Request 1760033444-2861064357680 completado em 0.0000s - Status: 400
 2025-10-09 15:10:44,674 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:10:44] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
 2025-10-09 15:11:39,221 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-09 15:11:39,221 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:11:39,221 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 15:11:39,223 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-09 15:11:39,223 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 15:11:39,225 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -378,7 +380,7 @@
 2025-10-09 15:12:03,641 - __main__ - INFO - Request 1760033523-2861064357680 completado em 0.0010s - Status: 400
 2025-10-09 15:12:03,641 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:12:03] "[31m[1mPOST /translate HTTP/1.1[0m" 400 -
 2025-10-09 15:13:32,644 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-09 15:13:32,644 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-09 15:13:32,644 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-09 15:13:32,645 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-09 15:13:32,645 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-09 15:13:32,648 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -395,11 +397,11 @@
 2025-10-09 15:13:46,843 - __main__ - INFO - Request 1760033626-2182669895472 completado em 0.0010s - Status: 200
 2025-10-09 15:13:46,843 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:13:46] "GET /health HTTP/1.1" 200 -
 2025-10-09 15:13:58,360 - __main__ - INFO - Request 1760033638-2182669895472: POST /translate
-2025-10-09 15:13:58,360 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coração do Mundo, o novo longa da Filmes de Plástico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O Último Episódio retrata a trajetória de amadurecimento de três adolescentes da periferia, a partir de narrativas criadas sobre o fim da animação Caverna do Dragão. A obra gera reconhecimento e identificação, algo que já é marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurílio Martins, deve emocionar a todos os públicos.  “É um filme que retrata um momento muito específico do mundo, no qual a comunicação era distinta e passávamos por uma crise econômica que as novas gerações não entendem, mas as dores são iguais às de hoje. As dores do crescimento são iguais em qualquer lugar do mundo. Por isso, a identificação é muito imediata, tanto para quem está vivendo, quanto para quem já viveu essas situações”, explica, em entrevista ao Conversa Bem Viver. O enredo parte da história criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o último episódio do desenho que marcou as gerações dos anos 80 e 90. Mas, no desenrolar da narrativa, vão ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausência parental são alguns deles.  Tudo isso mantendo características fiéis da Filmes de Plástico, como o olhar cuidadoso ao cotidiano, a representação de pessoas negras sem estereotipá-las e a sensibilidade que gera intimismo. “Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste é saber que isso não existe com tanta frequência nos outros lugares. Mas, de nossa parte, não é um panfleto. É natural. A Filmes de Plástico parte do princípio da sinceridade sobre aquilo que nos rodeia”, enfatiza Martins.  A produtora, que comemora os seus 16 anos de história, conta também com André Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Além dos dois primeiros, o elenco de O Último Episódio tem a participação de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuição é da Malute e da Embaúba Filmes.'
+2025-10-09 15:13:58,360 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coraï¿½ï¿½o do Mundo, o novo longa da Filmes de Plï¿½stico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O ï¿½ltimo Episï¿½dio retrata a trajetï¿½ria de amadurecimento de trï¿½s adolescentes da periferia, a partir de narrativas criadas sobre o fim da animaï¿½ï¿½o Caverna do Dragï¿½o. A obra gera reconhecimento e identificaï¿½ï¿½o, algo que jï¿½ ï¿½ marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurï¿½lio Martins, deve emocionar a todos os pï¿½blicos.  ï¿½ï¿½ um filme que retrata um momento muito especï¿½fico do mundo, no qual a comunicaï¿½ï¿½o era distinta e passï¿½vamos por uma crise econï¿½mica que as novas geraï¿½ï¿½es nï¿½o entendem, mas as dores sï¿½o iguais ï¿½s de hoje. As dores do crescimento sï¿½o iguais em qualquer lugar do mundo. Por isso, a identificaï¿½ï¿½o ï¿½ muito imediata, tanto para quem estï¿½ vivendo, quanto para quem jï¿½ viveu essas situaï¿½ï¿½esï¿½, explica, em entrevista ao Conversa Bem Viver. O enredo parte da histï¿½ria criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o ï¿½ltimo episï¿½dio do desenho que marcou as geraï¿½ï¿½es dos anos 80 e 90. Mas, no desenrolar da narrativa, vï¿½o ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausï¿½ncia parental sï¿½o alguns deles.  Tudo isso mantendo caracterï¿½sticas fiï¿½is da Filmes de Plï¿½stico, como o olhar cuidadoso ao cotidiano, a representaï¿½ï¿½o de pessoas negras sem estereotipï¿½-las e a sensibilidade que gera intimismo. ï¿½Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste ï¿½ saber que isso nï¿½o existe com tanta frequï¿½ncia nos outros lugares. Mas, de nossa parte, nï¿½o ï¿½ um panfleto. ï¿½ natural. A Filmes de Plï¿½stico parte do princï¿½pio da sinceridade sobre aquilo que nos rodeiaï¿½, enfatiza Martins.  A produtora, que comemora os seus 16 anos de histï¿½ria, conta tambï¿½m com Andrï¿½ Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Alï¿½m dos dois primeiros, o elenco de O ï¿½ltimo Episï¿½dio tem a participaï¿½ï¿½o de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuiï¿½ï¿½o ï¿½ da Malute e da Embaï¿½ba Filmes.'
 2025-10-09 15:13:58,387 - __main__ - INFO - Request 1760033638-2182669895472 completado em 0.0273s - Status: 200
 2025-10-09 15:13:58,387 - werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 15:13:58] "POST /translate HTTP/1.1" 200 -
 2025-10-10 11:33:44,079 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-10 11:33:44,079 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-10 11:33:44,079 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-10 11:33:44,129 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-10 11:33:44,129 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-10 11:33:44,209 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -412,7 +414,7 @@
  * Running on http://127.0.0.1:9000
 2025-10-10 11:33:44,312 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
 2025-10-10 19:11:20,949 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-10 19:11:21,045 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-10 19:11:21,045 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-10 19:11:21,067 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-10 19:11:21,068 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-10 19:11:21,249 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -433,7 +435,7 @@
 2025-10-10 19:12:06,644 - __main__ - INFO - Request 1760134326-2820461463344 completado em 0.0010s - Status: 200
 2025-10-10 19:12:06,645 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:12:06] "GET /health HTTP/1.1" 200 -
 2025-10-10 19:14:20,785 - __main__ - INFO - Request 1760134460-2820461463344: POST /translate
-2025-10-10 19:14:20,786 - __main__ - ERROR - Erro na tradução: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-10-10 19:14:20,786 - __main__ - ERROR - Erro na traduï¿½ï¿½o: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
 2025-10-10 19:14:20,787 - __main__ - INFO - Request 1760134460-2820461463344 completado em 0.0020s - Status: 500
 2025-10-10 19:14:20,787 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:14:20] "[35m[1mPOST /translate HTTP/1.1[0m" 500 -
 2025-10-10 19:14:36,827 - __main__ - INFO - Request 1760134476-2820461463344: POST /translate
@@ -441,11 +443,11 @@
 2025-10-10 19:14:36,828 - __main__ - INFO - Request 1760134476-2820461463344 completado em 0.0010s - Status: 200
 2025-10-10 19:14:36,828 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:14:36] "POST /translate HTTP/1.1" 200 -
 2025-10-10 19:16:13,563 - __main__ - INFO - Request 1760134573-2820461463344: POST /translate
-2025-10-10 19:16:13,563 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coração do Mundo, o novo longa da Filmes de Plástico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O Último Episódio retrata a trajetória de amadurecimento de três adolescentes da periferia, a partir de narrativas criadas sobre o fim da animação Caverna do Dragão. A obra gera reconhecimento e identificação, algo que já é marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurílio Martins, deve emocionar a todos os públicos.  “É um filme que retrata um momento muito específico do mundo, no qual a comunicação era distinta e passávamos por uma crise econômica que as novas gerações não entendem, mas as dores são iguais às de hoje. As dores do crescimento são iguais em qualquer lugar do mundo. Por isso, a identificação é muito imediata, tanto para quem está vivendo, quanto para quem já viveu essas situações”, explica, em entrevista ao Conversa Bem Viver. O enredo parte da história criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o último episódio do desenho que marcou as gerações dos anos 80 e 90. Mas, no desenrolar da narrativa, vão ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausência parental são alguns deles.  Tudo isso mantendo características fiéis da Filmes de Plástico, como o olhar cuidadoso ao cotidiano, a representação de pessoas negras sem estereotipá-las e a sensibilidade que gera intimismo. “Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste é saber que isso não existe com tanta frequência nos outros lugares. Mas, de nossa parte, não é um panfleto. É natural. A Filmes de Plástico parte do princípio da sinceridade sobre aquilo que nos rodeia”, enfatiza Martins.  A produtora, que comemora os seus 16 anos de história, conta também com André Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Além dos dois primeiros, o elenco de O Último Episódio tem a participação de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuição é da Malute e da Embaúba Filmes.'
+2025-10-10 19:16:13,563 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coraï¿½ï¿½o do Mundo, o novo longa da Filmes de Plï¿½stico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O ï¿½ltimo Episï¿½dio retrata a trajetï¿½ria de amadurecimento de trï¿½s adolescentes da periferia, a partir de narrativas criadas sobre o fim da animaï¿½ï¿½o Caverna do Dragï¿½o. A obra gera reconhecimento e identificaï¿½ï¿½o, algo que jï¿½ ï¿½ marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurï¿½lio Martins, deve emocionar a todos os pï¿½blicos.  ï¿½ï¿½ um filme que retrata um momento muito especï¿½fico do mundo, no qual a comunicaï¿½ï¿½o era distinta e passï¿½vamos por uma crise econï¿½mica que as novas geraï¿½ï¿½es nï¿½o entendem, mas as dores sï¿½o iguais ï¿½s de hoje. As dores do crescimento sï¿½o iguais em qualquer lugar do mundo. Por isso, a identificaï¿½ï¿½o ï¿½ muito imediata, tanto para quem estï¿½ vivendo, quanto para quem jï¿½ viveu essas situaï¿½ï¿½esï¿½, explica, em entrevista ao Conversa Bem Viver. O enredo parte da histï¿½ria criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o ï¿½ltimo episï¿½dio do desenho que marcou as geraï¿½ï¿½es dos anos 80 e 90. Mas, no desenrolar da narrativa, vï¿½o ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausï¿½ncia parental sï¿½o alguns deles.  Tudo isso mantendo caracterï¿½sticas fiï¿½is da Filmes de Plï¿½stico, como o olhar cuidadoso ao cotidiano, a representaï¿½ï¿½o de pessoas negras sem estereotipï¿½-las e a sensibilidade que gera intimismo. ï¿½Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste ï¿½ saber que isso nï¿½o existe com tanta frequï¿½ncia nos outros lugares. Mas, de nossa parte, nï¿½o ï¿½ um panfleto. ï¿½ natural. A Filmes de Plï¿½stico parte do princï¿½pio da sinceridade sobre aquilo que nos rodeiaï¿½, enfatiza Martins.  A produtora, que comemora os seus 16 anos de histï¿½ria, conta tambï¿½m com Andrï¿½ Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Alï¿½m dos dois primeiros, o elenco de O ï¿½ltimo Episï¿½dio tem a participaï¿½ï¿½o de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuiï¿½ï¿½o ï¿½ da Malute e da Embaï¿½ba Filmes.'
 2025-10-10 19:16:13,585 - __main__ - INFO - Request 1760134573-2820461463344 completado em 0.0218s - Status: 200
 2025-10-10 19:16:13,587 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2025 19:16:13] "POST /translate HTTP/1.1" 200 -
 2025-10-16 09:36:13,439 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-16 09:36:13,539 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-16 09:36:13,539 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-16 09:36:13,562 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-16 09:36:13,563 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-16 09:36:13,644 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -462,7 +464,7 @@
 2025-10-16 09:36:21,402 - __main__ - INFO - Request 1760618181-2833545791280 completado em 0.0014s - Status: 200
 2025-10-16 09:36:21,404 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:36:21] "GET /health HTTP/1.1" 200 -
 2025-10-16 09:36:34,874 - __main__ - INFO - Request 1760618194-2833545791280: POST /translate
-2025-10-16 09:36:34,874 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coração do Mundo, o novo longa da Filmes de Plástico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O Último Episódio retrata a trajetória de amadurecimento de três adolescentes da periferia, a partir de narrativas criadas sobre o fim da animação Caverna do Dragão. A obra gera reconhecimento e identificação, algo que já é marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurílio Martins, deve emocionar a todos os públicos.  “É um filme que retrata um momento muito específico do mundo, no qual a comunicação era distinta e passávamos por uma crise econômica que as novas gerações não entendem, mas as dores são iguais às de hoje. As dores do crescimento são iguais em qualquer lugar do mundo. Por isso, a identificação é muito imediata, tanto para quem está vivendo, quanto para quem já viveu essas situações”, explica, em entrevista ao Conversa Bem Viver. O enredo parte da história criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o último episódio do desenho que marcou as gerações dos anos 80 e 90. Mas, no desenrolar da narrativa, vão ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausência parental são alguns deles.  Tudo isso mantendo características fiéis da Filmes de Plástico, como o olhar cuidadoso ao cotidiano, a representação de pessoas negras sem estereotipá-las e a sensibilidade que gera intimismo. “Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste é saber que isso não existe com tanta frequência nos outros lugares. Mas, de nossa parte, não é um panfleto. É natural. A Filmes de Plástico parte do princípio da sinceridade sobre aquilo que nos rodeia”, enfatiza Martins.  A produtora, que comemora os seus 16 anos de história, conta também com André Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Além dos dois primeiros, o elenco de O Último Episódio tem a participação de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuição é da Malute e da Embaúba Filmes.'
+2025-10-16 09:36:34,874 - professional_translator - INFO - Traduzindo: 'Depois de sucessos como Marte Um, que quase disputou o Oscar em 2023, O Dia em que Te Conheci, Baronesa e No Coraï¿½ï¿½o do Mundo, o novo longa da Filmes de Plï¿½stico chega aos cinemas de todo o Brasil nesta quinta-feira (9). O ï¿½ltimo Episï¿½dio retrata a trajetï¿½ria de amadurecimento de trï¿½s adolescentes da periferia, a partir de narrativas criadas sobre o fim da animaï¿½ï¿½o Caverna do Dragï¿½o. A obra gera reconhecimento e identificaï¿½ï¿½o, algo que jï¿½ ï¿½ marca da produtora de Contagem (MG). Por isso, como aposta o diretor do filme, Maurï¿½lio Martins, deve emocionar a todos os pï¿½blicos.  ï¿½ï¿½ um filme que retrata um momento muito especï¿½fico do mundo, no qual a comunicaï¿½ï¿½o era distinta e passï¿½vamos por uma crise econï¿½mica que as novas geraï¿½ï¿½es nï¿½o entendem, mas as dores sï¿½o iguais ï¿½s de hoje. As dores do crescimento sï¿½o iguais em qualquer lugar do mundo. Por isso, a identificaï¿½ï¿½o ï¿½ muito imediata, tanto para quem estï¿½ vivendo, quanto para quem jï¿½ viveu essas situaï¿½ï¿½esï¿½, explica, em entrevista ao Conversa Bem Viver. O enredo parte da histï¿½ria criada por um dos adolescentes, que, com o objetivo de conquistar uma colega de escola, diz que tem uma fita com o ï¿½ltimo episï¿½dio do desenho que marcou as geraï¿½ï¿½es dos anos 80 e 90. Mas, no desenrolar da narrativa, vï¿½o ficando claros os dilemas enfrentados pelos jovens. A busca por um novo amor, dificuldades financeiras familiares e ausï¿½ncia parental sï¿½o alguns deles.  Tudo isso mantendo caracterï¿½sticas fiï¿½is da Filmes de Plï¿½stico, como o olhar cuidadoso ao cotidiano, a representaï¿½ï¿½o de pessoas negras sem estereotipï¿½-las e a sensibilidade que gera intimismo. ï¿½Como os nossos filmes partem da sinceridade e de um olhar muito profundo sobre o nosso cotidiano, automaticamente, esses personagens e essa geografia saltam para frente das telas. O triste ï¿½ saber que isso nï¿½o existe com tanta frequï¿½ncia nos outros lugares. Mas, de nossa parte, nï¿½o ï¿½ um panfleto. ï¿½ natural. A Filmes de Plï¿½stico parte do princï¿½pio da sinceridade sobre aquilo que nos rodeiaï¿½, enfatiza Martins.  A produtora, que comemora os seus 16 anos de histï¿½ria, conta tambï¿½m com Andrï¿½ Novais Oliveira, Gabriel Martins e Thiago Macedo Correia. Alï¿½m dos dois primeiros, o elenco de O ï¿½ltimo Episï¿½dio tem a participaï¿½ï¿½o de Matheus Sampaio, Rejane Faria e Babi Amaral. A distribuiï¿½ï¿½o ï¿½ da Malute e da Embaï¿½ba Filmes.'
 2025-10-16 09:36:34,893 - __main__ - INFO - Request 1760618194-2833545791280 completado em 0.0197s - Status: 200
 2025-10-16 09:36:34,894 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:36:34] "POST /translate HTTP/1.1" 200 -
 2025-10-16 09:37:20,423 - __main__ - INFO - Request 1760618240-2833545791280: POST /translate
@@ -478,7 +480,7 @@
 2025-10-16 09:38:01,788 - __main__ - INFO - Request 1760618281-2833545791280 completado em 0.0011s - Status: 200
 2025-10-16 09:38:01,788 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 09:38:01] "POST /translate HTTP/1.1" 200 -
 2025-10-16 13:17:43,763 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-16 13:17:43,764 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-16 13:17:43,764 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-16 13:17:43,772 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-16 13:17:43,772 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-16 13:17:43,785 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -507,7 +509,7 @@
 2025-10-16 13:51:49,851 - __main__ - INFO - Request 1760633509-2353936172848 completado em 0.0011s - Status: 200
 2025-10-16 13:51:49,851 - werkzeug - INFO - 127.0.0.1 - - [16/Oct/2025 13:51:49] "POST /translate HTTP/1.1" 200 -
 2025-10-17 15:42:19,932 - __main__ - INFO - Inicializando tradutor profissional...
-2025-10-17 15:42:19,940 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-10-17 15:42:19,940 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-10-17 15:42:19,965 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-10-17 15:42:19,965 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-10-17 15:42:20,050 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -536,7 +538,7 @@
 2025-10-17 16:14:05,767 - __main__ - INFO - Request 1760728445-2082046641968 completado em 0.0010s - Status: 200
 2025-10-17 16:14:05,767 - werkzeug - INFO - 127.0.0.1 - - [17/Oct/2025 16:14:05] "POST /translate HTTP/1.1" 200 -
 2025-11-07 09:18:32,079 - __main__ - INFO - Inicializando tradutor profissional...
-2025-11-07 09:18:32,170 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2025-11-07 09:18:32,170 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2025-11-07 09:18:32,174 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2025-11-07 09:18:32,176 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2025-11-07 09:18:32,268 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -573,7 +575,7 @@
 2025-11-07 10:05:45,680 - __main__ - INFO - Request 1762520745-1675415160624 completado em 0.0010s - Status: 200
 2025-11-07 10:05:45,681 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 10:05:45] "POST /translate HTTP/1.1" 200 -
 2026-01-14 18:56:11,174 - __main__ - INFO - Inicializando tradutor profissional...
-2026-01-14 18:56:11,294 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2026-01-14 18:56:11,294 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2026-01-14 18:56:11,297 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2026-01-14 18:56:11,298 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2026-01-14 18:56:11,391 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -595,11 +597,11 @@
 2026-01-14 18:57:45,052 - __main__ - INFO - Request 1768427865-2621791897392 completado em 0.0010s - Status: 200
 2026-01-14 18:57:45,052 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 18:57:45] "GET / HTTP/1.1" 200 -
 2026-01-14 18:59:16,211 - __main__ - INFO - Request 1768427956-2621791897392: POST /translate
-2026-01-14 18:59:16,212 - professional_translator - INFO - Traduzindo: 'Luyza é se é furona, me fez acordar cedo e ela esta dormindo'
+2026-01-14 18:59:16,212 - professional_translator - INFO - Traduzindo: 'Luyza ï¿½ se ï¿½ furona, me fez acordar cedo e ela esta dormindo'
 2026-01-14 18:59:16,215 - __main__ - INFO - Request 1768427956-2621791897392 completado em 0.0040s - Status: 200
 2026-01-14 18:59:16,215 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 18:59:16] "POST /translate HTTP/1.1" 200 -
 2026-01-14 19:03:32,004 - __main__ - INFO - Inicializando tradutor profissional...
-2026-01-14 19:03:32,004 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2026-01-14 19:03:32,004 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2026-01-14 19:03:32,006 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2026-01-14 19:03:32,007 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2026-01-14 19:03:32,009 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -642,7 +644,7 @@
 2026-01-14 19:13:01,185 - __main__ - INFO - Request 1768428781-2519762634544 completado em 0.0030s - Status: 404
 2026-01-14 19:13:01,186 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:13:01] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
 2026-01-14 19:26:50,696 - __main__ - INFO - Inicializando tradutor profissional...
-2026-01-14 19:26:50,697 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2026-01-14 19:26:50,697 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2026-01-14 19:26:50,698 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2026-01-14 19:26:50,699 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2026-01-14 19:26:50,701 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None
@@ -661,7 +663,7 @@
 2026-01-14 19:33:48,825 - __main__ - INFO - Request 1768430028-1304358979376 completado em 0.0010s - Status: 404
 2026-01-14 19:33:48,825 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:33:48] "[33mPOST /traduzir HTTP/1.1[0m" 404 -
 2026-01-14 19:41:53,175 - __main__ - INFO - Inicializando tradutor profissional...
-2026-01-14 19:41:53,192 - professional_translator - INFO - Inicializando sistema profissional de tradução...
+2026-01-14 19:41:53,192 - professional_translator - INFO - Inicializando sistema profissional de traduï¿½ï¿½o...
 2026-01-14 19:41:53,222 - professional_translator - INFO - Mapeamentos carregados: 131 palavras, 510 frases
 2026-01-14 19:41:53,223 - gensim.utils - INFO - loading Word2Vec object from models/word2vec_libras.model
 2026-01-14 19:41:53,330 - gensim.utils - INFO - loading wv recursively from models/word2vec_libras.model.wv.* with mmap=None

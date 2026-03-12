@@ -1242,3 +1242,31 @@
 2026-03-12 17:07:38 - stt_service.gateway_comunicacao.7f9c4168 - INFO - Estatísticas STT: {'session_id': '7f9c4168-deda-4192-911a-6adf9f71520f', 'bytes_processados': 1974272, 'transcricoes_parciais': 78, 'transcricoes_finais': 9, 'mb_processados': 1.88}
 2026-03-12 17:07:38 - stt_service.gateway_comunicacao.7f9c4168 - INFO - Estatísticas envio: {'session_id': '7f9c4168-deda-4192-911a-6adf9f71520f', 'total_envios': 9, 'envios_sucesso': 9, 'envios_falha': 0, 'taxa_sucesso_pct': 100.0, 'latencia_media_ms': 3.5, 'url_destino': 'http://127.0.0.1:5000/translate'}
 2026-03-12 17:07:38 - stt_service.gateway_comunicacao.7f9c4168 - INFO - Sessão 7f9c4168 encerrada
+2026-03-12 17:29:24 - stt_service.gateway_comunicacao.80545aa3 - INFO - Nova sessão WebSocket estabelecida: 80545aa3-f925-4283-b415-22886b5586ae
+2026-03-12 17:29:24 - stt_service.motor_stt_vosk.80545aa3 - INFO - Motor STT inicializado para sessão 80545aa3 (taxa: 16000Hz)
+2026-03-12 17:29:24 - stt_service.gateway_comunicacao.80545aa3 - INFO - Motor STT inicializado
+2026-03-12 17:29:24 - stt_service.orquestrador_envio.80545aa3 - INFO - Orquestrador de envio inicializado (destino: http://127.0.0.1:5000/translate, timeout: 10s)
+2026-03-12 17:29:24 - stt_service.gateway_comunicacao.80545aa3 - INFO - Orquestrador de envio inicializado
+2026-03-12 17:29:24 - stt_service.gateway_comunicacao.80545aa3 - INFO - Mensagem de sessão iniciada enviada
+2026-03-12 17:29:31 - stt_service.gateway_comunicacao.80545aa3 - INFO - Transcrição final detectada: 'o'
+2026-03-12 17:29:31 - stt_service.orquestrador_envio.80545aa3 - INFO - Envio cancelado por filtros de validação
+2026-03-12 17:29:31 - stt_service.gateway_comunicacao.80545aa3 - INFO - Dispatch response_body tipo: <class 'NoneType'>
+2026-03-12 17:29:31 - stt_service.gateway_comunicacao.80545aa3 - INFO - Dispatch response_body: None
+2026-03-12 17:29:31 - stt_service.gateway_comunicacao.80545aa3 - INFO - Mensagem de transcrição final enviada
+2026-03-12 17:29:43 - stt_service.gateway_comunicacao.80545aa3 - INFO - Transcrição final detectada: 'só aplicar o botão de a'
+2026-03-12 17:29:43 - stt_service.orquestrador_envio.80545aa3 - INFO - Enviando transcrição para glossa: 'só aplicar o botão de a' (confiança: 0.67)
+2026-03-12 17:29:43 - stt_service.orquestrador_envio.80545aa3 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 4.0ms)
+2026-03-12 17:29:43 - stt_service.gateway_comunicacao.80545aa3 - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-03-12 17:29:43 - stt_service.gateway_comunicacao.80545aa3 - INFO - Dispatch response_body: {'confidence': 0.17, 'input': 'só aplicar o botão de a', 'method': 'word_mapping', 'output': 'SÓ APLICAR O BOTÃO DE A', 'success': True}
+2026-03-12 17:29:43 - stt_service.gateway_comunicacao.80545aa3 - INFO - Mensagem de transcrição final enviada
+2026-03-12 17:29:46 - stt_service.gateway_comunicacao.80545aa3 - INFO - Transcrição final detectada: 'ainda a'
+2026-03-12 17:29:46 - stt_service.orquestrador_envio.80545aa3 - INFO - Enviando transcrição para glossa: 'ainda a' (confiança: 0.44)
+2026-03-12 17:29:46 - stt_service.orquestrador_envio.80545aa3 - INFO - ✓ Envio bem-sucedido (status: 200, latência: 3.1ms)
+2026-03-12 17:29:46 - stt_service.gateway_comunicacao.80545aa3 - INFO - Dispatch response_body tipo: <class 'dict'>
+2026-03-12 17:29:46 - stt_service.gateway_comunicacao.80545aa3 - INFO - Dispatch response_body: {'confidence': 0.0, 'input': 'ainda a', 'method': 'word_mapping', 'output': 'AINDA A', 'success': True}
+2026-03-12 17:29:46 - stt_service.gateway_comunicacao.80545aa3 - INFO - Mensagem de transcrição final enviada
+2026-03-12 17:29:48 - stt_service.gateway_comunicacao.80545aa3 - INFO - Cliente desconectou WebSocket
+2026-03-12 17:29:48 - stt_service.gateway_comunicacao.80545aa3 - INFO - Finalizando sessão...
+2026-03-12 17:29:48 - stt_service.gateway_comunicacao.80545aa3 - INFO - Estatísticas STT: {'session_id': '80545aa3-f925-4283-b415-22886b5586ae', 'bytes_processados': 663552, 'transcricoes_parciais': 23, 'transcricoes_finais': 3, 'mb_processados': 0.63}
+2026-03-12 17:29:48 - stt_service.gateway_comunicacao.80545aa3 - INFO - Estatísticas envio: {'session_id': '80545aa3-f925-4283-b415-22886b5586ae', 'total_envios': 3, 'envios_sucesso': 2, 'envios_falha': 0, 'taxa_sucesso_pct': 66.7, 'latencia_media_ms': 3.6, 'url_destino': 'http://127.0.0.1:5000/translate'}
+2026-03-12 17:29:48 - stt_service.gateway_comunicacao.80545aa3 - INFO - Sessão 80545aa3 encerrada

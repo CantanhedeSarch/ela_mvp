@@ -78,7 +78,7 @@ stt_service/
 │   ├── Sugestões de experimentos científicos
 │   └── Referências e citação
 │
-├── ⚡ QUICKSTART.md                  # Guia rápido de 5 minutos
+├── ⚡ Guia Stt.md                  # Guia rápido de 5 minutos
 │   ├── Instalação express
 │   ├── Download do modelo Vosk
 │   ├── Configuração de variáveis
@@ -186,7 +186,7 @@ Cliente → Gateway → Motor STT → Orquestrador → Serviço Glossa
 
 ### ✅ Acadêmicos
 
-- [x] README com motivação e arquitetura
+- [x] README 
 - [x] Fluxo de dados documentado com exemplos
 - [x] Métricas propostas para avaliação (WER, latência, throughput)
 - [x] Sugestões de experimentos científicos

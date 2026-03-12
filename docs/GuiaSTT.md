@@ -1,6 +1,6 @@
 # Guia Rápido - Microsserviço STT
 
-## ⚡ Início Rápido (5 minutos)
+
 
 ### 1. Preparar Ambiente
 

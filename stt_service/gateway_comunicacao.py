@@ -316,3 +316,4 @@ if __name__ == "__main__":
         log_level=ConfiguracaoSTT.NIVEL_LOG.lower(),
         reload=False
     )
+)
